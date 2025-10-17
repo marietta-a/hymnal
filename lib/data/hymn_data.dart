@@ -478,5 +478,85 @@ final hymnJson = [
     "firstLine": "O Lord in this great mystery",
     "composer": "MICHAEL GANNON",
     "category": "OFFERTORY"
+  },
+  {
+    "number": 61,
+    "title": "RECEIVE, O FATHER, IN THY LOVE",
+    "lyrics": "Receive, O Father, in thy love\nThese humble gifts of bread and wine;\nThat we ourselves we offer thee\nReturning gifts already thine.\n\n2. Behold this Host and Chalice, Lord,\nTo thee on High the gifts we raise;\nThrough them may we our honour pay,\nOur adoration and our praise.\n\n3. No earthly claim to grace is ours,\nSave what thy sacrifice has won;\nGrant then thy grace, fulfil our needs,\nAnd may thy will in ours be done.",
+    "firstLine": "Receive, O Father, in thy love",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 62,
+    "title": "TAKE MY LIFE, AND LET IT BE",
+    "lyrics": "Take my life, and let it be\nConsecrated, Lord, to thee;\nTake my moments and my days,\nLet them flow in ceaseless praise.\nTake my hands, and let them move\nAt the impulse of thy love.\nTake my feet, and let them be\nSwift and beautiful for thee.\n\n2. Take my voice, and let me sing\nAlways, only, for my King;\nTake my lips, and let them be\nFilled with messages from thee.\nTake my silver and my gold;\nNot a mite would I withhold.\nTake my intellect, and use\nEvery power as thou shalt choose.\n\n3. Take my will, and make it thine;\nIt shall be no longer mine.\nTake my heart; it is thine own;\nIt shall be thy royal throne.\nTake my love; my Lord, I pour\nAt thy feet its treasure-store.\nTake myself, and I will be\nEver, only, all for thee.",
+    "firstLine": "Take my life, and let it be",
+    "composer": "FRANCES R. HAVERGAL, 1836-79",
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 63,
+    "title": "TAKE, O LORD",
+    "lyrics": "Refrain:\nTake, O Lord we give them to you,\nOur poor hearts, we give in our offering to you.\n\nFrom your hand to man,\nBack from man to you.\n\n2. You the giver of life,\nLiving life to the poor.\n\n3. Yet the heart of your man,\nCannot do more than take.\n\n4. In return man must spend,\nHis life loving you.\n\n5. Our love here is shown,\nIn our offering to you.\n\n6. Take the gift from our hands,\nWe are grateful to you\n\n7. Come and offer to God,\nAll you children of God.\n\n8. Offer in form of bread,\nInner give him your hearts.\n\n9. To the Father and Son,\nAnd the Spirit give all.",
+    "firstLine": "Take, O Lord we give them to you,",
+    "composer": "ROBERT TANTO",
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 64,
+    "title": "TRUTH IN MY INWARD BEING",
+    "lyrics": "Truth in my inward being, wisdom in my\nSecret heart,\nO Lord that’s what you desire. (2 *)\n\nRefrain:\nWilling Spirit, Holy Spirit, Willing Spirit,\nThis is our sacrifice.\n\n2. We offer our minds and hearts,\nTo you O God at this table\nO Lord, that’s what you desire.\n\n3. We bring our gifts to you Lord,\nIn form of bread and wine\nO Lord, that’s what you desire.\n\n4. Bless them and change them, O Lord,\nInto your body and blood\nO Lord, that’s what you desire.\n\n5. All glory be to the Father,\nAnd to the Son and the Spirit\nO Lord, that’s what you desire.",
+    "firstLine": "Truth in my inward being, wisdom in my",
+    "composer": "JUDE NFAH",
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 65,
+    "title": "WE OFFER THEE THE HOLY MASS",
+    "lyrics": "We offer thee the Holy Mass,\nThee our Creator to adore;\nTo thank thee for thy gracious gift\nAnd praise thy name for evermore.\n\n2. We pray for pardon and for grace\nTo change the life that we have led;\nAnd beg thee for thy Son’s dear sake\nTo bless the living and the dead.\n\n3. We bring our gifts, we bring our hearts\nO Lord receive them, bless them all;\nAnd grant we may thy children be\nTo love and bless thee evermore.\n\n4. Now Jesus Christ’s true flesh and blood\nShall be our sacrifice divine;\nThe same in Mass as on the cross\nThough under form of bread and wine.\n\n5. To God the Father, God the Son,\nThe Holy Spirit, three in One\nAll honour, glory, virtue be\nTo God our Father and our King.",
+    "firstLine": "We offer thee the Holy Mass,",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 66,
+    "title": "WE OFFER YOU THESE GIFTS, O LORD",
+    "lyrics": "We offer you these gifts, O Lord\nHumbly pleading for your mercy,\nMercy to bind our hearts to yours\nTo be with you for our Redemption.\n\nRefrain:\nWe offer to you Father\nThese gifts of bread and wine\nThe True Body and Blood of your Son.\nReceive these gifts we bring to you.\n\n2. We bow down on bended knee.\nWe pray you to receive our gifts\nNo other offerings so great as these.\nReceive our gifts we bring to you.\n\n3. Satan demanded the highest price,\nWho but your Son could pay for it?\nWith his Body and Blood did Christ\nPurchase us from the hands of satan.\n\n4. We too like Melchisedeck, Father,\nOffer you gifts of bread and wine.\nFather and the Son glory to you,\nThe same to the Holy Spirit.",
+    "firstLine": "We offer you these gifts, O Lord",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 67,
+    "title": "WHAT CAN WE BRING TO OFFER",
+    "lyrics": "What can we bring to offer,\nAs our gift to you, O Lord, O God,\nAs our gift to you?\nYou are full of kindness for your sinful sons,\nO Lord, O God,\nFor your sinful sons.\n\nRefrain:\nFather, all that we have,\nFather, comes from your hands,\nSo we offer You Jesus as our Holy gift,\nO Lord, O God,\nAs our Holy gift.\n\n2. Take then all of our labour,\nSuffering and pain, O Lord, O Ggod,\nSuffering and pain.\nTake then beauty and gladness,\nHeart and mind and will, O Lord, O God,\nHeart and mind and will.\n\n3. Bread and wine will be given,\nHumble food and drink, O Lord, O God,\nHumble food and drink\nSymbols of human labour,\nSymbols of ourselves, O Lord, O God,\nSymbols of ourselves.\n\n4. But our Jesus will change them,\nTo his risen self, O Lord, O God,\nTo his risen self.\nHe will share with his brothers,\nLife and truth and love, O Lord, O God,\nLife and truth and love.",
+    "firstLine": "What can we bring to offer,",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 68,
+    "title": "WHAT SHALL I RENDER",
+    "lyrics": "Chorus;\nWhat shall I render O! O!\nWhat shall I render to the Lord?\n\nWhat shall I render to my God?\nWhat shall I render to the Lord?\n\n2. What shall I render to the Spirit?\nWhat shall I render to the Lord?\n\n3. What shall I render before my God?\nWhat shall I render to the Lord?\n\n4. What shall I render for His goodness?\nWhat shall I render to the Lord?\n\n5. What shall I render for His Mercy?\nWhat shall I render to the Lord?\n\n6. What shall I render for all His Love?\nWhat shall I render to the Lord?\n\n7. What shall I render for all His deeds?\nWhat shall I render to the Lord?\n\n8. Let us offer our lives,\nCome and offer to the Lord.\n\n9. We adore Him, we thank Him,\nWe give praises to the Lord.",
+    "firstLine": "What shall I render to my God?",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 69,
+    "title": "WITH ALL MY HEART I THANK YOU LORD",
+    "lyrics": "With all my heart I thank You, Lord,\nFor sanctifying grace.\n\n2. Because this gift makes me Your child,\nAnd I shall see Your face.\n\n3. It’s only right that I should pray\nAnd offer all I do.\n\n4. To show how much I love this gift\nThat make my soul like You.",
+    "firstLine": "With all my heart I thank You, Lord,",
+    "composer": null,
+    "category": "OFFERTORY"
+  },
+  {
+    "number": 70,
+    "title": "A NEW COMMANDMENT",
+    "lyrics": "Refrain:\nA new commandment I give to you, that you\nLove one another\nAs I have loved you, said the Lord.\nBlessed are they, whose path is innocent.\nWho walk, who walk in the way of the Lord,\nWho walk in the way of the Lord.\n\nWhere charity and love prevail\nThere God is to be found.\nLove one another (2*)\n\n2. How good it is to live as brothers,\nLiving as one.\nLove one another (2*)\n\n3. The love of Christ has brought us here to-\nGether,\nAnd makes us one.\nLove one another (2*)\n\n4. Christ has given us an example,\nThat we should do as he has done.\nLove one another (2*)",
+    "firstLine": "A new commandment I give to you, that you",
+    "composer": null,
+    "category": "COMMUNION AND CORPUS CHRISTI"
   }
 ];
