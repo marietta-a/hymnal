@@ -2399,14 +2399,6 @@ final hymnJson = [
     "composer": "F. W. FABER, 1814-63",
     "category": "THE CHURCH"
   },
-    {
-    "number": 300,
-    "title": "FAITH OF OUR FATHERS",
-    "lyrics": "1. Faith of our father, living still,\nIn spite of dungeon, fire, and sword\nO how our hearts beat high with joy:\nWhene’er we hear that glorious word\nFaith of our fathers! Holy faith!\nWe will be true to thee till death\n\n2. Our fathers chained in prison’s dark\nWere still I heart and conscience free:\nHow sweet would be their children’s fate,\nIf they, like them, could die for thee!\nFaith of our fathers! Holy faith!\nWe will be true to thee till death\n\n3. Faith of our fathers, Mary’s prayers\nShall win our country back to thee;\nAnd through the truth that comes from God\nCameroon shall then indeed be free.\nFaith of our fathers! Holy faith!\nWe will be true to thee till death.\n\n4. Faith of our fathers, we will love\nBoth friend and foe in all our strife,\nAnd preach thee too, as love knows how\nBy kindly words and virtuous life:\nFaith of our fathers! Holy faith!\nWe will be true to thee till death.",
-    "firstLine": "Faith of our father, living still,",
-    "composer": "F. W. FABER, 1814-63",
-    "category": "THE CHURCH"
-  },
   {
     "number": 301,
     "title": "FULL IN THE PANTING HEART OF ROME",
