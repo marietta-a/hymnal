@@ -17,15 +17,21 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-
   final Map<String, bool> _expandedCategories = {};
+  
+  // --- NEW: Keep track of the search query ---
+  String _searchQuery = '';
 
-  // --- NEW: Add initState to set the default expanded state ---
   @override
   void initState() {
     super.initState();
-    // Since Hymn.hymns is a static list, we can access it before the widget builds.
-    // This sets the very first category to be expanded by default.
+    // Set the initial default state (first category expanded)
+    _resetExpansionState();
+  }
+
+  // --- NEW: Helper method to reset the expansion state ---
+  void _resetExpansionState() {
+    _expandedCategories.clear();
     if (Hymn.hymns.isNotEmpty) {
       final String firstCategory = Hymn.hymns.first.category ?? 'General';
       _expandedCategories[firstCategory] = true;
@@ -34,27 +40,55 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final hymnProvider = Provider.of<HymnProvider>(context);
+    // We use listen: false here because we will manually handle updates in setState
+    final hymnProvider = Provider.of<HymnProvider>(context, listen: false); 
     final favoritesProvider = Provider.of<FavoritesProvider>(context);
 
-    final List<Widget> pages = [
-      _buildGroupedHymnList(hymnProvider.filteredHymns),
-      _buildHymnListPage(_getFavoriteHymns(hymnProvider, favoritesProvider)),
-    ];
-
+    // Use a Consumer for the part of the UI that needs to rebuild
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cameroon Hymnal'),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kToolbarHeight),
+          // --- UPDATED: The onChanged callback now manages expansion state ---
           child: SearchBarWidget(
             onChanged: (query) {
+              // Trigger search in the provider
               hymnProvider.searchHymns(query);
+
+              // Update the UI state
+              setState(() {
+                _searchQuery = query;
+                _expandedCategories.clear(); // Clear all previous expansion states
+
+                if (query.isNotEmpty) {
+                  // If searching, find all categories in the results and expand them
+                  final categoriesInSearchResults = hymnProvider.filteredHymns
+                      .map((hymn) => hymn.category ?? 'General')
+                      .toSet(); // Use a Set to get unique categories
+                  
+                  for (var category in categoriesInSearchResults) {
+                    _expandedCategories[category] = true;
+                  }
+                } else {
+                  // If search is cleared, reset to the default state
+                  _resetExpansionState();
+                }
+              });
             },
           ),
         ),
       ),
-      body: pages[_currentIndex],
+      // --- UPDATED: Wrap body in a Consumer to get the latest filteredHymns ---
+      body: Consumer<HymnProvider>(
+        builder: (context, hymnDataProvider, child) {
+          final List<Widget> pages = [
+            _buildGroupedHymnList(hymnDataProvider.filteredHymns),
+            _buildHymnListPage(_getFavoriteHymns(hymnDataProvider, favoritesProvider)),
+          ];
+          return pages[_currentIndex];
+        },
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {
@@ -96,8 +130,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildGroupedHymnList(List<Hymn> hymns) {
-    if (hymns.isEmpty) {
-      return const Center(child: Text('No hymns found.'));
+    if (hymns.isEmpty && _searchQuery.isNotEmpty) {
+      return const Center(child: Text('No hymns found for your search.'));
     }
 
     final List<dynamic> displayList = [];
@@ -110,7 +144,8 @@ class _HomeScreenState extends State<HomeScreen> {
         currentCategory = hymnCategory;
         displayList.add(currentCategory);
       }
-
+      
+      // Use the class-level map to decide if hymns should be shown
       if (_expandedCategories[currentCategory] ?? false) {
         displayList.add(hymn);
       }
@@ -143,6 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: InkWell(
         onTap: () {
           setState(() {
+            // When user taps, toggle the state
             _expandedCategories[category] = !isExpanded;
           });
         },
