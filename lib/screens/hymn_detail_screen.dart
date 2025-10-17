@@ -56,7 +56,7 @@ class HymnDetailScreen extends StatelessWidget {
                 child: Text(
                   '- ${hymn.composer!}', // The composer's name
                   style: GoogleFonts.lato(
-                    fontSize: 14.0,
+                    fontSize: 12.0,
                     fontStyle: FontStyle.italic,
                     color: Colors.grey[600],
                   ),
