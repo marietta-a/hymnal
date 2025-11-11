@@ -6,7 +6,6 @@ import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:provider/provider.dart';
-import 'package:collection/collection.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

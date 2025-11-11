@@ -8,6 +8,7 @@ class Hymn {
   final String? category;
   final String? firstLine;
   final String? composer;
+  final String? src;
 
   Hymn({
     required this.number,
@@ -16,6 +17,7 @@ class Hymn {
     this.firstLine,
     this.composer,
     this.category,
+    this.src
   });
 
   
