@@ -7,6 +7,10 @@ import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:provider/provider.dart';
 
+// --- 1. Import necessary packages ---
+import 'package:share_plus/share_plus.dart';
+import 'dart:io' show Platform; // Used to check the operating system
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -17,60 +21,75 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   final Map<String, bool> _expandedCategories = {};
-  
-  // --- NEW: Keep track of the search query ---
   String _searchQuery = '';
 
   @override
   void initState() {
     super.initState();
-    // Set the initial default state (first category expanded)
     _resetExpansionState();
   }
 
-  // --- NEW: Helper method to reset the expansion state ---
   void _resetExpansionState() {
     _expandedCategories.clear();
-    if (Hymn.hymns.isNotEmpty) {
-      final String firstCategory = Hymn.hymns.first.category ?? 'General';
+    // Assuming Hymn model has a static list for initial category
+    // You might need to adjust this if your data is loaded asynchronously.
+    final allHymns = Provider.of<HymnProvider>(context, listen: false).allHymns;
+    if (allHymns.isNotEmpty) {
+      final String firstCategory = allHymns.first.category ?? 'General';
       _expandedCategories[firstCategory] = true;
     }
+  }
+  
+  // --- 3. Add the _shareApp method ---
+  void _shareApp() {
+    const String appName = "Cameroon Hymnal";
+    const String message = "Check out the new edition of $appName! Download it here:";
+    
+    // IMPORTANT: Replace these with your actual app store links once published!
+    const String playStoreUrl = "https://play.google.com/store/apps/details?id=com.hymnal.cameroon";
+    const String appStoreUrl = "https://apps.apple.com/app/your-app-name/idYOUR_APP_ID";
+
+    // Select the appropriate URL based on the platform
+    final String url = Platform.isAndroid ? playStoreUrl : appStoreUrl;
+
+    Share.share(
+      '$message\n\n$url',
+      subject: 'Download the $appName',
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    // We use listen: false here because we will manually handle updates in setState
-    final hymnProvider = Provider.of<HymnProvider>(context, listen: false); 
+    final hymnProvider = Provider.of<HymnProvider>(context, listen: false);
     final favoritesProvider = Provider.of<FavoritesProvider>(context);
 
-    // Use a Consumer for the part of the UI that needs to rebuild
     return Scaffold(
       appBar: AppBar(
         title: const Text('Cameroon Hymnal'),
+        actions: [
+          // --- 2. Add a Share button to the AppBar ---
+          IconButton(
+            icon: const Icon(Icons.share),
+            onPressed: _shareApp,
+            tooltip: 'Share App',
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kToolbarHeight),
-          // --- UPDATED: The onChanged callback now manages expansion state ---
           child: SearchBarWidget(
             onChanged: (query) {
-              // Trigger search in the provider
               hymnProvider.searchHymns(query);
-
-              // Update the UI state
               setState(() {
                 _searchQuery = query;
-                _expandedCategories.clear(); // Clear all previous expansion states
-
+                _expandedCategories.clear();
                 if (query.isNotEmpty) {
-                  // If searching, find all categories in the results and expand them
                   final categoriesInSearchResults = hymnProvider.filteredHymns
                       .map((hymn) => hymn.category ?? 'General')
-                      .toSet(); // Use a Set to get unique categories
-                  
+                      .toSet();
                   for (var category in categoriesInSearchResults) {
                     _expandedCategories[category] = true;
                   }
                 } else {
-                  // If search is cleared, reset to the default state
                   _resetExpansionState();
                 }
               });
@@ -78,7 +97,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      // --- UPDATED: Wrap body in a Consumer to get the latest filteredHymns ---
       body: Consumer<HymnProvider>(
         builder: (context, hymnDataProvider, child) {
           final List<Widget> pages = [
@@ -136,15 +154,17 @@ class _HomeScreenState extends State<HomeScreen> {
     final List<dynamic> displayList = [];
     String? currentCategory;
 
+    // A small fix to ensure the hymn provider is read within the build method scope
+    final allHymns = Provider.of<HymnProvider>(context).allHymns;
+    if (allHymns.isEmpty) return const Center(child: CircularProgressIndicator());
+
+
     for (final hymn in hymns) {
       final hymnCategory = hymn.category ?? 'General';
-
       if (hymnCategory != currentCategory) {
         currentCategory = hymnCategory;
         displayList.add(currentCategory);
       }
-      
-      // Use the class-level map to decide if hymns should be shown
       if (_expandedCategories[currentCategory] ?? false) {
         displayList.add(hymn);
       }
@@ -154,7 +174,6 @@ class _HomeScreenState extends State<HomeScreen> {
       itemCount: displayList.length,
       itemBuilder: (context, index) {
         final item = displayList[index];
-
         if (item is String) {
           final isExpanded = _expandedCategories[item] ?? false;
           return _buildCategoryHeader(item, isExpanded);
@@ -177,7 +196,6 @@ class _HomeScreenState extends State<HomeScreen> {
       child: InkWell(
         onTap: () {
           setState(() {
-            // When user taps, toggle the state
             _expandedCategories[category] = !isExpanded;
           });
         },

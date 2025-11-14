@@ -1931,7 +1931,7 @@ final hymnJson = [
   {
     "number": 242,
     "title": "LITANY OF THE BLESSED VIRGIN",
-    "lyrics": "Lord, have mercy on us.\nChrist, have mercy on us.\nLord, have mercy on us.\nChrist, hear us.\nChrist, graciously hear us.\nGod the Father of heaven,\nHave mercy on us.\nGod the Son, Redeemer of the world,\nGod the Holy Ghost,\nHoly Trinity, one God,\nHoly Pray for us\nHoly Mother of God,\nHoly Virgin of virgins,\nMother of Christ,\nMother of divine grace,\nMother most pure,\nMother inviolate,\nMother undefiled,\nMother most amiable,\nMother admirable,\nMother of good counsel,\nMother of our Creator,\nMother of our Saviour,\nVirgin most prudent,\nVirgin most venerable,\nVirgin most renowned,\nVirgin most powerful,\nVirgin most merciful,\nVirgin most faithful,\nMirror of justice,\nSeat of wisdom\nCause of our joy,\nSpiritual vessel,\nVessel of honour,\nSingular vessel of devotion,\nMystical rose,\nTower of David,\nTower of ivory,\nHouse of gold,\nArk of the covenant,\nGate of heaven,\nMorning star,\nHealth of the sick\nRefuge of sinners,\nComforter of the afflicted,\nHelp of Christians,\nQueen of Angels,\nQueen of Patriarchs,\nQueen of Prophets,\nQueen of Apostles,\nQueen of Martyrs,\nQueen of Virgins,\nQueen of all Saints,\nQueen conceived without\noriginal sin,\nQueen assumed into heaven,\nQueen of the most holy Rosary,\nQueen of peace.\nLamb of God, who takest away the sins of the\nworld,\nSpare us, O Lord.\nLamb of God, who takest away the sins of the\nworld,\nGraciously hear us, O Lord.\nLamb of God, who takest away the sins of the\nworld,\nHave mercy on us.\nChrist hear us.\nGraciously hear us.\n\nV. Pray for us, O holy other of God.\nR. That we may be made worthy of the\npromises\nof Christ.\n\nLet us pray\nGrant, we beseech thee, O Lord God, continual\nhealth of body and soul to us thy servants;\nThat, through the glorious advocacy of the\nBlessed Virgin Mary, we may be made free from\nthe tribulations of this present life, and rejoice in\nthe everlasting happiness. Through Christ our\nLord. Amen.",
+    "lyrics": "Lord, have mercy on us.\nChrist, have mercy on us.\nLord, have mercy on us.\nChrist, hear us.\nChrist, graciously hear us.\nGod the Father of heaven,\nHave mercy on us.\nGod the Son, Redeemer of the world,\nGod the Holy Ghost,\nHoly Trinity, one God,\nHoly Pray for us\nHoly Mother of God,\nHoly Virgin of virgins,\nMother of Christ,\nMother of divine grace,\nMother most pure,\nMother inviolate,\nMother undefiled,\nMother most amiable,\nMother most admirable,\nMother of good counsel,\nMother of our Creator,\nMother of our Saviour,\nVirgin most prudent,\nVirgin most venerable,\nVirgin most renowned,\nVirgin most powerful,\nVirgin most merciful,\nVirgin most faithful,\nMirror of justice,\nSeat of wisdom\nCause of our joy,\nSpiritual vessel,\nVessel of honour,\nSingular vessel of devotion,\nMystical rose,\nTower of David,\nTower of ivory,\nHouse of gold,\nArk of the covenant,\nGate of heaven,\nMorning star,\nHealth of the sick\nRefuge of sinners,\nComforter of the afflicted,\nHelp of Christians,\nQueen of Angels,\nQueen of Patriarchs,\nQueen of Prophets,\nQueen of Apostles,\nQueen of Martyrs,\nQueen of Virgins,\nQueen of all Saints,\nQueen conceived without\noriginal sin,\nQueen assumed into heaven,\nQueen of the most holy Rosary,\nQueen of peace.\nLamb of God, who takest away the sins of the\nworld,\nSpare us, O Lord.\nLamb of God, who takest away the sins of the\nworld,\nGraciously hear us, O Lord.\nLamb of God, who takest away the sins of the\nworld,\nHave mercy on us.\nChrist hear us.\nGraciously hear us.\n\nV. Pray for us, O holy other of God.\nR. That we may be made worthy of the\npromises\nof Christ.\n\nLet us pray\nGrant, we beseech thee, O Lord God, continual\nhealth of body and soul to us thy servants;\nThat, through the glorious advocacy of the\nBlessed Virgin Mary, we may be made free from\nthe tribulations of this present life, and rejoice in\nthe everlasting happiness. Through Christ our\nLord. Amen.",
     "firstLine": "Lord, have mercy on us.",
     "composer": null,
     "category": "OUR LADY"
@@ -2110,7 +2110,7 @@ final hymnJson = [
     "lyrics": "Dear husband of Mary! Dear Nurse of her Child!\nLife’s ways are full weary the desert is wild;\nBleak sands are all round us, no home can we see;\nSweet Spouse of our Lady! We lean upon thee.\n\n2. For thou to the pilgrim art Father and Guide,\nAnd Jesus and Mary felt safe by thy side\nAh, blessed Saint Joseph, how safe should I be,\nSweet spouse of our Lady! If thou wert with me!\n\n3 Blessed Saint Joseph! How great was thy Worth\nThe one chosen shadow of God upon earth,\nThe Father of Jesus – ah then wilt thou be,\nSweet spouse of our Lady! A father to me?\n\n4. When the treasures of God were unsheltered\nOn earth\nSafe keeping was found for them both in thy\nWorth,\nO Father of Jesus, be father to me,\nSweet Spouse of our Lady! And I will love thee.",
     "firstLine": "Dear husband of Mary! Dear Nurse of her Child!",
     "composer": "REV. F. W. FABER",
-    "category": "ST. JOESEPH"
+    "category": "ST. JOSEPH"
   },
   {
     "number": 265,
@@ -2118,7 +2118,7 @@ final hymnJson = [
     "lyrics": "Dear St Joseph, pure and gentle,\nGuardian of the Saviour child,\nTreading with the virgin mother,\nEgypt’s desert rough and wild.\n\nChorus:\nHail, St Joseph, spouse of Mary,\nBlessed above all saint on high,\nWhen the death shades round us gather,\nTeach, oh, teach us how to die.\n\n2. He who rested on thy bosom\nIs by countless saint adored,\nProstrate angels in His presence\nSing Hosannas to their Lord.\n\n3. Now to thee no gift refusing,\nJesus stoops to hear thy prayer;\nThen, dear saint, from thy fair dwelling,\nGive to us a father’s care.\n\n4. Dear St Joseph, kind and loving,\nStretch to us a helping hand;\nGuide us through life’s toils and sorrows,\nSafely to the distant land.\n\n5. In the strife of life be near us,\nAnd in death, oh, hover nigh;\nLet our souls on thy sweet bosom,\nTo their home of gladness fly.",
     "firstLine": "Dear St Joseph, pure and gentle,",
     "composer": "ANON.",
-    "category": "ST. JOESEPH"
+    "category": "ST. JOSEPH"
   },
   {
     "number": 266,
@@ -2126,7 +2126,7 @@ final hymnJson = [
     "lyrics": "Hail, holy Joseph, hail!\nHusband of Mary, hail!\nChaste as the lily flower\nIn Eden’s peaceful vale.\n\n2 Hail, holy Joseph, hail!\nFather of Christ esteemed,\nFather be thou to those\nThy Foster son redeemed.\n\n3. Hail, holy Joseph, hail!\nPrince of the house of God,\nMay his blest grace be\nBy thy pure hands bestowed.\n\n4. Hail, holy Joseph, hail!\nComrade of angels, hail:\nCheer thou the hearts that faint,\nAnd guide the steps that fail.\n\n5. Hail, holy Joseph, hail!\nGod’s choice wert thou alone;\nTo thee the Word made flesh\nWas subject as a son.\n\n6. Mother of Jesus, bless,\nAnd bless, ye saints on high,\nAll meek and simple souls\nThat to Saint Joseph cry.",
     "firstLine": "Hail, holy Joseph, hail!",
     "composer": "F. W. FABER, 1814-63",
-    "category": "ST. JOESEPH"
+    "category": "ST. JOSEPH"
   },
   {
     "number": 267,
@@ -2134,7 +2134,7 @@ final hymnJson = [
     "lyrics": "With my Saviour ever near to guide me,\nI am safe whatever may betide me!\nFrom the storms and tempest he will hide me,\nIn the hollow of his hand.\nIn the hollow of his hand! (2*)\nI am safe whatever may betide me;\nIn the hollow of his hand!\n\n2. In His arm of love he doth enfold me;\nWord of peace his voice Divine hath told me;\nI am safe, for God Himself doth hold me\nIn the hollow of His hand!\nIn the hollow, etc.\n\n3. He will guard my soul, and leave me never;\nFrom His love no power on earth shall sever;\nAnd I know He’ll keep me now and ever\nIn the hollow of His hand!\nIn the hollow, etc.",
     "firstLine": "With my Saviour ever near to guide me,",
     "composer": null,
-    "category": "ST. JOESEPH"
+    "category": "ST. JOSEPH"
   },
   {
     "number": 268,
@@ -2801,5 +2801,325 @@ final hymnJson = [
     // "category": "ALL SOULS AND FUNERALS"
     "category": "MASS"
   },
-  
+    {
+    "number": 351,
+    "title": "BE GLAD, PEOPLE OF THE EARTH",
+    "lyrics": "Be glad, O people of the earth\nLift up your hands with song and dance\nFor I am with you, yes within you,\nForever, you are the heart of my heart.\n\n1. I will never forget you, O my people\nOn the day of anguish I will answer you.\nAs you join in celebration\nMy joy will move among you.\n\n2. I will make your faith burn brightly,\nSo that others may find life's fullness.\nFreedom for all captives,\nAnd justice for all nations.\n\n3. No longer will the circle of your life,\nIts pain and goodness,\nBe just for yourself,\nYour gift to share will flower.\n\n4. As you work for others' freedom,\nWith the seed of hope within you,\nHunger shall not harm you,\nNor thirst withdraw your courage.",
+    "firstLine": "Be glad, O people of the earth",
+    "composer": null,
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 352,
+    "title": "BE READY TO STAND",
+    "lyrics": "Be ready now to stand (2x)\nTake all your sins to Jesus\nWho is waiting\nBe ready now to stand.\n\nRefrain:\nThe Holy Spirit shall descend on you,\nHe shall make you whole.\nBe ready now to stand.\n\n2. The Saviour cares for you. (2x)\nHe knows that Satan never\nLets you leave him;\nThe Saviour cares for you.\nHe is the only one to take your burden;\nThe Saviour cares for you. (Ref)\n\n3. The Spirit comes to you. (2x)\nThe Spirit comes, bringing you\nPeace and freedom;\nThe Spirit comes to you.\nThe peace and freedom that will\nLast forever;\nThe Spirit comes to you. (Ref)",
+    "firstLine": "Be ready now to stand (2x)",
+    "composer": null,
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 353,
+    "title": "BEHOLD AMONG MEN",
+    "lyrics": "Behold among men,\nThe dwelling place of God\nThey shall be his people,\nAnd he shall be their Lord and God.\n\n1. People called by God\nThrough the word of the Prophets\nPeople brought together in the\nHouse of the Lord,\nPeople who attend to their Lord,\nThe Church of Christ the Lord.\n\n2. People who are grafted on\nJesus the vine,\nBranches bearing fruits in the\nGrace of the Lord,\nBranches rooted in His great love,\nThe church of Christ, the Lord.\n\n3. People who are born in the\nWaters of the Spirit,\nPeople who are marked by the\nSeal of the Spirit,\nPeople in the Spirit made one,\nThe church of Christ, the Lord.\n\n4. People nourished now by the\nBody of the Lord,\nPeople who sit down to the\nNew Paschal supper,\nHoly people called to be royal,\nThe church of Christ, the Lord.\n\n5. People called in faith to be\nQuickened by His life,\nPeople called by God from the\nDarkness into light,\nPeople called by God for His own,\nThe church of Christ, the Lord.",
+    "firstLine": "Behold among men,",
+    "composer": "LUCIEN DEISS",
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 354,
+    "title": "HAPPY ARE THOSE",
+    "lyrics": "O sing a new song to Jesus our savior\nThe solid rock on which we stand\nO praise and glorify the name of Jesus\nOur redeemer and king of kings.\n\nRefrain:\nHappy are those who will come to Jesus\nHappy are those who will do his will,\nThey are like trees that grow beside the river,\nWhose fresh green leaves will never dry.\n\n2. Be merciful to me, dear Lord and Master,\nForgive my sins and make me clean.\nO, let me hear the sound of joy and gladness,\nAnd make me willing to obey.\n\n3. O Lord, we come to You for our protection,\nRescue and save us from all ills.\nO God of Jacob, now be our refuge,\nSo we will never be afraid.",
+    "firstLine": "O sing a new song to Jesus our savior",
+    "composer": "SOH PADDY",
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 355,
+    "title": "JOY FILLED MY HEART",
+    "lyrics": "Refrain:\nJoy filled my heart when I heard them say\nLet us go to the house of God.\n\nCoda:\nOne day in his house\nIs better than a thousand elsewhere. (bis)\n\n1. I shall go up to the altar\nOf the almighty God\nThe God who gives joy to my being. (Ref)\n\n2. Let us enter His house to\nExpress our joy before Him\nWith our songs of praises. (Ref)\n\n3. Let us enter His house\nEven though we are not worthy\nIn order to hear his voice. (Ref)\n\n4. Let us enter His house to\nExpress our happiness\nAnd also beg for His blessings. (Ref)",
+    "firstLine": "Joy filled my heart when I heard them say",
+    "composer": "MENGOLO E.",
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 356,
+    "title": "PEOPLE OF THE LORD",
+    "lyrics": "People of the Lord,\nSing praise to the Lord\nPraise to the Lord on high (3x)\nFor the Lord is good.\n\n2. O sing to the Lord, (2x)\nAnd shout your praise to Him.\nShout and praise the Lord, (2x)\nFor the Lord is good.\n\n3. Acclaim the Lord, (2x)\nGreat is His Holy name.\nGreat is His Holy name, (2x)\nMighty is the Lord.\n\n4. Give glory to the Lord, (2x)\nGlory and praise to Him.\nGlory and praise to Him, (2x)\nWonderful is God.\n\n5. Give thanks to the Lord, (2x)\nFor all His wondrous deeds.\nThank and praise the Lord, (2x)\nFor His wondrous deeds.\n\n6. The Lord Almighty reigns, (2x)\nLet us rejoice in Him.\nYes, rejoice in Him, (2x)\nHoly is the Lord.\n\n7. Alleluia! Alleluia! Alleluia! Amen.\nAlleluia! Amen, (2x) Alleluia! Amen.",
+    "firstLine": "People of the Lord,",
+    "composer": null,
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 357,
+    "title": "REJOICE ALL YOU PEOPLE",
+    "lyrics": "Refrain:\nRejoice all you people on earth\nLift up your hearts with songs of praise\nFor we are all his people,\nAnd he is our Lord and God,\nHe is with us always.\n\n1. He is our God,\nHe leads us wherever we go\nIf we keep faithful to him,\nHe will surely protect\nAnd lead us wherever we go, rejoice!\n\n2. Praise to our God;\nHe made us and we belong to Him\nLet us come bowing to Him;\nHe provides what we need.\nLet us join asking His blessing, rejoice!\n\n3. Praise to our Lord;\nHe redeemed us for God with His blood.\nHe has opened us the way,\nTo everlasting joy.\nSaving us from condemnation, rejoice!\n\n4. Praise the Paraclete;\nThe Spirit that dwells in our hearts.\nHe has opened up our minds\nTo accept the Good News.\nAnd has made us children of God, rejoice!\n\n5. Praise the Trinity,\nThe Father, Son and Holy Spirit.\nLet our tongues unceasingly,\nNow and forever more,\nEcho His praise from pole to pole, rejoice!",
+    "firstLine": "Rejoice all you people on earth",
+    "composer": "ALOYSIUS FONKENG",
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 358,
+    "title": "SEMPITERNAL GLORY",
+    "lyrics": "Refrain:\nCome let us praise the Lord our God\nHe made us we belong to him.\nCome, praise the Lord, O you children of God\nWe are the sheep of his flock.\n\n1. Salvation, power and glory\nBelong to our God\nHis judgments are true and just\nTo him be sempiternal glory! (Ref)\n\n2. Praise our God, you his servants.\nPraise Him, you who fear Him.\nPraise Him, all you, small and great.\nTo Him be sempiternal Glory! (Ref)\n\n3. Our God the Almighty reigns.\nLet's re-joice and exult.\nLet us now give Him the Glory.\nTo Him be sempiternal Glory! (Ref)\n\n4. The Marriage Feast of the Lamb!\nThe Marriage of the Lamb has come!\nHis bride has made herself ready!\nTo Him be sempiternal Glory! (Ref)\n\n5. All Praise be to God the Father;\nPraise to his Co-equal Son;\nAdoration to the Spirit;\nBond of Love, in Godhead one! (Ref)",
+    "firstLine": "Come let us praise the Lord our God",
+    "composer": null,
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 359,
+    "title": "COME TO THE HOUSE OF YAHWEH",
+    "lyrics": "Refrain:\nCome to the House of Yahweh\nGive him the praise that is his due,\nThe Alpha and Omega\nIs none, but our God.\n\n1. Sing with the trumpets aloud\nO sing with joy in your heart\nO enter the House of Yahweh. (Ref)\n\n2. Sing with the flute and the harp;\nAssemble in the Lord's temple;\nChrist is the King and the Lamb. (Ref)\n\n3. Blow the pipe and the flute;\nDisplay with drums and xylophones;\nFor this is the palace of God. (Ref)\n\n4. Praises all to Yahweh;\nAnd Jesus Christ His only Son;\nAnd to the Holy Spirit. (Ref)",
+    "firstLine": "Come to the House of Yahweh",
+    "composer": null,
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 360,
+    "title": "WE SING TO YOU",
+    "lyrics": "We sing to you,\nO light bringing men Out of darkness\nWe give you praise, O guiding light\nWho shows the way to heaven.\nWe are one in the spirit\nWe are one in the Lord.\nAnd we pray that our unity\nMay one day be restored.\n\nChorus:\nAnd they will know (4x)\nWe are Christians by our love.\n\n2. We will walk with each other,\nWe will walk hand in hand.\nAnd together we will spread the news,\nThat God is in our land.\n\n3. All praise be to the Father\nFrom whom all things come,\nAnd all praise to Christ Jesus; His only Son,\nAnd all praise to the Spirit, who makes us one.",
+    "firstLine": "We sing to you,",
+    "composer": "J.B. SALLE",
+    "category": "ENTRANCE - NEW"
+  },
+  {
+    "number": 361,
+    "title": "HERE I AM LORD",
+    "lyrics": "I the Lord of sea and sky,\nI have heard my people cry,\nAll who dwell in dark and sin,\nMy hand will save.\nI who made the stars of night,\nI will make their darkness bright,\nWho will bear my light to them?\nWhom shall I send?\n\nRefrain:\nHere I am Lord, it is I Lord.\nI have heard you calling in the night,\nI will go Lord, if you lead me\nI will hold your people in my heart.\n\n2. I the Lord of snow and rain,\nI have borne my people's pain.\nI have wept for love of them,\nThey turn away.\nI will break their hearts of stone,\nGive them hearts of love alone,\nI will speak my word to them,\nWhom shall I send?\n\n3. I the Lord of wind and flame,\nI will tend the poor and lame,\nI will set a feast for them,\nMy hand will save.\nFinest bread I will provide,\nTill their hearts are satisfied\nI will give my life to them,\nWhom shall I send?",
+    "firstLine": "I the Lord of sea and sky,",
+    "composer": null,
+    "category": "AFTER THE READINGS - NEW"
+  },
+  {
+    "number": 362,
+    "title": "COUNT YOUR BLESSINGS",
+    "lyrics": "When upon life's billows\nYou are tempest tossed,\nWhen you are discouraged\nThinking all is lost,\nCount your many blessings\nName them one by one,\nAnd it will surprise you\nWhat the Lord has done.\n\nRefrain:\nCount your blessings, name them one by one,\nCount your blessings, see what God has done;\nCount your blessings, name them one by one,\nAnd it will surprise you what the Lord has done.\n\n2. Are you ever burdened with the load of care?\nDoes the cross seem heavy you are called to bear?\nCount your many blessings every doubt will fly\nAnd you will be singing as the days go by.\n\n3. When you look at others with their lands and gold\nThink that Christ has promised you his wealth untold;\nCount your many blessings, money cannot buy,\nYour reward in heaven, not your home on high.\n\n4. So amid the conflict, whether great or small,\nDo not be discouraged, God is over all;\nCount your many blessings, angels will attend,\nHelp and comfort give you to your journey's end.",
+    "firstLine": "When upon life's billows",
+    "composer": null,
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 363,
+    "title": "I BELIEVE THAT JESUS DIED",
+    "lyrics": "I believe that Jesus that died for me.\nA sacrifice beyond my understanding.\nOffering Himself in place of me.\nOh! How can I repay the Lord?\n\nRefrain:\nFather to You we offer, O my,\nJesus, to You this gift we bring.\nHoly Ghost accept this offering\nWhich we offer up to You.\n\n2. I believe all that the Scripture said,\nAbout the love beyond my understanding.\nForgiveness beyond comprehension.\nOh! How can I repay the Lord? (Ref)\n\n3. Teach me, Lord, to love You as I ought.\nOh! Teach me, Lord, to love You all my lifetime.\nSpreading love where'er I find myself.\nOh! How can I repay the Lord?",
+    "firstLine": "I believe that Jesus that died for me.",
+    "composer": "JUDE NNAM",
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 364,
+    "title": "LORD, LET US KNOW",
+    "lyrics": "Lord, let us know Your Holy ways,\nLord, let us know Your Holy path. (2x)\n\nRefrain:\nO Lord----Receive our gifts\nO Lord----Receive our hearts\nO Lord------Receive our bread\nO Lord------Receive our wine.\n\n2. All that we have, all that own,\nAll comes from You, our blessed Lord.\n\n3. Teach us to be humble and true,\nTeach us to be generous, Lord.\n\n4. For You are God our Sa-viour,\nRemember Your mer-cy, Lord.",
+    "firstLine": "Lord, let us know Your Holy ways,",
+    "composer": null,
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 365,
+    "title": "O YES IN THE PRESENCE",
+    "lyrics": "Refrain:\nO yes! In the presence of the Lord\nI will bring my gifts in thanksgiving and love.\nThere is joy in my heart;\nIt is flowing like a river;\nI will praise the Lord in thanksgiving and love.\n\n1. God our Father, everlasting king\nPlease accept the gifts we offer\n(all) in thanksgiving and love.\nTake our bread upon this altar\nAnd our wine in the chalice,\n(all) in thanksgiving and love.\n\n2. With thankful hearts and joyful songs\nWe approach your holy altar,\n(all) in thanksgiving and love.\nBearing gifts of your creation\nWe return what you have given\n(all) in thanksgiving and love.\n\n3. To you, Father, now we offer\nThe ciborium and the chalice,\n(all) in thanksgiving and love\nAll we have and all our being,\nIn this sacrifice most holy,\n(all) in thanksgiving and love.\n\n4. O Lord Jesus, our very precious friend,\nWe bow to give you honour\n(all) in thanksgiving and love\nIn the morning and in the ev'ning;\nWe prostrate before you, trembling\n(all) in thanksgiving and love.\n\n5. O Maria, take our families,\nWhom we offer with these gifts\n(all) in thanksgiving and love\nO Maria, take all our friends,\nand the people we offer you\n(all) in thanksgiving and love.",
+    "firstLine": "O yes! In the presence of the Lord",
+    "composer": "JUDE NNAM",
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 366,
+    "title": "RECEIVE THESE HUMBLE GIFTS",
+    "lyrics": "Refrain:\nReceive these humble gifts we bring to You,\nO Lord, we offer them with joy,\nAccept them all and bless them, O Lord.\nReceive these humble gifts we bring to You,\nO Lord, we offer them with joy,\nAccept them all, and bless them all.\n\n1. O Lord, accept our thanks and prayers,\nAnd grant us pardon for our sins. (Ref.)\n\n2. Accept, accept our minds and hearts,\nAnd purify them, O Lord, our God. (Ref.)\n\n3. Our joy and sorrows we offer You,\nAccept them all and bless us, O Lord. (Ref.)\n\n4. Accept, accept this bread and wine,\nFor this Holy sa-crifice. (Ref.)\n\n5. Accept, accept these songs of praise,\nYour sons offer to You, O Lord. (Ref.)\n\n6. Honour and praise be to the Father,\nAnd to the Son, and Holy Ghost. (Ref.)",
+    "firstLine": "Receive these humble gifts we bring to You,",
+    "composer": null,
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 367,
+    "title": "TAKE AND SANCTIFY",
+    "lyrics": "Refrain:\nTake and sanctify for Your honour, Lord;\nAnd sanctify these gifts.\nTake and sanctify\nThese for Your honour, Lord. (2x)\n\n1. All that I have, all that I do;\nEverything I will ever make.\nTake my life and take my all;\nEverything I will ever make. (Ref)\n\n2. All that I need, all that I pray;\nEverything I will ever have.\nTake my life and take my all;\nEverything I will ever have. (Ref)\n\n3. All that I dream, all that I crave;\nEverything I will ever be.\nTake my life and take my all;\nEverything I will ever be. (Ref)",
+    "firstLine": "Take and sanctify for Your honour, Lord;",
+    "composer": "JUDE NNAM",
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 368,
+    "title": "WE BRING OUR GIFTS TO YOU",
+    "lyrics": "Refrain:\nWe bring our gifts to You,\nWith our whole hearts, O Lord,\nReceive our gifts, O Lord\nWhich we bring to You.\n\n1. Let us offer our gifts,\n(all) with a humble heart.\n\n2. Always offer to God,\n(all) with an open heart.\n\n3. Offer your best of gifts\n(all) as Abel did.\n\n4. Do as Abraham did,\n(all) who offered Isaac.\n\n5. Offer all that you have,\n(all) though a widow's mite.\n\n6. Let us offer ourselves,\n(all) with Christ on the cross.\n\n7. Let us give thanks to God,\n(all) maker of all things.",
+    "firstLine": "We bring our gifts to You,",
+    "composer": null,
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 369,
+    "title": "WHAT RETURN TO YOU?",
+    "lyrics": "Refrain:\nWhat return to You can I make, O Lord?\nWhat return to You, but my humble yes.\n\n1. You created me, Lord;\nAdopted me, Your child,\nI come to You, my Lord;\nWith my humble yes. (Ref)\n\n2. But Lord, I'm not so sure;\nThough I say yes to You,\nPlease Lord, send me Your Spirit;\nTo guide me and lead me. (Ref)\n\n3. I know I am so weak;\nTo respond to Your love,\nBut Your Spirit will do;\nI say yes to serve You. (Ref)\n\n4. O Lord, open my ears;\nTo hear Your words of love,\nCome, live within my heart;\nKeep Your word in my heart. (Ref)\n\n5. O Lord, open my mouth,\nTo Spread Your Word of Love,\nTeach me to share Your Love,\nWith those who don't know You. (Ref)\n\n6. Oh Yes, Oh Yes, O Lord,\nI say, Yes, to serve You;\nSince you love me so much,\nI say my humble Yes. (Ref)",
+    "firstLine": "What return to You can I make, O Lord?",
+    "composer": null,
+    "category": "OFFERTORY - NEW"
+  },
+  {
+    "number": 370,
+    "title": "ALL TO JESUS I SURRENDER",
+    "lyrics": "All to Jesus I surrender,\nAll to him I freely give.\nI will ever love and trust him\nIn his presence daily live.\n\nRefrain:\nI surrender all (2x)\nAll to Thee my blessed Saviour\nI surrender all.\n\n2. All to Jesus I surrender\nHumbly at his feet I bow,\nWorldly pleasures all forsaken\nTake me Jesus, take me now.\n\n3. All to Jesus I surrender,\nMake me Saviour wholly thine;\nLet me feel the Holy Spirit,\nTruly know that thou art mine.\n\n4. All to Jesus I surrender,\nLord, I give myself to thee,\nFill me with thy love and power,\nLet thy blessing fall on me.\n\n5. All to Jesus I surrender,\nNow I feel the sacred flame.\nOh, they joy of full salvation!\nGlory, glory to his name.",
+    "firstLine": "All to Jesus I surrender,",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 371,
+    "title": "AMAZING GRACE",
+    "lyrics": "Amazing grace, how sweet the sound\nThat saved a wretch like me.\nI was once lost, but now I'm found,\nWas blind, but now I see.\n\n2. 'Twas grace that taught my heart to fear,\nAnd grace my fears relieved.\nHow precious did that grace appear\nThe hour I first believed.\n\n3. Through many dangers, foils and snares\nI have already come.\n'Tis grace hath brought me safe thus far,\nAnd grace will lead me home.\n\n4. The Lord has promised good to me;\nHis word my hope secures.\nHe will my shied and portion be\nAs long as life endures.",
+    "firstLine": "Amazing grace, how sweet the sound",
+    "composer": "ERICH SYLVESTER 1975",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 372,
+    "title": "BIND US TOGETHER",
+    "lyrics": "Refrain:\nBind us together Lord, bind us together\nWith cords that cannot be broken\nBind us together Lord (2x)\nBind us together in love.\n\n1. There is only one God\nThere is only one King.\nThere is only one Body,\nThat is why we sing. (Ref)\n\n2. Made for the glory of God,\nPurchased by his precious Son.\nBorn with right to be clean,\nFor Jesus the victory has won.\n\n3. You are the family of God,\nYou are the promise divine,\nYou are God's chosen desire,\nYou are the glorious new wine. (Ref)",
+    "firstLine": "Bind us together Lord, bind us together",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 373,
+    "title": "BLESSED ASSURANCE",
+    "lyrics": "Blessed assurance, Jesus is mine!\nOh, what a foretaste of glory divine!\nHeir of salvation, purchase of God;\nBorn of his spirit, washed in his blood.\n\nRefrain:\nThis is my story, this is my song,\nPraising my Saviour, all the day long. (2x)\n\n2. Perfect submission, perfect delight,\nVisions of rapture now burst on my sight:\nAngels descending bring from above\nEchoes of mercy, whispers of love. (Ref)\n\n3. Perfect submission, all is at rest,\nI in my Saviour am happy and blest:\nWatching and waiting, looking above,\nFilled with his goodness, lost in his love. (Ref)",
+    "firstLine": "Blessed assurance, Jesus is mine!",
+    "composer": "FANNY J. CROSBY, 1820-1915; JOSEPH F. KNAPP, 1839-1908",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 374,
+    "title": "CORPUS MEUM (My Body)",
+    "lyrics": "Accipite et manducate,\nEx hoc omnes ooo\nHoc est enim Corpus Meum,\nQuod pro vobis tradetur.\nTake this and eat, you who believe\nThis is my body given for you.\n\n1. This is the mystery which we celebrate,\nJesus did it all at the Last Supper.\nThis is the mystery in which we believe,\nGiving himself as our food and drink.\n\n2. The Eucharist builds up the church,\nIt binds together all believers.\nThe Holy Eucharist nourishes our lives,\nAnd purifies us all our iniquity.\n\n3. Come, let us bow and adore the Lord,\nLet's give Him honour, praise and thanksgiving.\nHe is the bread come down from Heaven,\nHe who eats this bread shall live forever.\n\n4. Praise to the Father, the Almighty,\nPraise to the Son, Jesus Christ, our Lord.\nPraise to the Spirit who dwells in our hearts,\nDwelling both now and forever, Amen.",
+    "firstLine": "Accipite et manducate,",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 375,
+    "title": "EAT MY BODY",
+    "lyrics": "Refrain:\nEat my body, drink my blood,\nThus shall you have eternal life.\n\n1. All ye that labour come to me\nAnd I will give you rest.\nCome unto me you troubled hearts,\nCome unto your God. (Ref)\n\n2. All ye who thirst come unto me,\nCome have some wine for free;\nHunger and thirst shall pass away,\nCome unto your God. (Ref)\n\n3. Come to the sure fountain of life,\nCome and refresh your soul.\nCome to the fountain of my love,\nCome unto your God.\n\n4. Eat of the bread I alone give,\nEat till you get your fill.\nFood for the living do I give,\nCome unto your God.\n\n5. My flesh I give in form of bread,\nMy blood in form of wine.\nEat the one bread and drink this cup,\nCome unto your God.\n\n6. Pilgrims along the long, rough way,\nStrength do I give to you.\nEat and be raised on the last day,\nCome unto your God.",
+    "firstLine": "Eat my body, drink my blood,",
+    "composer": "ALOYSIUS FONKENG",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 376,
+    "title": "GUIDE ME, O THOU GREAT REDEEMER",
+    "lyrics": "Guide me O thou great redeemer,\nPilgrim through this barren world,\nI am weak, but thou art mighty\nHold me with thy powerful hand.\nBread of heaven (2x)\nFeed me till I want no more. (2x)\n\n2. Open now the crystal fountain,\nWhence the healing stream doth flow;\nLet the fire and cloudy pillar\nLead me all my journey through:\nStrong deliverer, (2x)\nBe thou still my strength and shield. (2x)\n\n3. When I tread the verge of Jordan,\nBid my anxious fears subside,\nDeath of death, and hell's destruction,\nLand me safe on Canaan's side:\nSongs of praises, (2x)\nI will ever give to Thee. (2x)",
+    "firstLine": "Guide me O thou great redeemer,",
+    "composer": "W. WILLIAMS, 1717",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 377,
+    "title": "HE KNOWS IT ALL",
+    "lyrics": "He knows my thoughts, my ways, my deeds,\nMy Jesus knows it all,\nEv'ry part in me his hands hath made\nHe knows, He knows it all.\nHe knows it all, my total heart,\nNothing is hidden from my Lord\nHe knows, He knows it all.\n\n2. In the darkness or bright day-light,\nHe knows, He knows it all.\nIn depths beneath or heights above,\nHe knows, He knows it all\nWhat e'er I do, what e'er I say\nHe notes and takes into account\nWhat e'er I do or say.\n\n3. He plans my ways, He directs me,\nHe knows, He knows it all.\nIn time of woe, in time of joy,\nHe knows, He knows it all.\nHis plan for me is in His hand\nHe plans and controls everything,\nYes, Jesus knows it all.\n\n4. My life on earth my Jesus knows\nHis hand provides me strength,\nIf I should leave this earthly home,\nJesus has one for me.\nJe-sus loves me, beyond compare\nI am the sheep of His pastures,\nHe loves me this I know.\n\n5. My life's mysteries my Jesus knows,\nHe knows and cares for me.\nNo matter how the tides may rise,\nHe's there and will take care.\nMy times are ever in His hands\nHe draws the plans and executes\nAs it is in His hands.",
+    "firstLine": "He knows my thoughts, my ways, my deeds,",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 378,
+    "title": "I NEED THEE EVERY HOUR",
+    "lyrics": "I need Thee ev'ry hour,\nMost gracious Lord\nNo tender voice like Thine\nCan peace afford.\n\nRefrain:\nI need Thee, oh! I need Thee,\nEv'ry hour I need Thee,\nOh bless me now my Saviour\nI come to Thee.\n\n2. I need Thee ev'ry hour,\nStay Thou near by,\nTemptation lose their pow'r\nWhen Thou art nigh.\n\n3. I need Thee ev'ry hour,\nIn joy or pain,\nCome quickly and abide,\nOr life is vain.\n\n4. I need Thee ev'ry hour,\nTeach me Thy will,\nAnd Thy rich promises\nIn me fulfill.\n\n5. I need Thee ev'ry hour,\nMost Holy One;\nOh make me Thine indeed,\nThou blessed Son.",
+    "firstLine": "I need Thee ev'ry hour,",
+    "composer": "A. HAWKS, 1872",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 379,
+    "title": "IN YOU I PUT MY TRUST",
+    "lyrics": "Refrain:\nIn You I put my trust,\nO come to me (Loving God)\nHelp me to hearken to your voice always\n(Fill me with your spirit),\nTo guide my ways, (Thus strengthened),\nI will do your will.\n\n1. Lord you made me Priest,\nProphet and King\nTo do your will with all my might,\nBut you know, my God,\nI'm weak and frail,\nO grant me the grace I need. (Ref)\n\n2. Make me know your ways,\nTeach me your paths\nO guide me in the paths of truth.\nDo not let me be parted from you,\nFor you are my Lord and God. (Ref)\n\n3. In the Lord I find my resting place,\nHe is my Rock, he is my Strength.\nIn his safe keeping, I find refuge;\nIn his arms I rest secure. (Ref)\n\n4. From distress and fear, free me Jesus!\nFrom vainglory, deliver me!\nFrom all earthly gains, Free me Jesus!\nGive me grace to do your will. (Ref)\n\n5. God the Father, Son and Holy Ghost,\nThe fount of life, of love and hope,\nO direct my ways Bless'd Trinity.\nI have confidence in You. (Ref)",
+    "firstLine": "In You I put my trust,",
+    "composer": "NFORFI MICHAEL",
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 380,
+    "title": "MY HOPE IS BUILT",
+    "lyrics": "My hope is built on nothing less\nThan Jesus' blood and righteousness;\nI dare not trust my sweetest frame,\nBut wholly lean on Jesus' name.\n\nRefrain:\nOn Christ the solid rock I stand;\nAll other ground is sinking sand. (2x)\n\n2. When darkness seems to veil His face,\nI rest on His unchanging grace,\nIn every high and stormy gale,\nMy anchor holds within the veil. (Ref)\n\n3. His oath, His covenant and blood,\nSupport me in the whelming flood;\nWhen all around my soul gives way,\nHe then is all my hope and stay. (Ref)",
+    "firstLine": "My hope is built on nothing less",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 381,
+    "title": "OH, THE LOVE OF MY LORD",
+    "lyrics": "Oh, the love of my Lord is the essence\nOf all that I love here on earth\nAll the beauty I see,\nHe has given to me\nAnd his giving is gentle as silence.\n\n2. Every day, every hour, every moment\nHave been blessed by the strength of his love\nAt the turn of each tide,\nHe is here at my side,\nAnd his touch is as gentle as silence.\n\n3. There've been times when I've turned\nFrom his presence\nAnd I've walked other paths, other ways,\nBut I've called on his name\nIn the dark of my shame,\nAnd his mercy was gentle as silence.",
+    "firstLine": "Oh, the love of my Lord is the essence",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 382,
+    "title": "TAKE THIS ALL OF YOU",
+    "lyrics": "Refrain:\nTake this all of you and eat,\nFor this is my bo-dy,\nTake this all of you and drink,\nFor this is my blood.\n\n1. The day before he suffered,\nJesus broke the bread and said:\n\"Take this bread and eat it,\nFor this is my body.\" (Ref)\n\n2. Supper being ended,\nHe took the cup of wine,\nThanking You, His Father,\nHe charged the twelve and said. (Ref)\n\n3. This is the cup of my blood,\nThe blood of the new law,\nThat sins may be forgiven,\nI will shed for you and for all men. (Ref)\n\n4. I thank You, Lord, my God,\nIn the meeting of the just,\nThe Lord is compassion and love,\nHe makes us remember His wonders. (Ref)\n\n5. He gives food to those who fear Him,\nKeeps His covenant ever in mind,\nThe works of the Lord are great,\nTo be pondered by all who love Him. (Ref)\n\n6. All creatures look to You,\nAnd You give them their food in due time,\nHow good is the Lord to all,\nAnd kind to all his creatures. (Ref)",
+    "firstLine": "Take this all of you and eat,",
+    "composer": null,
+    "category": "COMMUNION - NEW"
+  },
+  {
+    "number": 383,
+    "title": "I LOVE MY SAVIOUR TOO",
+    "lyrics": "Jesus my heavenly king\nLoves me I know.\nPraises to him I sing onward I go\nClosely to him I cling,\nBlessings still flow.\nI love my Saviour too.\n\nRefrain:\nI love my Saviour\nHe loves me too\nI seek his favour\nIn everything I do.\n\n2. Walking with Him each day,\nLove light doth shine\nDoing His will always, never refine\nKneeling to him I pray\n\"Thy will, not mine\"\nI love my Saviour too.\n\n3. Happy to serve my friend,\nLean on his arm\nRapture will never end, nothing alarm\nVoices will sweetly blend\nUnder his charm\nI love my Saviour too.",
+    "firstLine": "Jesus my heavenly king",
+    "composer": "F. R. BAXTER",
+    "category": "CLOSING - NEW"
+  },
+  {
+    "number": 384,
+    "title": "WHEN THE SAINTS",
+    "lyrics": "I'm just a weary pilgrim\nPlodding through this world of sin\nGetting ready for that city\nWhen the saints go marching in.\n\nRefrain:\nWhen the Saints (2x) Go marching in (2x)\nWhen the saints go marching in,\nLord I want to be in the number\nWhen the saints go marching in.\n\n2. If I will see the Saviour,\nA new life I must begin.\nThen I'll be in that glad number,\nWhen the saints go marching in. (Ref)\n\n3. I'll follow my Redeemer,\nIn the steps where He has been.\nThus I know that He will call me,\nWhen the saints go marching in. (Ref)\n\n4. Up there I'll see the Saviour,\nWho redeemed my soul from sin.\nWith extended hands He'll greet me,\nWhen the saints go marching in. (Ref)",
+    "firstLine": "I'm just a weary pilgrim",
+    "composer": null,
+    "category": "CLOSING - NEW"
+  },
+  {
+    "number": 385,
+    "title": "AVE MARIA GRATIA PLENA",
+    "lyrics": "As I kneel before you,\nAs I bow my head in prayer\nTake this day, make it yours,\nAnd fill me with your love.\n\nRefrain:\nAve Maria, gratia plena\nDominus te cum, benedicta tu.\n\n2. All I have I give You,\nEvery dream and wish are Yours,\nMother of Christ, Mother of mine,\nPresent them to my Lord.\n\n3. As I kneel before You,\nAs I see Your smiling face,\nEvery thought, every word\nIs lost in Your embrace.",
+    "firstLine": "As I kneel before you,",
+    "composer": null,
+    "category": "OUR LADY - NEW"
+  },
+  {
+    "number": 386,
+    "title": "AVE MARIA, O MAIDEN",
+    "lyrics": "Ave Maria, O maiden, O mother,\nFondly our voices arise unto thee.\nThine are the graces unclaimed by another,\nSinless and beautiful star of the sea.\n\nRefrain:\nMater amabilis, ora pro nobis\nPray for thy children who call upon thee.\nAve sanctissima, ave purissima,\nSinless and beautiful star of the sea.\n\n2. Ave Maria! The night shades are falling;\nSoftly our voices arise unto Thee.\nEarth's lonely exiles for succor are calling;\nSinless and Beautiful star of the sea. (Ref)\n\n3. Ave Maria! Thou portal of Heaven;\nHarbour of refuge, to Thee do we flee.\nLost in the darkness by stormy winds driven;\nShine on our pathway, fair star of the sea. (Ref)",
+    "firstLine": "Ave Maria, O maiden, O mother,",
+    "composer": null,
+    "category": "OUR LADY - NEW"
+  },
+  {
+    "number": 387,
+    "title": "BEAUTIFUL QUEEN OF PEACE",
+    "lyrics": "Refrain:\nBeautiful queen of peace,\nBeautiful mother of grace\nFor your great honour we sing,\nBe joyful today, Mother Mary.\n\n1. Mother of virtue and honour\nBlessed is the fruit that thou didst conceive\nIn thy holy womb.\n\n2. Mother so gentle and loving,\nYou gave to the world a blessed Saviour;\nJesus Christ, our Lord.\n\n3. Mary, our wonderful Mother,\nWe raise up our hearts in praises to You;\nSplendour of the world.\n\n4. Mary, the model of maidens,\nYour wonderful light shines upon the earth;\nO Thou star of light.\n\n5. Mary, our beautiful Virgin,\nIntercede for us to Your own dear Son;\nJesus Christ, our Lord.",
+    "firstLine": "Beautiful queen of peace,",
+    "composer": "J. P. GRIGNARD",
+    "category": "OUR LADY - NEW"
+  },
+  {
+    "number": 388,
+    "title": "DOMINICAN MAGNIFICAT",
+    "lyrics": "I will rejoice in the Lord\nand my soul will triumph in God;\nfor He has clothed me in holiness\nand robed me with grace,\nlike a bride, adorned in her bridal dress.\n\n1. My soul glorifies the Lord,\nMy spi-rit finds joy in God my Sa-viour.\nHe has looked upon his low-ly handmaid;\nAll people now will call me blessed.\n\n2. The Almigh-ty has wrought for me his wonders.\nThe name of our God is Holy,\nHe has mercy on those who fear him,\nFrom one generation to the next.\n\n3. He has shown the strength of his arm.\nAnd sca-ttered the wicked in their pride.\nHe has put down the mighty from their thrones,\nAnd exalted the gentle and lowly. (Ref)\n\n4. He has filled the hungry with good things;\nThe rich sent empty away;\nHe cherishes Israel his servant,\nHe keeps his merciful designs in remembrance.\n\n5. He stands firm in his promise to our fathers,\nTo A-bra-ham and all his children,\nSo His love for our fathers is fulfilled,\nThe loving kindness of the heart of our God.\n\n6. Praise the Father, the Son and Holy Spi-rit,\nBoth now and forever. Amen.\nThe Lord who is, who was and who will be,\nFor ages unending. Amen. (Ref)",
+    "firstLine": "I will rejoice in the Lord",
+    "composer": null,
+    "category": "OUR LADY - NEW"
+  },
+  {
+    "number": 389,
+    "title": "IRISH MAGNIFICAT",
+    "lyrics": "My soul now glorify,\nThe Lord who is my Saviour.\nRejoice for whom am I;\nThat God has shown me favour.\n\n2. The world shall call me blessed;\nAnd ponder on my story;\nIn me is manifest,\nGod's greatness and His glory.\n\n3. For those who are His friends;\nAnd keep His law as holy;\nHis mercy never ends;\nAnd He exalts the lowly.\n\n4. But by His power, the great,\nThe proud, the self-conceited;\nThe kings who sit in state,\nAre humbled and defeated.\n\n5. He feeds the starving poor.\nHe guards His holy nation.\nFulfilling what He swore,\nLong since in revelation.\n\n6. Then glorify with me\nThe Lord who is my Saviour.\nOne Holy Trinity\nForever and forever.",
+    "firstLine": "My soul now glorify,",
+    "composer": null,
+    "category": "OUR LADY - NEW"
+  },
+  {
+    "number": 390,
+    "title": "IT IS WELL WITH MY SOUL",
+    "lyrics": "When peace, like a river,\nAttendeth my way,\nWhen sorrows like sea-billows, roll\nWhatever my lot, thou hast taught me to say\nIt is well, it is well with my soul.\n\nRefrain:\nIt is well (it is well)\nWith my soul (with my soul)\nIt is well, it is well with my soul.\n\n2. Though Satan should buffet,\nThough trials should come,\nLet this blest assurance control,\nThat Christ has regar-ded\nMy helpless estate,\nAnd hath shed\nHis own blood for my soul. (Ref)\n\n3. My sin, oh the bliss\nOf this glo-ri-ous thought,\nMy sin not in part, but the whole,\nIs nailed to the Cross, and I bear it no more,\nPraise the Lord,\nPraise the Lord, O my soul! (Ref)\n\n4. For me, be it Christ,\nBe it Christ hence to live:\nIf Jordan above me shall roll,\nNo pang shall be mine,\nFor in death as in life,\nThou wilt whisper\nThy peace to my soul. (Ref)\n\n5. But Lord, 'tis for thee,\nFor thy coming we wait,\nThe sky not the grave is our goal;\nOh, trump of the angel!\nOh, voice of the Lord! Blessed hope,\nBlessed rest of my soul. (Ref)\n\n6. And Lord, haste the day\nWhen the faith shall be sight,\nThe clouds be rolled back as a scroll;\nThe trump shall resound,\nAnd the Lord shall descend,\n\"Even so, it is well with my soul\" (Ref)",
+    "firstLine": "When peace, like a river,",
+    "composer": "HORATIO SPAFFORD, 1873",
+    "category": "GENERAL - NEW"
+  }
+
 ];
