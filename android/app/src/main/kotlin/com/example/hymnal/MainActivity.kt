@@ -1,4 +1,4 @@
-package com.example.hymnal
+package com.hymnal.cameroon
 
 import io.flutter.embedding.android.FlutterActivity
 
