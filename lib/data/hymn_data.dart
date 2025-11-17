@@ -40,7 +40,7 @@ final hymnJson = [
   {
     "number": 5,
     "title": "CRY OUT WITH JOY TO THE LORD (Ps. 99)",
-    "lyrics": "Antiphon 1\nArise, come to your God, sing him your songs of rejoice\n\nAntiphon 2\nGlory to you, O God!\n\nAntiphon 3\nAlleluia, alleluia, alleluia.\n\n1. Cry out with JOY to the LORD, all the EARTH.\nSERVE the LORD with GLADness.\nCome be him, SINGing for JOY.\n\n2. Know that HE, the LORD, is God.\nHe MADE us, we beLONG to HIM,\nWe are his PEOple, the SHEEP of his FLOCK.\n\n3. GO within his GATES, giving THANKS.\nEnter his COURTS with SONGS of PRAISE.\nGive THANKS to him and BLESS his NAME.\n\n4. InDEED, how GOOD is the LORD,\neTERNal his MERciful LOVE;\nhe is FAITHful from AGE to AGE.\n\n5. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS.",
+    "lyrics": "Antiphon 1\nArise, come to your God, sing him your songs of rejoicing\n\nAntiphon 2\nGlory to you, O God!\n\nAntiphon 3\nAlleluia, alleluia, alleluia.\n\n1. Cry out with JOY to the LORD, all the EARTH.\nSERVE the LORD with GLADness.\nCome be him, SINGing for JOY.\n\n2. Know that HE, the LORD, is God.\nHe MADE us, we beLONG to HIM,\nWe are his PEOple, the SHEEP of his FLOCK.\n\n3. GO within his GATES, giving THANKS.\nEnter his COURTS with SONGS of PRAISE.\nGive THANKS to him and BLESS his NAME.\n\n4. InDEED, how GOOD is the LORD,\neTERNal his MERciful LOVE;\nhe is FAITHful from AGE to AGE.\n\n5. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS.",
     "firstLine": "Arise, come to your God, sing him your songs of rejoice",
     "composer": null,
     "category": "ENTRANCE"
