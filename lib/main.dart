@@ -1,8 +1,11 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
+import 'package:hymnal/providers/theme_provider.dart';
+import 'package:hymnal/providers/font_provider.dart'; // Import FontProvider
 import 'package:hymnal/screens/home_screen.dart';
+import 'package:hymnal/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -18,20 +21,21 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => HymnProvider()),
         ChangeNotifierProvider(create: (_) => FavoritesProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => FontProvider()), // Add FontProvider
       ],
-      child: MaterialApp(
-        title: 'Flutter Hymnal App',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-          useMaterial3: true,
-          textTheme: GoogleFonts.latoTextTheme(
-            Theme.of(context).textTheme,
-          ),
-        ),
-        home: const HomeScreen(),
-        debugShowCheckedModeBanner: false,
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, child) {
+          return MaterialApp(
+            title: 'Cameroon Hymnal App',
+            themeMode: themeProvider.themeMode,
+            theme: AppThemes.lightTheme,
+            darkTheme: AppThemes.darkTheme,
+            home: const HomeScreen(),
+            debugShowCheckedModeBanner: false,
+          );
+        },
       ),
     );
   }
 }
-
