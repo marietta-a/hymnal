@@ -7,6 +7,8 @@ final hymnJson = [
     "composer": "WILLIAM KETHE, DAY’S PSALTER 1560-61 AND SCOTTISH PSALTER – 1650",
     "category": "ENTRANCE",
     "src": "https://www.youtube.com/watch?v=9hNyvydqqrc&list=RD9hNyvydqqrc&start_radio=1",
+    "choir": "DYnamiC Choir",
+    "imgPath": "",
   },
   {
     "number": 2,
@@ -14,7 +16,10 @@ final hymnJson = [
     "lyrics": "Antiphon:\nAll the earth proclaim the Lord.\nSing your praise to God.\n\n1. Serve you the Lord heart filled with gladness\nCome into his presence singing for joy.\n\n2. Know that the Lord is our creator.\nYes, He is our father, we are his sons.\n\n3. Enter his gates bringing thanksgiving,\nO enter his courts while singing his praise.\n\n4. Our Lord is God his love enduring,\nHis word is abiding now with all men.\n\n5. Honour and praise be to the Father,\nThe Son, and the Spirit, world without end.",
     "firstLine": "All the earth proclaim the Lord.",
     "composer": "L. DEISS",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 3,
@@ -1011,7 +1016,7 @@ final hymnJson = [
   {
     "number": 127,
     "title": "COME, O DIVINE MESSIAH",
-    "lyrics": "Come, O Divine messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\nChorus:\nSweet savior haste;\nCome, come to earth,\nDispel the night, and show the face,\nAnd bid us hail the dawn of grace.\nCome, O Divine Messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\n2. On thou, whom nations sighed for,\nWhom priests and prophets long foretold,\nWilt break the captives’ fetters,\nRedeem the long-lost fold.\n\n3. shalt come in peace and meekness\nAnd lowly will my cradle be:\nAll clothed in human weakness\nShall we thy Godhead see.",
+    "lyrics": "Come, O Divine messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\nChorus:\nSweet savior haste;\nCome, come to earth,\nDispel the night, and show thy face,\nAnd bid us hail the dawn of grace.\nCome, O Divine Messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\n2. On thou, whom nations sighed for,\nWhom priests and prophets long foretold,\nWilt break the captives’ fetters,\nRedeem the long-lost fold.\n\n3. shalt come in peace and meekness\nAnd lowly will my cradle be:\nAll clothed in human weakness\nShall we thy Godhead see.",
     "firstLine": "Come, O Divine messiah!",
     "composer": "Pellegrin, 1745; TR. S. N. D.",
     "category": "ADVENT"
