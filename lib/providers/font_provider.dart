@@ -13,9 +13,9 @@ class FontProvider with ChangeNotifier {
   ];
 
   // --- Defaults ---
-  static const double _defaultHeaderFontSize = 16.0;
-  static const String _defaultHeaderFontFamily = 'Lato';
-  static const double _defaultLyricsFontSize = 18.0;
+  static const double _defaultHeaderFontSize = 18.0;
+  static const String _defaultHeaderFontFamily = 'Montserrat';
+  static const double _defaultLyricsFontSize = 16.0;
   static const String _defaultLyricsFontFamily = 'Lato';
 
   // --- Private State ---
