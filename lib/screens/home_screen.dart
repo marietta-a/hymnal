@@ -9,6 +9,7 @@ import 'package:hymnal/providers/theme_provider.dart';
 import 'package:hymnal/screens/settings_screen.dart';
 import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
+import 'package:in_app_update/in_app_update.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'dart:io' show Platform;
@@ -30,7 +31,55 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _resetExpansionState();
+      _checkForUpdate(); // Call the update check when the screen loads
     });
+  }
+
+  
+
+  // ==================== NEW: IN-APP UPDATE LOGIC ====================
+  Future<void> _checkForUpdate() async {
+    // In-app updates are only supported on Android.
+    if (!Platform.isAndroid) return;
+
+    try {
+      final AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
+
+      // Check if an update is available and if a flexible update is allowed.
+      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable &&
+          updateInfo.flexibleUpdateAllowed) {
+        
+        // Start the flexible update flow. This will show a dialog to the user.
+        await InAppUpdate.startFlexibleUpdate();
+        
+        // Listen for the update to finish downloading.
+        InAppUpdate.installUpdateListener.listen((InstallStatus status) {
+          if (status == InstallStatus.downloaded) {
+            // When the download is complete, show a SnackBar to prompt the user to restart.
+            _showUpdateDownloadedSnackbar();
+          }
+        });
+      }
+    } catch (e) {
+      print('Failed to check for in-app update: $e');
+    }
+  }
+
+  void _showUpdateDownloadedSnackbar() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Text('A new update has been downloaded.'),
+        // Keep the SnackBar visible indefinitely until the user acts on it.
+        duration: const Duration(days: 365), 
+        action: SnackBarAction(
+          label: 'RESTART',
+          onPressed: () {
+            // This will complete the installation and restart the app.
+            InAppUpdate.completeFlexibleUpdate();
+          },
+        ),
+      ),
+    );
   }
 
   void _resetExpansionState() {
