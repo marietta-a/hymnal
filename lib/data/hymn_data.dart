@@ -7,6 +7,8 @@ final hymnJson = [
     "composer": "WILLIAM KETHE, DAY’S PSALTER 1560-61 AND SCOTTISH PSALTER – 1650",
     "category": "ENTRANCE",
     "src": "https://www.youtube.com/watch?v=9hNyvydqqrc&list=RD9hNyvydqqrc&start_radio=1",
+    "choir": "DYnamiC Choir",
+    "imgPath": "",
   },
   {
     "number": 2,
@@ -14,7 +16,10 @@ final hymnJson = [
     "lyrics": "Antiphon:\nAll the earth proclaim the Lord.\nSing your praise to God.\n\n1. Serve you the Lord heart filled with gladness\nCome into his presence singing for joy.\n\n2. Know that the Lord is our creator.\nYes, He is our father, we are his sons.\n\n3. Enter his gates bringing thanksgiving,\nO enter his courts while singing his praise.\n\n4. Our Lord is God his love enduring,\nHis word is abiding now with all men.\n\n5. Honour and praise be to the Father,\nThe Son, and the Spirit, world without end.",
     "firstLine": "All the earth proclaim the Lord.",
     "composer": "L. DEISS",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 3,
@@ -35,7 +40,7 @@ final hymnJson = [
   {
     "number": 5,
     "title": "CRY OUT WITH JOY TO THE LORD (Ps. 99)",
-    "lyrics": "Antiphon 1\nArise, come to your God, sing him your songs of rejoice\n\nAntiphon 2\nGlory to you, O God!\n\nAntiphon 3\nAlleluia, alleluia, alleluia.\n\n1. Cry out with JOY to the LORD, all the EARTH.\nSERVE the LORD with GLADness.\nCome be him, SINGing for JOY.\n\n2. Know that HE, the LORD, is God.\nHe MADE us, we beLONG to HIM,\nWe are his PEOple, the SHEEP of his FLOCK.\n\n3. GO within his GATES, giving THANKS.\nEnter his COURTS with SONGS of PRAISE.\nGive THANKS to him and BLESS his NAME.\n\n4. InDEED, how GOOD is the LORD,\neTERNal his MERciful LOVE;\nhe is FAITHful from AGE to AGE.\n\n5. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS.",
+    "lyrics": "Antiphon 1\nArise, come to your God, sing him your songs of rejoicing\n\nAntiphon 2\nGlory to you, O God!\n\nAntiphon 3\nAlleluia, alleluia, alleluia.\n\n1. Cry out with JOY to the LORD, all the EARTH.\nSERVE the LORD with GLADness.\nCome before him, SINGing for JOY.\n\n2. Know that HE, the LORD, is God.\nHe MADE us, we beLONG to HIM,\nWe are his PEOple, the SHEEP of his FLOCK.\n\n3. GO within his GATES, giving THANKS.\nEnter his COURTS with SONGS of PRAISE.\nGive THANKS to him and BLESS his NAME.\n\n4. InDEED, how GOOD is the LORD,\neTERNal his MERciful LOVE;\nhe is FAITHful from AGE to AGE.\n\n5. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS.",
     "firstLine": "Arise, come to your God, sing him your songs of rejoice",
     "composer": null,
     "category": "ENTRANCE"
@@ -419,7 +424,7 @@ final hymnJson = [
   {
     "number": 53,
     "title": "FATHER ALMIGHTY WE GIVE YOU OUR THANKS",
-    "lyrics": "Refrain:\nStrengthen us Lord, with the burning love of christ\nSend us the Spirit of Your Son.\n\n1. Father Almighty, we give You our thanks,\nThanks for the gift of Your Son;\nThanks for the friendship You’ve called us to share,\nGathered together in one;\nKeep us together, all true to Your Name;\nStriving till we’ve overcome.\n\n2. Father we thank You for giving us Life,\nLife to be lived all of You;\nGiving a share in Your Godhead divine,\nA share in Your Love through and through;\nHelp us bear witness to Your holy Name\nIn all that we say think or do.\n\n3. Father, please help us to spread the good news,\nBrought by Your Son to mankind,\nNews of Your love and concern for all men,\nThe poor and the lame and the blind;\nHelp us to live all the time, all our lives,\nThe teachings that Christ left behind.\n\n4. Help us to fire all the world with Your love,\nWe who are one in Your Son;\nHelp us transform all the world into Christ,\nTill all men and races are one;\nGive us Your peace Lord, Your peace and Your love;\nFather, may Your will be done.",
+    "lyrics": "Refrain:\nStrengthen us Lord, with the burning love of christ\nSend us the Spirit of Your Son.\n\n1. Father Almighty, we give You our thanks,\nThanks for the gift of Your Son;\nThanks for the friendship You’ve called us to share,\nGathered together in one;\nKeep us together, all true to Your Name;\nStriving till we’ve overcome.\n\n2. Father we thank You for giving us Life,\nLife to be lived all for You;\nGiving a share in Your Godhead divine,\nA share in Your Love through and through;\nHelp us bear witness to Your holy Name\nIn all that we say think or do.\n\n3. Father, please help us to spread the good news,\nBrought by Your Son to mankind,\nNews of Your love and concern for all men,\nThe poor and the lame and the blind;\nHelp us to live all the time, all our lives,\nThe teachings that Christ left behind.\n\n4. Help us to fire all the world with Your love,\nWe who are one in Your Son;\nHelp us transform all the world into Christ,\nTill all men and races are one;\nGive us Your peace Lord, Your peace and Your love;\nFather, may Your will be done.",
     "firstLine": "Strengthen us Lord, with the burning love of christ",
     "composer": "FAKO CATHOLIC CHOIRS ASSOCIATION (F. C. C. A.)",
     "category": "OFFERTORY"
@@ -1011,7 +1016,7 @@ final hymnJson = [
   {
     "number": 127,
     "title": "COME, O DIVINE MESSIAH",
-    "lyrics": "Come, O Divine messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\nChorus:\nSweet savior haste;\nCome, come to earth,\nDispel the night, and show the face,\nAnd bid us hail the dawn of grace.\nCome, O Divine Messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\n2. On thou, whom nations sighed for,\nWhom priests and prophets long foretold,\nWilt break the captives’ fetters,\nRedeem the long-lost fold.\n\n3. shalt come in peace and meekness\nAnd lowly will my cradle be:\nAll clothed in human weakness\nShall we thy Godhead see.",
+    "lyrics": "Come, O Divine messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\nChorus:\nSweet savior haste;\nCome, come to earth,\nDispel the night, and show thy face,\nAnd bid us hail the dawn of grace.\nCome, O Divine Messiah!\nThe world in silence waits the day\nWhen hope shall sing its triumph,\nAnd sadness flee away.\n\n2. On thou, whom nations sighed for,\nWhom priests and prophets long foretold,\nWilt break the captives’ fetters,\nRedeem the long-lost fold.\n\n3. shalt come in peace and meekness\nAnd lowly will my cradle be:\nAll clothed in human weakness\nShall we thy Godhead see.",
     "firstLine": "Come, O Divine messiah!",
     "composer": "Pellegrin, 1745; TR. S. N. D.",
     "category": "ADVENT"
@@ -1859,7 +1864,7 @@ final hymnJson = [
   {
     "number": 233,
     "title": "DAILY, DAILY, SING TO MARY",
-    "lyrics": "Daily, daily sing to Mary,\nSing, my soul, her praises due;\nAll her feasts, her actions worship,\nWith the heart’s devotion true.\nLost in wond’ring contemplation\nBe her majesty confessed:\nCall her mother, call her virgin,\nHappy mother, Virgin blest.\n\nShe is mighty to deliver;\nCall her, trust her lovingly:\nWhen the tempest ranges round thee,\nShe will calm the troubled sea.\nGift of heaven she has given,\nNoble Lady! To our race:\nShe, the Queen, who decks her subjects\nWith the light of God’s own grace.\n\nSing, my tongue, the virgin’s trophies,\nWho for us her Maker bore;\nFor the curse of old inflicted,\nPeace and blessings to restore.\nSing in songs of praise unending,\nSing the world’s Majestic Queen:\nWeary not nor faint in telling\nAll the gifts she gives to men.\n\nAll my senses, heart, affections,\nStrive to sound her glory forth;\nSpread abroad the sweet memorial\nOf the Virgin’s priceless worth.\nWhere the voice of music thrilling,\nWhere the tongues of eloquence,\nThat can utter hymns beseeming\nAll her matchless excellence?\n\nAll our joy do flow from Mary,\nAll then join her praises to sing:\nTrembling sing the Virgin Mother,\nMother of our Lord and King.\nWhile we sing her awful glory,\nFar above our fancy’s reach,\nLet our hearts be quick and offer\nLove alone the heart can teach.",
+    "lyrics": "Daily, daily sing to Mary,\nSing, my soul, her praises due;\nAll her feasts, her actions worship,\nWith the heart’s devotion true.\nLost in wond’ring contemplation\nBe her majesty confessed:\nCall her mother, call her virgin,\nHappy mother, Virgin blest.\n\nShe is mighty to deliver;\nCall her, trust her lovingly:\nWhen the tempest ranges round thee,\nShe will calm the troubled sea.\nGift of heaven she has given,\nNoble Lady! To our race:\nShe, the Queen, who decks her subjects\nWith the light of God’s own grace.\n\nSing, my tongue, the virgin’s trophies,\nWho for us her Maker bore;\nFor the curse of old inflicted,\nPeace and blessings to restore.\nSing in songs of praise unending,\nSing the world’s Majestic Queen:\nWeary not nor faint in telling\nAll the gifts she gives to men.\n\nAll my senses, heart, affections,\nStrive to sound her glory forth;\nSpread abroad the sweet memorials\nOf the Virgin’s priceless worth.\nWhere the voice of music thrilling,\nWhere the tongues of eloquence,\nThat can utter hymns beseeming\nAll her matchless excellence?\n\nAll our joy do flow from Mary,\nAll then join her praises to sing:\nTrembling sing the Virgin Mother,\nMother of our Lord and King.\nWhile we sing her awful glory,\nFar above our fancy’s reach,\nLet our hearts be quick and offer\nLove alone the heart can teach.",
     "firstLine": "Daily, daily sing to Mary,",
     "composer": "TR. H. BITTLESTONE, 1818-86; ASCRIBED TO ST. BERNARD OF CLUNY, 12TH CENT",
     "category": "OUR LADY"
@@ -2908,7 +2913,7 @@ final hymnJson = [
   {
     "number": 364,
     "title": "LORD, LET US KNOW",
-    "lyrics": "Lord, let us know Your Holy ways,\nLord, let us know Your Holy path. (2x)\n\nRefrain:\nO Lord----Receive our gifts\nO Lord----Receive our hearts\nO Lord------Receive our bread\nO Lord------Receive our wine.\n\n2. All that we have, all that own,\nAll comes from You, our blessed Lord.\n\n3. Teach us to be humble and true,\nTeach us to be generous, Lord.\n\n4. For You are God our Sa-viour,\nRemember Your mer-cy, Lord.",
+    "lyrics": "Lord, let us know Your Holy ways,\nLord, let us know Your Holy path. (2x)\n\nRefrain:\nO Lord----Receive our gifts\nO Lord----Receive our hearts\nO Lord------Receive our bread\nO Lord------Receive our wine.\n\n2. All that we have, all that we own,\nAll comes from You, our blessed Lord.\n\n3. Teach us to be humble and true,\nTeach us to be generous, Lord.\n\n4. For You are God our Sa-viour,\nRemember Your mer-cy, Lord.",
     "firstLine": "Lord, let us know Your Holy ways,",
     "composer": null,
     "category": "OFFERTORY - NEW"
