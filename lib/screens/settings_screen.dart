@@ -18,12 +18,14 @@ class SettingsScreen extends StatelessWidget {
           return ListView(
             padding: const EdgeInsets.all(16.0),
             children: [
-              _buildSectionHeader(context, 'Header & Title Font'),
+              _buildSectionHeader(context, 'Header & Title Font', fontProvider),
               _buildFontSizeSlider(
                 context,
                 'Font Size: ${fontProvider.headerFontSize.toStringAsFixed(1)}',
                 fontProvider.headerFontSize,
                 (value) => fontProvider.setHeaderFontSize(value),
+                fontProvider,
+                isHeader: true
               ),
               _buildFontFamilyDropdown(
                 context,
@@ -33,12 +35,14 @@ class SettingsScreen extends StatelessWidget {
                 fontProvider.headerFontSize, // For preview
               ),
               const Divider(height: 40),
-              _buildSectionHeader(context, 'Lyrics Font'),
+              _buildSectionHeader(context, 'Lyrics Font', fontProvider, isHeader: false),
               _buildFontSizeSlider(
                 context,
                 'Font Size: ${fontProvider.lyricsFontSize.toStringAsFixed(1)}',
                 fontProvider.lyricsFontSize,
                 (value) => fontProvider.setLyricsFontSize(value),
+                fontProvider,
+                isHeader: false
               ),
               _buildFontFamilyDropdown(
                 context,
@@ -54,13 +58,14 @@ class SettingsScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSectionHeader(BuildContext context, String title) {
+  Widget _buildSectionHeader(BuildContext context, String title, FontProvider fontProvider, {bool isHeader = true}) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
       child: Text(
         title,
-        style: TextStyle(
-          fontSize: 18,
+        style: GoogleFonts.getFont(
+          isHeader ? fontProvider.headerFontFamily : fontProvider.lyricsFontFamily,
+          fontSize: isHeader ? fontProvider.headerFontSize : fontProvider.lyricsFontSize,
           fontWeight: FontWeight.bold,
           color: Theme.of(context).colorScheme.primary,
         ),
@@ -73,11 +78,20 @@ class SettingsScreen extends StatelessWidget {
     String label,
     double currentValue,
     ValueChanged<double> onChanged,
+    FontProvider fontProvider,
+    {
+      bool isHeader = true,
+    }
   ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label),
+        Text(label,
+          style: GoogleFonts.getFont(
+            isHeader ? fontProvider.headerFontFamily : fontProvider.lyricsFontFamily,
+            fontSize: isHeader ? fontProvider.headerFontSize : fontProvider.lyricsFontSize
+          ),
+        ),
         Slider(
           value: currentValue,
           min: 12.0,
