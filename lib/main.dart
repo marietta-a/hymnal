@@ -5,10 +5,17 @@ import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/providers/theme_provider.dart';
 import 'package:hymnal/providers/font_provider.dart'; // Import FontProvider
 import 'package:hymnal/screens/home_screen.dart';
+import 'package:hymnal/services/notification_service.dart';
 import 'package:hymnal/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+Future<void> main() async {
+  
+  // Ensure Flutter bindings are initialized before using plugins.
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize the notification service.
+  await NotificationService().initialize();
   runApp(const MyApp());
 }
 

@@ -7,6 +7,7 @@ import 'package:hymnal/providers/font_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/providers/theme_provider.dart';
 import 'package:hymnal/screens/settings_screen.dart';
+import 'package:hymnal/services/notification_service.dart';
 import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:in_app_update/in_app_update.dart';
@@ -37,27 +38,28 @@ class _HomeScreenState extends State<HomeScreen> {
 
   
 
-  // ==================== NEW: IN-APP UPDATE LOGIC ====================
+  // ==================== MODIFIED: IN-APP UPDATE LOGIC ====================
   Future<void> _checkForUpdate() async {
-    // In-app updates are only supported on Android.
     if (!Platform.isAndroid) return;
 
     try {
       final AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
 
-      // Check if an update is available and if a flexible update is allowed.
-      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable )
-      // && updateInfo.flexibleUpdateAllowed) 
-      {
+      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable) {
         
-        // Start the flexible update flow. This will show a dialog to the user.
+        // Start the flexible update flow.
         await InAppUpdate.startFlexibleUpdate();
         
-        // Listen for the update to finish downloading.
+        // Listen for the download to complete.
         InAppUpdate.installUpdateListener.listen((InstallStatus status) {
           if (status == InstallStatus.downloaded) {
-            // When the download is complete, show a SnackBar to prompt the user to restart.
-            _showUpdateDownloadedSnackbar();
+            // When downloaded, show a notification instead of a SnackBar.
+            NotificationService().showUpdateDownloadedNotification();
+            
+            // OPTIONAL BUT RECOMMENDED:
+            // Also show a SnackBar as an immediate in-app prompt.
+            // This gives the user two ways to restart.
+            // _showUpdateDownloadedSnackbar(); 
           }
         });
       }
