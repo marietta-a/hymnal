@@ -46,8 +46,9 @@ class _HomeScreenState extends State<HomeScreen> {
       final AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
 
       // Check if an update is available and if a flexible update is allowed.
-      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable &&
-          updateInfo.flexibleUpdateAllowed) {
+      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable )
+      // && updateInfo.flexibleUpdateAllowed) 
+      {
         
         // Start the flexible update flow. This will show a dialog to the user.
         await InAppUpdate.startFlexibleUpdate();
@@ -95,13 +96,16 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _shareApp() {
     const String appName = "Cameroon Hymnal";
-    const String message =
+    String message =
         "Check out the new edition of $appName! Download it here:";
     const String playStoreUrl =
         "https://play.google.com/store/apps/details?id=com.hymnal.cameroon";
+    const String playStoreMsg = "Download the new edition of $appName from the Google Play Store here:";
     const String appStoreUrl =
         "https://apps.apple.com/app/your-app-name/idYOUR_APP_ID";
+    const String appStoreMsg = "Download the new edition of $appName from App Store here:";
     final String url = Platform.isAndroid ? playStoreUrl : appStoreUrl;
+    message = Platform.isAndroid ? playStoreMsg : appStoreMsg;
     Share.share(
       '$message\n\n$url',
       subject: 'Download the $appName',
