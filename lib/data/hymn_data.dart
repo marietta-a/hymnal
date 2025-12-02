@@ -1176,7 +1176,7 @@ final hymnJson = [
   {
     "number": 147,
     "title": "JOY TO THE WORLD",
-    "lyrics": "1. Joy to the world the Lord is come,\nLet earth receive her king,\nLet every heart prepare him a room and heaven and nature sing,\nAnd heaven and nature sing.(bis)\n\n2. Joy to the world, the Savoir reigns,\nLet me their songs employ,\nWhile fields and floods, rocks, hills and plains\nRepeat the sounding joy, Repeat the sounding joy. (bis)\n\n3. He rules the world with truth and grace,\nAnd makes the nation prove\nThe glories of his righteousness, and wonders of his love,\nAnd wonders of his love. (bis)",
+    "lyrics": "1. Joy to the world the Lord is come,\nLet earth receive her king,\nLet every heart prepare him a room and heaven and nature sing,\nAnd heaven and nature sing.(bis)\n\n2. Joy to the world, the Savoir reigns,\nLet men their songs employ,\nWhile fields and floods, rocks, hills and plains\nRepeat the sounding joy, Repeat the sounding joy. (bis)\n\n3. He rules the world with truth and grace,\nAnd makes the nation prove\nThe glories of his righteousness, and wonders of his love,\nAnd wonders of his love. (bis)",
     "firstLine": "Joy to the world the Lord is come,",
     "composer": null,
     "category": "CHRISTMAS AND EPIPHANY"
