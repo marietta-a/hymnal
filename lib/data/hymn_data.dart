@@ -448,7 +448,7 @@ final hymnJson = [
   {
     "number": 56,
     "title": "LORD, FOR OUR SINS WE OFFER THEE",
-    "lyrics": "1. Lord for our sins we offer thee,\nThis gift of bread,\nFor all thy Christians faithful too,\nLiving and dead.\n\n2. Thou who didst make us and remake,\nThrough Christ thy Son,\nWith him like water in the wine,\nO make us one.\n\n3. Now as we offer on thy sight,\nThis saving cup,\nFragrant before thy majesty,\nMay it rise up.\n\n4. Humble and pleasing sacrifice,\nLord, may we be;\nAnd Holy Spirit, come to bless,\nOur gifts to thee.\n\n5. That our Saviour’s sacred flesh,\nChanged be this bread\nAnd that the cup of wine become,\nBlood that he shed.",
+    "lyrics": "1. Lord for our sins we offer thee,\nThis gift of bread,\nFor all thy Christians faithful too,\nLiving and dead.\n\n2. Thou who didst make us and remake,\nThrough Christ thy Son,\nWith him like water in the wine,\nO make us one.\n\n3. Now as we offer in thy sight,\nThis saving cup,\nFragrant before thy majesty,\nMay it rise up.\n\n4. Humble and pleasing sacrifice,\nLord, may we be;\nAnd Holy Spirit, come to bless,\nOur gifts to thee.\n\n5. That our Saviour’s sacred flesh,\nChanged be this bread\nAnd that the cup of wine become,\nBlood that he shed.",
     "firstLine": "Lord for our sins we offer thee,",
     "composer": null,
     "category": "OFFERTORY"
@@ -456,7 +456,7 @@ final hymnJson = [
   {
     "number": 57,
     "title": "MY GOD ACCEPT MY HEART",
-    "lyrics": "1. My god, accept my heart this day,\nAnd make wholly thine,\nThat I from thee no more may stray,\nNo more from thee decline.\n\n2. Before the Cross of him who died,\nBehold, I prostrate fall;\nLet every sin be crucified,\nAnd Christ be all in all.\n\n3. Anoint me with thy heavenly grace,\nAnd seal me for thine own;\nThat I may see thy glorious face,\nAnd worship at thy throne.\n\n4. Let every though, and work and word\nTo thee be ever given;\nThen life shall be thy service, ord,\nAnd death the gate of heaven.\n\n5. All glory to the Father be,\nAll glory to the Son,\nAll glory, Holy Ghost, to thee,\nWhile endless ages run.",
+    "lyrics": "1. My god, accept my heart this day,\nAnd make wholly thine,\nThat I from thee no more may stray,\nNo more from thee decline.\n\n2. Before the Cross of him who died,\nBehold, I prostrate fall;\nLet every sin be crucified,\nAnd Christ be all in all.\n\n3. Anoint me with thy heavenly grace,\nAnd seal me for thine own;\nThat I may see thy glorious face,\nAnd worship at thy throne.\n\n4. Let every thought, and work and word\nTo thee be ever given;\nThen life shall be thy service, Lord,\nAnd death the gate of heaven.\n\n5. All glory to the Father be,\nAll glory to the Son,\nAll glory, Holy Ghost, to thee,\nWhile endless ages run.",
     "firstLine": "My god, accept my heart this day,",
     "composer": "M. BRIDGES, 1800-94",
     "category": "OFFERTORY"
