@@ -79,19 +79,21 @@ To get a local copy up and running, follow these simple steps.
 
 ### Installation
 
-1.  Clone the repo
+1. Fork the repo
+   
+3.    Clone the repo
     ```sh
-    git clone https://github.com/your-username/cameroon-hymnal-app.git
+    git clone https://github.com/your-username/hymnal.git
     ```
-2.  Navigate to the project directory
+4.  Navigate to the project directory
     ```sh
-    cd cameroon-hymnal-app
+    cd hymnal
     ```
-3.  Install dependencies
+5.  Install dependencies
     ```sh
     flutter pub get
     ```
-4.  Run the app
+6.  Run the app
     ```sh
     flutter run
     ```
