@@ -49,3 +49,6 @@ flutter:
       - asset: assets/fonts/Merriweather_120pt-Regular.ttf
       - asset: assets/fonts/Merriweather_120pt-Black.ttf
       - asset: assets/fonts/Merriweather_120pt-Italic.ttf
+  assets:
+    - assets/images/
+    - assets/screenshots/
