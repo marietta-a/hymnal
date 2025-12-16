@@ -44,11 +44,11 @@ Our goal is to foster "religious singing by the people" and encourage active par
 <!-- IMPORTANT: Replace these placeholder image links with actual paths to your screenshots in your repository -->
 | **Home Screen**                                      | **Hymn Detail**                                       | 
 | :----------------------------------------------------------- | :---------------------------------------------------- | 
-| ![Home Screen](assets/images/screenshots/2.png?raw=true "Home Screen") | ![Detail Screen](assets/images/screenshots/4.png?raw=true "Hymn Detail")
+| ![Home Screen](assets/screenshots/2.png?raw=true "Home Screen") | ![Detail Screen](assets/screenshots/4.png?raw=true "Hymn Detail")
 
 | **Search**                                               | **Favorites**                                          | **Settings**                                             |
 | :------------------------------------------------------- | :----------------------------------------------------- | :------------------------------------------------------- |
-| ![Search](assets/images/screenshots/5.png?raw=true "Search Feature") | ![Favorites](assets/images/screenshots/7.png?raw=true "Favorites") | ![Settings](assets/images/screenshots/3.png?raw=true "Settings") |
+| ![Search](assets/screenshots/5.png?raw=true "Search Feature") | ![Favorites](assets/screenshots/7.png?raw=true "Favorites") | ![Settings](assets/screenshots/3.png?raw=true "Settings") |
 
 ## ⬇️ Download
 
