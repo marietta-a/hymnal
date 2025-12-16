@@ -4,7 +4,7 @@
 
 <p align="center">
   <!-- IMPORTANT: Replace this with the actual path to your app icon in your repository -->
-  <img src="assets/icon/app_icon.png" alt="Cameroon Hymnal App Icon" width="150"/>
+  <img src="assets/images/logo.png" alt="Cameroon Hymnal App Icon" width="150"/>
 </p>
 
 <p align="center">
