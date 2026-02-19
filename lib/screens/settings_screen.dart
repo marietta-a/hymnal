@@ -18,10 +18,10 @@ class SettingsScreen extends StatelessWidget {
           return ListView(
             padding: const EdgeInsets.all(16.0),
             children: [
-              _buildSectionHeader(context, 'Header & Title Font', fontProvider),
+              _buildSectionHeader(context, 'Header & Title Text', fontProvider),
               _buildFontSizeSlider(
                 context,
-                'Font Size: ${fontProvider.headerFontSize.toStringAsFixed(1)}',
+                'Text Size: ${fontProvider.headerFontSize.toStringAsFixed(1)}',
                 fontProvider.headerFontSize,
                 (value) => fontProvider.setHeaderFontSize(value),
                 fontProvider,
@@ -29,16 +29,16 @@ class SettingsScreen extends StatelessWidget {
               ),
               _buildFontFamilyDropdown(
                 context,
-                'Font Family',
+                'Text Style',
                 fontProvider.headerFontFamily,
                 (family) => fontProvider.setHeaderFontFamily(family!),
                 fontProvider.headerFontSize, // For preview
               ),
               const Divider(height: 40),
-              _buildSectionHeader(context, 'Lyrics Font', fontProvider, isHeader: false),
+              _buildSectionHeader(context, 'Lyrics Text', fontProvider, isHeader: false),
               _buildFontSizeSlider(
                 context,
-                'Font Size: ${fontProvider.lyricsFontSize.toStringAsFixed(1)}',
+                'Text Size: ${fontProvider.lyricsFontSize.toStringAsFixed(1)}',
                 fontProvider.lyricsFontSize,
                 (value) => fontProvider.setLyricsFontSize(value),
                 fontProvider,
@@ -46,7 +46,7 @@ class SettingsScreen extends StatelessWidget {
               ),
               _buildFontFamilyDropdown(
                 context,
-                'Font Family',
+                'Text Style',
                 fontProvider.lyricsFontFamily,
                 (family) => fontProvider.setLyricsFontFamily(family!),
                 fontProvider.lyricsFontSize, // For preview
