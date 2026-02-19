@@ -37,8 +37,8 @@ android {
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-        versionCode = 16
-        versionName = "1.1.6"
+        versionCode = 17
+        versionName = "1.1.7"
     }
     
 
@@ -55,8 +55,14 @@ android {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-           // signingConfig = signingConfigs.getByName("debug")
             signingConfig = signingConfigs.getByName("release")
+
+            // Enable shrinking and obfuscation 
+            isMinifyEnabled = true 
+            isShrinkResources = true 
+            
+            // Use the optimized default ProGuard file + your custom rules 
+            proguardFiles( getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro" )
         }
     }
 }
