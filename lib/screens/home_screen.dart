@@ -56,33 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
             // When downloaded, show a notification instead of a SnackBar.
             NotificationService().showUpdateDownloadedNotification();
             
-            // OPTIONAL BUT RECOMMENDED:
-            // Also show a SnackBar as an immediate in-app prompt.
-            // This gives the user two ways to restart.
-            // _showUpdateDownloadedSnackbar(); 
           }
         });
       }
     } catch (e) {
       print('Failed to check for in-app update: $e');
     }
-  }
-
-  void _showUpdateDownloadedSnackbar() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: const Text('A new update has been downloaded.'),
-        // Keep the SnackBar visible indefinitely until the user acts on it.
-        duration: const Duration(days: 365), 
-        action: SnackBarAction(
-          label: 'RESTART',
-          onPressed: () {
-            // This will complete the installation and restart the app.
-            InAppUpdate.completeFlexibleUpdate();
-          },
-        ),
-      ),
-    );
   }
 
   void _resetExpansionState() {

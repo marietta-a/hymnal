@@ -1376,7 +1376,7 @@ final hymnJson = [
   {
     "number": 172,
     "title": "JESUS MEEK AND LOWLY",
-    "lyrics": "Jesu, meek and lowly,\nSavior, pure and holy,\nOn thy love relying,\nCome I to thee flying.\n\n2. Prince of life and power,\nMy salvation’s tower,\nOn the cross I view thee,\nCalling sinners to thee.\n\n3. There behold me gazing\nAt the sight amazing;\nBending low before thee,\nHelpless I adore thee.\n\n4. See the red wounds streaming,\nWith Christ life-blood gleaming:\nBlood for sinners flowing,\nPardon free bestowing.\n\n5. Fountain rich in blessing,\nChrist’s fond love expressing\nThou might aching sadness\nTurnest into gladness.\n\n6. Lord in mercy guide me,\nBe thou e’er beside me;\nIn thy ways direct me,\n‘Neath thy wings protect me.",
+    "lyrics": "Jesu, meek and lowly,\nSavior, pure and holy,\nOn thy love relying,\nCome I to thee flying.\n\n2. Prince of life and power,\nMy salvation’s tower,\nOn the cross I view thee,\nCalling sinners to thee.\n\n3. There behold me gazing\nAt the sight amazing;\nBending low before thee,\nHelpless I adore thee.\n\n4. See the red wounds streaming,\nWith Christ life-blood gleaming:\nBlood for sinners flowing,\nPardon free bestowing.\n\n5. Fountain rich in blessing,\nChrist’s fond love expressing\nThough my aching sadness\nTurnest into gladness.\n\n6. Lord in mercy guide me,\nBe thou e’er beside me;\nIn thy ways direct me,\n‘Neath thy wings protect me.",
     "firstLine": "Jesu, meek and lowly,",
     "composer": "A.H. COLLINS,O.C.R,1827-1919",
     "category": "LENT AND PENANCE"
