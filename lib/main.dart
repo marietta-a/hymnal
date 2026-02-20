@@ -1,4 +1,3 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
@@ -13,6 +12,9 @@ Future<void> main() async {
   
   // Ensure Flutter bindings are initialized before using plugins.
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initalize ads
+  // await MobileAds.instance.initialize(); 
   
   // Initialize the notification service.
   await NotificationService().initialize();
