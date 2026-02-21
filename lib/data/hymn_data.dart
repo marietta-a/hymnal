@@ -1448,7 +1448,7 @@ final hymnJson = [
   {
     "number": 181,
     "title": "WHEN I SURVEY THE WONDROUS CROSS",
-    "lyrics": "1. When I survey the wondrous Cross,\nOn which the Prince of glory died,\nMy richest gain I count but loss,\nAnd pour content on all my pride\n\n2. Forbid it, Lord, that I should boast,\nSave in the death of Christ, my God;\nAll the vain things that charm the most,\nI sacrifice them to his Blood.\n\n3. See from his head, his hands, his feet,\nSorrow and love flow mingled down;\nDid e’er such love and sorrow meet,\nOr thorns compose so rich a crown?\n\n4. Were the whole realm of nature mine,\nThat were a present fat too small;\nLove so amazing, so divine,\nDemands my soul, my life, my all. Amen",
+    "lyrics": "1. When I survey the wondrous Cross,\nOn which the Prince of glory died,\nMy richest gain I count but loss,\nAnd pour content on all my pride\n\n2. Forbid it, Lord, that I should boast,\nSave in the death of Christ, my God;\nAll the vain things that charm the most,\nI sacrifice them to his Blood.\n\n3. See from his head, his hands, his feet,\nSorrow and love flow mingled down;\nDid e’er such love and sorrow meet,\nOr thorns compose so rich a crown?\n\n4. Were the whole realm of nature mine,\nThat were a present far too small;\nLove so amazing, so divine,\nDemands my soul, my life, my all. Amen",
     "firstLine": "When I survey the wondrous Cross,",
     "composer": "ISAAC WATTS, 1674-1748",
     "category": "LENT AND PENANCE"
