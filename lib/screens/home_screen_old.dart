@@ -1,6 +1,6 @@
+// // lib/screens/home_screen.dart
 // import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
-// import 'package:google_mobile_ads/google_mobile_ads.dart'; // 1. Import AdMob
 // import 'package:hymnal/models/hymn.dart';
 // import 'package:hymnal/providers/favorites_provider.dart';
 // import 'package:hymnal/providers/font_provider.dart';
@@ -27,79 +27,40 @@
 //   final Map<String, bool> _expandedCategories = {};
 //   String _searchQuery = '';
 
-//   // --- ADMOB PROPERTIES ---
-//   BannerAd? _bannerAd;
-//   bool _isBannerAdLoaded = false;
-
-//   // Replace these with your REAL Ad Unit IDs (the ones with the "/")
-//   final String _adUnitId = Platform.isAndroid
-//       ? 'ca-app-pub-2717868471631453~2860971470'
-//       : 'ca-app-pub-3940256099942544/2934735716'; // iOS Test Banner ID TODO
-
 //   @override
 //   void initState() {
 //     super.initState();
-//     _loadBannerAd(); // Initialize Ad
 //     WidgetsBinding.instance.addPostFrameCallback((_) {
 //       _resetExpansionState();
-//       _checkForUpdate();
+//       _checkForUpdate(); // Call the update check when the screen loads
 //     });
 //   }
 
-//   @override
-//   void dispose() {
-//     _bannerAd?.dispose(); // Dispose Ad to free memory
-//     super.dispose();
-//   }
+  
 
-//   void _loadBannerAd() {
-//     _bannerAd = BannerAd(
-//       adUnitId: _adUnitId,
-//       request: const AdRequest(),
-//       size: AdSize.banner,
-//       listener: BannerAdListener(
-//         onAdLoaded: (ad) {
-//           setState(() {
-//             _isBannerAdLoaded = true;
-//           });
-//         },
-//         onAdFailedToLoad: (ad, err) {
-//           debugPrint('BannerAd failed to load: $err');
-//           ad.dispose();
-//         },
-//       ),
-//     )..load();
-//   }
-
-//   /// Helper widget to display the ad safely
-//   Widget _buildAdWidget() {
-//     if (_isBannerAdLoaded && _bannerAd != null) {
-//       return Container(
-//         alignment: Alignment.center,
-//         width: _bannerAd!.size.width.toDouble(),
-//         height: _bannerAd!.size.height.toDouble(),
-//         margin: const EdgeInsets.symmetric(vertical: 16.0),
-//         child: AdWidget(ad: _bannerAd!),
-//       );
-//     }
-//     return const SizedBox.shrink();
-//   }
-
-//   // ==================== IN-APP UPDATE LOGIC ====================
+//   // ==================== MODIFIED: IN-APP UPDATE LOGIC ====================
 //   Future<void> _checkForUpdate() async {
 //     if (!Platform.isAndroid) return;
+
 //     try {
 //       final AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
+
 //       if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable) {
+        
+//         // Start the flexible update flow.
 //         await InAppUpdate.startFlexibleUpdate();
+        
+//         // Listen for the download to complete.
 //         InAppUpdate.installUpdateListener.listen((InstallStatus status) {
 //           if (status == InstallStatus.downloaded) {
+//             // When downloaded, show a notification instead of a SnackBar.
 //             NotificationService().showUpdateDownloadedNotification();
+            
 //           }
 //         });
 //       }
 //     } catch (e) {
-//       debugPrint('Failed to check for in-app update: $e');
+//       print('Failed to check for in-app update: $e');
 //     }
 //   }
 
@@ -116,11 +77,20 @@
 
 //   void _shareApp() {
 //     const String appName = "Cameroon Hymnal";
-//     const String playStoreUrl = "https://play.google.com/store/apps/details?id=com.hymnal.cameroon";
-//     const String appStoreUrl = "https://apps.apple.com/app/your-app-name/idYOUR_APP_ID";
+//     String message =
+//         "Check out the new edition of $appName! Download it here:";
+//     const String playStoreUrl =
+//         "https://play.google.com/store/apps/details?id=com.hymnal.cameroon";
+//     const String playStoreMsg = "Download the new edition of $appName from the Google Play Store here:";
+//     const String appStoreUrl =
+//         "https://apps.apple.com/app/your-app-name/idYOUR_APP_ID";
+//     const String appStoreMsg = "Download the new edition of $appName from App Store here:";
 //     final String url = Platform.isAndroid ? playStoreUrl : appStoreUrl;
-//     final String message = "Download the new edition of $appName here: \n\n$url";
-//     Share.share(message, subject: 'Download $appName');
+//     message = Platform.isAndroid ? playStoreMsg : appStoreMsg;
+//     Share.share(
+//       '$message\n\n$url',
+//       subject: 'Download the $appName',
+//     );
 //   }
 
 //   @override
@@ -137,17 +107,26 @@
 //               final isDarkMode = themeProvider.themeMode == ThemeMode.dark;
 //               return IconButton(
 //                 icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
-//                 onPressed: () => themeProvider.toggleTheme(!isDarkMode),
+//                 onPressed: () {
+//                   themeProvider.toggleTheme(!isDarkMode);
+//                 },
+//                 tooltip: 'Toggle Theme',
 //               );
 //             },
 //           ),
 //           IconButton(
 //             icon: const Icon(Icons.settings),
-//             onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SettingsScreen())),
+//             onPressed: () {
+//               Navigator.of(context).push(
+//                 MaterialPageRoute(builder: (context) => const SettingsScreen()),
+//               );
+//             },
+//             tooltip: 'Settings',
 //           ),
 //           IconButton(
 //             icon: const Icon(Icons.share),
 //             onPressed: _shareApp,
+//             tooltip: 'Share App',
 //           ),
 //         ],
 //         bottom: PreferredSize(
@@ -175,51 +154,55 @@
 //       ),
 //       body: Consumer<HymnProvider>(
 //         builder: (context, hymnDataProvider, child) {
-//           if (_currentIndex == 0) {
-//             return _buildGroupedHymnList(hymnDataProvider.filteredHymns);
-//           } else {
-//             return _buildHymnListPage(_getFavoriteHymns(hymnDataProvider, favoritesProvider));
-//           }
+//           final List<Widget> pages = [
+//             _buildGroupedHymnList(hymnDataProvider.filteredHymns),
+//             _buildHymnListPage(
+//                 _getFavoriteHymns(hymnDataProvider, favoritesProvider)),
+//           ];
+//           return pages[_currentIndex];
 //         },
 //       ),
 //       bottomNavigationBar: BottomNavigationBar(
 //         currentIndex: _currentIndex,
-//         onTap: (index) => setState(() => _currentIndex = index),
+//         onTap: (index) {
+//           setState(() {
+//             _currentIndex = index;
+//           });
+//         },
 //         items: const [
-//           BottomNavigationBarItem(icon: Icon(Icons.notes), label: 'All Hymns'),
-//           BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorites'),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.notes),
+//             label: 'All Hymns',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.favorite),
+//             label: 'Favorites',
+//           ),
 //         ],
 //       ),
 //     );
 //   }
 
-//   List<Hymn> _getFavoriteHymns(HymnProvider hymnProvider, FavoritesProvider favoritesProvider) {
+//   List<Hymn> _getFavoriteHymns(
+//       HymnProvider hymnProvider, FavoritesProvider favoritesProvider) {
 //     return hymnProvider.allHymns
 //         .where((hymn) => favoritesProvider.isFavorite(hymn.number))
 //         .toList();
 //   }
 
-//   /// Favorites Page with Ad at the end
 //   Widget _buildHymnListPage(List<Hymn> hymns) {
-//     if (hymns.isEmpty) return const Center(child: Text('No favorites yet.'));
-    
-//     // Add 1 to length for the ad
-//     int itemCount = hymns.length + (_isBannerAdLoaded ? 1 : 0);
-
+//     if (hymns.isEmpty) {
+//       return const Center(child: Text('No favorites yet.'));
+//     }
 //     return ListView.separated(
-//       itemCount: itemCount,
+//       itemCount: hymns.length,
 //       itemBuilder: (context, index) {
-//         if (index == hymns.length) return _buildAdWidget(); // Ad at bottom
 //         return HymnListTile(hymn: hymns[index]);
 //       },
-//       separatorBuilder: (context, index) {
-//         if (index == hymns.length - 1 && _isBannerAdLoaded) return const SizedBox.shrink();
-//         return const Divider(height: 1);
-//       },
+//       separatorBuilder: (context, index) => const Divider(height: 1),
 //     );
 //   }
 
-//   /// Main Hymn List with Ad at the end of search results
 //   Widget _buildGroupedHymnList(List<Hymn> hymns) {
 //     if (hymns.isEmpty && _searchQuery.isNotEmpty) {
 //       return const Center(child: Text('No hymns found for your search.'));
@@ -242,20 +225,13 @@
 //       }
 //     }
 
-//     // Add 1 to length for the ad
-//     int itemCount = displayList.length + (_isBannerAdLoaded ? 1 : 0);
-
 //     return ListView.builder(
-//       itemCount: itemCount,
+//       itemCount: displayList.length,
 //       itemBuilder: (context, index) {
-//         // If this is the extra slot at the end, show the ad
-//         if (index == displayList.length) {
-//           return _buildAdWidget();
-//         }
-
 //         final item = displayList[index];
 //         if (item is String) {
-//           return _buildCategoryHeader(item, _expandedCategories[item] ?? false);
+//           final isExpanded = _expandedCategories[item] ?? false;
+//           return _buildCategoryHeader(item, isExpanded);
 //         } else if (item is Hymn) {
 //           return Column(
 //             children: [
@@ -268,22 +244,31 @@
 //       },
 //     );
 //   }
-
+  
+//   // ==================== FIX IS HERE ====================
 //   Widget _buildCategoryHeader(String category, bool isExpanded) {
 //     return Consumer<FontProvider>(
 //       builder: (context, fontProvider, child) {
 //         return Material(
 //           color: Theme.of(context).colorScheme.primaryContainer.withOpacity(0.4),
 //           child: InkWell(
-//             onTap: () => setState(() => _expandedCategories[category] = !isExpanded),
+//             onTap: () {
+//               setState(() {
+//                 _expandedCategories[category] = !isExpanded;
+//               });
+//             },
 //             child: Padding(
-//               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+//               padding:
+//                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
 //               child: Row(
 //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
 //                 children: [
+//                   // 1. Wrap the Text widget with Expanded. This tells the text to take up
+//                   // all available space and prevents it from pushing the icon off-screen.
 //                   Expanded(
 //                     child: Text(
 //                       category.toUpperCase(),
+//                       // 2. Add overflow handling as a safeguard for very long text.
 //                       overflow: TextOverflow.ellipsis,
 //                       maxLines: 1,
 //                       style: GoogleFonts.getFont(
@@ -295,6 +280,7 @@
 //                       ),
 //                     ),
 //                   ),
+//                   // The Icon is not expanded, so it takes up its natural, fixed width.
 //                   Icon(
 //                     isExpanded ? Icons.expand_less : Icons.expand_more,
 //                     color: Theme.of(context).colorScheme.primary,
@@ -307,4 +293,5 @@
 //       },
 //     );
 //   }
+//   // ==================== END OF FIX ====================
 // }

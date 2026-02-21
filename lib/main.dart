@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/providers/theme_provider.dart';
-import 'package:hymnal/providers/font_provider.dart'; // Import FontProvider
+import 'package:hymnal/providers/font_provider.dart';
 import 'package:hymnal/screens/home_screen.dart';
 import 'package:hymnal/services/notification_service.dart';
 import 'package:hymnal/theme/app_theme.dart';
@@ -14,7 +15,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initalize ads
-  // await MobileAds.instance.initialize(); 
+  await MobileAds.instance.initialize(); 
   
   // Initialize the notification service.
   await NotificationService().initialize();
