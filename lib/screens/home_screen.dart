@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // Replace these with your REAL Ad Unit IDs (the ones with the "/")
   final String _adUnitId = Platform.isAndroid
       ? 'ca-app-pub-2717868471631453/2339502385'
-      : 'ca-app-pub-3940256099942544/2934735716'; // iOS Test Banner ID TODO
+      : 'ca-app-pub-2717868471631453/2339502385'; // iOS Test Banner ID TODO
 
   @override
   void initState() {

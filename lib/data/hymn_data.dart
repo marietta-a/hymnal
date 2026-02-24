@@ -1312,7 +1312,7 @@ final hymnJson = [
   {
     "number": 164,
     "title": "DRAW NEAR, O LORD",
-    "lyrics": "Antiphon:\nDraw near, O Lord, Our God, graciously\nhear us,\nGuilty of sinning before you.\n\nO King exalted, Saviour of all nations,\nSee how our giving lifts our eyes to\nheaven;\nHear us, Redeemer, as we beg forgiveness\n\n2. Might of the Father, Keystone of God’s\nTemple\nWay of salvation, Gate of Heaven’s glory;\nSin has enslaved us; free your sons from\nbondage.\n\n4. Humbly confessing countless sins commited,\nOur hearts are broken, laying bare their secrets;\nCleanse us, Redeemer, boundless in compassion.\n\n5. Innocent captive, unresting Victim,\nLiars denounce you; sentenced for the guilty;\nOnce you redeemed us; now renew us, Jesus.",
+    "lyrics": "Antiphon:\nDraw near, O Lord, Our God, graciously\nhear us,\nGuilty of sinning before you.\n\nO King exalted, Saviour of all nations,\nSee how our grieving lifts our eyes to\nheaven;\nHear us, Redeemer, as we beg forgiveness\n\n2. Might of the Father, Keystone of God’s\nTemple\nWay of salvation, Gate of Heaven’s glory;\nSin has enslaved us; free your sons from\nbondage.\n\n4. Humbly confessing countless sins commited,\nOur hearts are broken, laying bare their secrets;\nCleanse us, Redeemer, boundless in compassion.\n\n5. Innocent captive, unresting Victim,\nLiars denounce you; sentenced for the guilty;\nOnce you redeemed us; now renew us, Jesus.",
     "firstLine": "King exalted, Saviour of all nations,",
     "composer": null,
     "category": "LENT AND PENANCE"
