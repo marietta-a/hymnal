@@ -1291,7 +1291,10 @@ final hymnJson = [
     "lyrics": "All ye who seek a comfort sure\nIn trouble and distress,\nWhatever sorrow vex the mind,\nOr guilt the soul oppress;\n\n2. Jesus, who gave himself fro you\nUpon the cross to die,\nOpens to you his sacred heart,-\nOh, to that Heart draw night.\n\n3. Ye hear how kindly He invites;\nYe hear His words so blest\n“All ye that labour, come to me,\nAnd I will give you rest “\n\n4. What meeker than the Savoiur’s heart?\nAs on the Cross he lay\nIt did his murderes forgive\nAnd for their pardon pray,\n\n5. O Heart! Thou joy of Saints on hight!\nThou hope of sinners here!\nAttracted by those loving words,\nTo thee I lift my prayer.\n\n6. Wash thou my wounds in that dear blood\nWhich forth from thee doth flow;\nNew grace, new hope inspire; a new\nAnd better heart bestow,",
     "firstLine": "All ye who seek a comfort sure",
     "composer": "TR. REV. CASWALL, 1814-78",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/3G3FqxgiEYs?si=GhJbk3m75aWJJGj4",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 162,
@@ -1299,7 +1302,10 @@ final hymnJson = [
     "lyrics": "At the cross her station keeping\nStood the mournful Mother weeping,\nClose to Jesus to the last\n\n2. Through her heart, His sorrow sharing,\nAll His bitter anguish bearing,\nNow at length the sword has pass’d\n\n3. Oh, how sad and sore distress’d\nWas that Mother highly blest\nOf the sole-begotten One!\n\n4. Christ above in torment hangs;\nShe beneath beholds the pangs\nOf her dying, glorious Son\n\n5. Is there one who would not weep,\nWhelm’d in miseries so deep\nChrist’s dear Mother to behold?\n\n6. Can the human heart refrain\nFrom partaking in her pain;\nIn that Mother’s pain untold?\n\n7. Bruised, derided, cursed, defiled,\nShe beheld her tender Child\nAll with bloody scourged rent;\n\n8. For the sins His own nation\nSaw Him hang in desolation,\nTill His Spirit forth he sent.\n\n9. O thou Mother fount of love!\nTouch my spirit from above,\nMake my heart with thine accord:\n\n10. Make me feel as thou hast felt;\nMake my soul to glow and melt\nWith the love of Christ my Lord.\n\n11. Holy Mother! Pierce me through;\nIn my heart each wound renew\nOf my Saviour crucified:\n\n12. Let me share with thee His pain,\nWho for all my sins was slain,\nWho for me in torments died.\n\n13. Let me mingle tears with thee,\nMourning Him who mourn’d for me,\nAll day that I may live:\n\n14. By the cross with thee to stay;\nThere with thee to weep and pray;\nIs all I ask of thee to give.\n\n15. Virgin of all virgins blest,\nListen to my fond request:\nLet me share thy great divine,",
     "firstLine": "At the cross her station keeping",
     "composer": "JACOPONE DA TODI, O.F.M. TR. “THE INNER COURT”",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/dISxKAn1gU0?si=r-IGsXCwIc87CPXx",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 163,
@@ -1307,7 +1313,10 @@ final hymnJson = [
     "lyrics": "Blessed Lamb! on Calvary’s mountain\nSlain to take our sins away:\nLet the drops of that rich fountain\nOur tremendous ransoms pay:\nSacred Saviour! Sacred Savoiur\nLowly at thy feet we pray.\n\n2. Blessed Lamb! vouchsafe us pardon,\nIn thy love our souls confide:\nBy thy groans within thou hast died,\nLet thy Passion – let thy Passion\nEvermore with us abide!\n\n3. So shall peace, sweet peace be given,\nPurchase of thy precious pain;\nSo shall earth but lead to heaven,\nSince for us the Lamb was slain;\nDear Redeemer! Dear Redeemer!\nThou cast not have die in vain.",
     "firstLine": "Blessed Lamb! on Calvary’s mountain",
     "composer": "M. BRIDGES, 1800-94",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/qTiHewIRkno?si=uGljiM6U9PAlQkO7",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 164,
@@ -1315,7 +1324,10 @@ final hymnJson = [
     "lyrics": "Antiphon:\nDraw near, O Lord, Our God, graciously\nhear us,\nGuilty of sinning before you.\n\nO King exalted, Saviour of all nations,\nSee how our grieving lifts our eyes to\nheaven;\nHear us, Redeemer, as we beg forgiveness\n\n2. Might of the Father, Keystone of God’s\nTemple\nWay of salvation, Gate of Heaven’s glory;\nSin has enslaved us; free your sons from\nbondage.\n\n4. Humbly confessing countless sins commited,\nOur hearts are broken, laying bare their secrets;\nCleanse us, Redeemer, boundless in compassion.\n\n5. Innocent captive, unresting Victim,\nLiars denounce you; sentenced for the guilty;\nOnce you redeemed us; now renew us, Jesus.",
     "firstLine": "King exalted, Saviour of all nations,",
     "composer": null,
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/_v8VUJyk1UA?si=bCEIpP4SVj3Z8f4E",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 165,
@@ -1323,7 +1335,10 @@ final hymnJson = [
     "lyrics": "Glory be to Jesus,\nWho in bitter pains\nPour’d for me the life-blood\nFrom his sacred veins\n\n2. Grace and life eternal\nIn that blood I find;\nBlest be his compassion,\nInfinitely kind.\n\n3. Blest through endless ages\nBe the precious stream,\nWhich from endless torment\nDoth the world redeem.\n\n4. There the faiting spirit\nDrinks of life her fill;\nThere as in fountain\nLaves herself at will\n\n5. Abel’s blood for vengeance\nPleaded to the skies;\nBut the blood of Jesus\nFor our pardon cries\n\n6. Oft as it is sprinkled\nOn our guilty hearts,\nSatan in confusion\nTerror-struck departs.\n\n7. Oft as earth exalting’\nwafts its praise on high,\nHell with horror trembles;\nHeav’n is fill’d with joy.\n\n8. Lift ye, then your voices;\nSwell the mighty flood;\nLouder still and louder,\nPraise the precious blood",
     "firstLine": "Glory be to Jesus,",
     "composer": "18th CENT TR. E. CASWALL, 181478",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/KszoCSY5g8k?si=OSd6FqvgCKW6IU68",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 166,
@@ -1331,7 +1346,10 @@ final hymnJson = [
     "lyrics": "God of mercy and compassion,\nLook with pity upon me;\nFather, let me call the Father,\n‘Tis thy child returns to thee.\nJesus, Lord I ask for mercy;\nLet me not implore in vain;\nAll my sins I now detest them;\nNever will I sin again\n\n2. By my sins I have deserved\nDeath and endless misery,\nHell with all its pains and torments,\nAnd for all eternity,\nJesus, Lord, etc.\n\n3. By my sins I have abandon’d\nRight and claim to heaven above,\nWhere the saints rejoice for ever\nIn a boundless sea of love.\nJesus, Lord, etc.\n\n4. See our Saviour, bleeind, dying,\nOn the cross of Calvary;\nTo that cross my sins have nail’d him,\nYet he bleeds and dies for me,\nJesus, Lord, etc.",
     "firstLine": "God of mercy and compassion,",
     "composer": "E. VAUGHAN, C.SS.R, 1827-1908",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/dd8ddCFmyNc?si=v5qJL-RJOT_HgCAx",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 167,
@@ -1339,7 +1357,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nGrant to us, O Lord, a heart renewed;\nRecreate in us your own Spirit, Lord\n\nBehold, the days are coming, says the Lord\nour God,\nWhen I will make a new covenant with the\nhouse of Israel\n\n2. Deep within their being I will implant my law;\nI will write it in their hearts\n\n3. I will be their God,\nAnd they will be my people\n\n4. And for all their faults I will ngrnt forgiveness;\nNever more will I remember their sins",
     "firstLine": "Behold, the days are coming, says the Lord our God,",
     "composer": "L. DEISS",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/TubGT0Wgk38?si=J9dqww-YtvouleaZ",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 168,
@@ -1347,7 +1368,10 @@ final hymnJson = [
     "lyrics": "Hark, my soul! It is the Lord\n‘Tis thy Saviour, hear his word;\nJesus speaks, and speaks to thee;\n“Say, poor sinner, lov’st thou Me?”\n\n2. “I deliverd thee when bound,\nAnd, when wounded, healed thy wound;\nSought thee wandering, set thee, right,\nTurned thy darkness into light.”\n\n3. “Can a woman’s tender care\nCease towards the child she bare?\nYes, she may forgetful be,\nYet will I remember thee?”\n\n4. “Mine is an unchanging love,\nHigher that the heights above,\nDeeper that the depths beneath,\nFree and faithful, strong as death.”\n\n5. “Thou shalt see my glory soon,\nWhen the work of grace is done,\nPartner of my throne shalt be;\nSay, poor sinner, lov’st thou me”\n\n6. Lord, it is my chief complaint\nThat my love is weak and faint;\nYet I love thee, and adore;\nO for grace to love Thee more! Amen.",
     "firstLine": "Hark, my soul! It is the Lord",
     "composer": "W. COWPER, 1731-1800",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/TD2e19sHVXQ?si=GPk0nKs_ZMAoKhrv",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 169,
@@ -1355,7 +1379,10 @@ final hymnJson = [
     "lyrics": "Hear, O thou bounteous Maker, hear\nOur humble vows with gracious ear;\nTurn not thy saving face away\nWhilst on this solemn fast we pray\n\n2. Great searcher of our hearts, to thee\nWe here deplore our misery;\nBehold, we to thy mercies fly,\nDo thou thy healing grace apply\n\n3. Great are our sins, O Lord, but thou\nCanst pardon more than we can do;\nMay our defects, like shadows, raise\nThe beauty and the life of grace.\n\n4. May fasts extinguish in our will\nThe fuel and desire of ill,\nAnd thus our souls, from fetters free\nMay only thirst and follow thee\n\n5. Grant, O most sacred Trinity,\nOne undivided Unity,\nThat abstinence may here improve\nOur claim to reign with thee above",
     "firstLine": "Hear, O thou bounteous Maker, hear",
     "composer": "ASCRIBED TO ST. GREGORY THE GREAT,540-604",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 170,
@@ -1363,7 +1390,10 @@ final hymnJson = [
     "lyrics": "I’ve wondered far away from God, Now I’m\ncoming home;\nThe paths of sin too long I’ve trod, Lord, I’m\ncoming home.\n\nChorus:\nComing home, coming home, Nevermore to\nroam.(2*)\n\n2. I’ve wasted many precious years, Now\nI’m coming home;\nI now repent with bitter tears, Lord,\nI’m coming home.\n\n3. I’ve tired of sin and straying, Lord, Now I’m\ncoming home;\nI’ll trust Thy love, believe Thy word, Lord, I’m\ncoming home\n\n4. My soul is sick, my heart is sore, Now I’m\ncoming home;\nMy strength renew, my hope restore, Lord I’m\ncoming home.",
     "firstLine": "I’ve wondered far away from God, Now I’m coming home;",
     "composer": "W.J. KIRK PATRICK, TR. PRIMER, 1706",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/nFjIMPdN3jM?si=yGlU-iI3bEkBk4wJ",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 171,
@@ -1371,7 +1401,10 @@ final hymnJson = [
     "lyrics": "In the Lord’s atoning grief\nBe our rest and sweet relief;\nDeep within our hearts we’ll store\nDoes dear pains and wrongs he bore.\n\n2. Thorns and cross and nails and spear,\nWounds that faithful hearts revere,\nVinegar and gall and reed\nAnd the pang is so that freed,\n\n3. May these all our spirits fill,\nAnd with love inflame our will;\nPlant in us contrition’s root,\nRipen there its saving fruit.\n\n4. Crucified, we thee adore,\nThee with all our hearts implore;\nWith the saints our souls unite\nIn the realms of heavenly light.\n\n5. Christ, by coward and betrayed,\nChrist, for us a captive made,\nChrist, upon the bitter tree,\nSlain for man, be praised to thee.",
     "firstLine": "In the Lord’s atoning grief",
     "composer": "ST. BONAVENTURE, 1221-74",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 172,
@@ -1379,7 +1412,10 @@ final hymnJson = [
     "lyrics": "Jesu, meek and lowly,\nSavior, pure and holy,\nOn thy love relying,\nCome I to thee flying.\n\n2. Prince of life and power,\nMy salvation’s tower,\nOn the cross I view thee,\nCalling sinners to thee.\n\n3. There behold me gazing\nAt the sight amazing;\nBending low before thee,\nHelpless I adore thee.\n\n4. See the red wounds streaming,\nWith Christ life-blood gleaming:\nBlood for sinners flowing,\nPardon free bestowing.\n\n5. Fountain rich in blessing,\nChrist’s fond love expressing\nThough my aching sadness\nTurnest into gladness.\n\n6. Lord in mercy guide me,\nBe thou e’er beside me;\nIn thy ways direct me,\n‘Neath thy wings protect me.",
     "firstLine": "Jesu, meek and lowly,",
     "composer": "A.H. COLLINS,O.C.R,1827-1919",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/207OIADezZQ?si=Tgc1ADCrmKYyS0Wh",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 173,
@@ -1387,7 +1423,10 @@ final hymnJson = [
     "lyrics": "Jesus, my Lord, behold at length the day\nWhen I resolve from sin to turn away.\nO pardon me, Jesus; thy mercy implore;\nI will never more offend thee, No, never more.\n\n2. Since my poor soul thy precious blood has cost,\nSuffer it not to be for ever lost. O pardon, etc.\n\n3. Kneeling in tears, behold me at thy feet;\nLike Magdalen, forgiveness I entreat. O pardon etc.",
     "firstLine": "Jesus, my Lord, behold at length the day",
     "composer": "J. CHADWICK, 1813-82",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/NANxkCpmDDI?si=UlLtaraWB7rONYcX",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 174,
@@ -1395,7 +1434,10 @@ final hymnJson = [
     "lyrics": "Lord Jesus, think on me\nAnd purge away my sin;\nFrom earthborn passions set me free,\nAnd make me pure within.\n\n2. Lord Jesus, think on me,\nAmid the battle’s strife;\nIn all my pain and misery\nBe thou my health and life.\n\n3. Lord Jesus, think on me,\nWith care and woe opprest;\nLet me thy loving servant be,\nAnd taste thy promised rest.\n\n4. Lord Jesus, think on me,\nNor let me go astray;\nThrough darkness and perplexity\nPoint thou thee heavenly way\n\n5. Lord Jesus, think on me,\nWhen flows the tempest high:\nWhen on doth rush thee enemy,\nO Saviour, be Thou nigh.\n\n6. Lord Jesus, think on me,\nThat, when the flood is past,\nI may the eternal brightness see,\nAnd share thy joy at last.",
     "firstLine": "Lord Jesus, think on me",
     "composer": "SYNESIUS OF CYRENE,375-430 TR. ALLEN WILLIAM CHATFIELD, 1808-96",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/ie4qBytHkOM?si=PLJ_5gsux2ObrEou",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 175,
@@ -1403,7 +1445,10 @@ final hymnJson = [
     "lyrics": "Man of sorrows wrapt in grief,\nBow thine ear to our relief;\nThou for us the path hast trod\nOf the dreadful wrath of God;\nThou the cup of fire hast drained\nTill its light alone remained\nLamb of love! We look to thee:\nHear our mournful litany.\n\n2. By the garden, fraught with woe,\nWhither thou full oft wouldt go;\nBy thine agony of prayer\nIn the desolation there;\nBy the dire and deep distress\nOf that mystery fathomless –\nLord, our tears in mercy see:\nHearken to our litany.\n\n3. By the chalice brimming o’er\nWith disgrace and torment sore;\nBy those lips which fain would pray\nThat it might but pass away;\nBy the heart which drank it dry,\nLest a rebel race should die –\nBe thy pity, Lord, our plea:\nHear our solemn litany.\n\n4. Man of sorrows! Let thy grief\nPurchase for us our relief:\nLord of mercy! Bow thine ear,\nSlow to anger, swift to hear:\nBy the cross’s royal road\nLead us to the throne of God.\nThere for aye to sing to thee\nHeaven’s triumphant litany.",
     "firstLine": "Man of sorrows wrapt in grief,",
     "composer": "M. BRIDGES,1800-94",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/7ntPIJtIdkc?si=uh_gm17eUPXTlu4n",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 176,
@@ -1411,7 +1456,10 @@ final hymnJson = [
     "lyrics": "O come with me awhile;\nSee, Mary calls us to her side;\nO come and let us mourn with her;\nJesus, our Lord, is crucified.\n\n2. Have we no tears to shed for him,\nWhile soldiers scoff and Jews deride?\nAh! Look how patiently he hangs;\nJesus, our love is crucified.\n\n3. How fast his feet and the hands are nailed:\nHis blessed tongue with thirst is tied;\nHis failing eyes are blind with blood;\nJesus our love, is crucified\n\n4. Seven times he spoke seven words of love\nAnd all three hours he silence cried\nFor mercy on the souls of men;\nJesus, our love, is crucified.\n\n5. O break, O break, hard heart of mine:\nThy weak self-love and guilty pride\nHis Pilate and his Judas were ;\nJesus our love is crucified.\n\n6. A broken heart a fount of tears,\nAsk, and they will not be denied;\nA broken heart, love’s cradle is ;\nJesus, our love, is crucified\n\n7. O love of God! O sin of man!\nIn this dread act your strength is tried;\nAnd victory remains with love;\nJesus, our love, is crucified.",
     "firstLine": "O come with me awhile;",
     "composer": "F.W. FABER, 1814-63",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/0puAVh1TBic?si=Hg8UMhUNdg774_Ml",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 177,
@@ -1419,7 +1467,10 @@ final hymnJson = [
     "lyrics": "O Lord who showed us in thy fasting\nHow we may gain life everlasting,\nThy love we know!\nAlthough despised, acquainted with grief,\nLord, how you love the repentant thief\n\n2. O Lord, we live behind our pleasure,\nAnd in the desert seek our treasure,\nMay our hearts grow.\nAlthough despised, &c.\n\n3. O Lord, may forty days’ repentance\nFulfill in part our rightful sentence;\nMay thy grace flow.\nAlthough despised, &c.",
     "firstLine": "O Lord who showed us in thy fasting",
     "composer": null,
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 178,
@@ -1427,7 +1478,10 @@ final hymnJson = [
     "lyrics": "O Sacred Heart surrounded,\nBy crown of piercing thorn,\nO bleeding head so wounded,\nReviled and put to scorn.\nOur sins have marred beauty\nOf thy most Holy face;\nYet angel host adore thee\nAnd tremble as they gaze.\n\n2. In this thy bitter passion,\nGood shepherd, think of me,\nWith thy most kind compassion\nUnworthy though I be.\nBeneath thy cross abiding,\nFor ever would I rest,\nIn your dear love confiding,\nAnd in your presence blest.\n\n3. O Jesus I adore you,\nMy thorn – crowned Lord and King,\nI bow my heart before you,\nYour gracious name I sing.\nYour name that brought salvation,\nYour name in life my stay\nMy hope and consolation,\nWhen life shall fade away.",
     "firstLine": "O Sacred Heart surrounded,",
     "composer": "PAUL GERHARDT, 1607-76 TR. JAMES WADELL ALEXANDER, 1804-59",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 179,
@@ -1435,7 +1489,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nRemember man that you are dust,\nAnd into dust you will return.\n\nLet us change our garments for ashes and\nsackcloth.\nLet us fast and weep before the Lord for gracious\nAnd merciful is our God to forgive our sins.\n\n2. Between the porch and the altar, let the priests\nThe ministers of the Lord lament and say:\n“Spare, O Lord, spare your sons, spare your\nsons.\nAnd close not the mouths of your faithful who\nsing to you.”\n\n3. Let us change for better from our sins of\nignorance,\nLet we die in sins, in our sins, a sudden\ndeath.\n\n4. Hear us Lord, have mercy, have mercy,\nFor we have sinned against you, against you.\n\n5. Help us God our Saviour, help us Lord, help\nUs Lord,\nFor the glory of your name O Lord, help us\nLord.\n\n6. Glory be to the Father and to the Son,\nTo the Holy Spirit Holy Ghost, hear us Lord.",
     "firstLine": "Let us change our garments for ashes and sackcloth.",
     "composer": null,
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/pH5e698OOVs?si=lX_QGwl6MvL2CSJ3",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 180,
@@ -1443,7 +1500,10 @@ final hymnJson = [
     "lyrics": "Were you there when they crucified my\nLord?\nWere you there when they crucified my Lord?\nOh, sometimes it causes me to tremble, tremble,\ntremble.\nWere you there when they crucified my Lord?\n\n2. Were you there when they nailed him to the\ntree?\nWere you there when they nailed him to the\ntree?\nOh, sometimes it causes me to tremble, tremble,\ntremble.\nWere you there when they nailed him to the\ntree?\n\n3. Were you there when they pierced him in the\nside?\nWere you there when they pierced him in the\nside?\nOh, sometimes it causes me to tremble, tremble,\ntremble.\nWere you there when they pierced him in the\nside?\n\n4. Were you there when the sun refused to shine?\nWere you there when the sun refused to shine?\nOh, sometimes it causes me to tremble, tremble,\ntremble.\nWere you there when the sun refused to shine?\n\n5. Were you there when they laid him in the tomb?\nWere you there when they laid him in the tomb?\nOh, sometimes it causes me to tremble, tremble,\ntremble.\nWere you there when they laid him in the tomb?\n\n6. Were you there when he rose from out the\ntomb?\nWere you there when he rose from out the\ntomb?\nOh, sometimes it causes me to tremble, tremble\ntremble.\nWere you there when he rose from out the\ntomb?",
     "firstLine": "Were you there when they crucified my Lord?",
     "composer": null,
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/mqjS5fnvWk4?si=WhrhkDAwSlA3S04h",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 181,
@@ -1451,7 +1511,10 @@ final hymnJson = [
     "lyrics": "1. When I survey the wondrous Cross,\nOn which the Prince of glory died,\nMy richest gain I count but loss,\nAnd pour content on all my pride\n\n2. Forbid it, Lord, that I should boast,\nSave in the death of Christ, my God;\nAll the vain things that charm the most,\nI sacrifice them to his Blood.\n\n3. See from his head, his hands, his feet,\nSorrow and love flow mingled down;\nDid e’er such love and sorrow meet,\nOr thorns compose so rich a crown?\n\n4. Were the whole realm of nature mine,\nThat were a present far too small;\nLove so amazing, so divine,\nDemands my soul, my life, my all. Amen",
     "firstLine": "When I survey the wondrous Cross,",
     "composer": "ISAAC WATTS, 1674-1748",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtube.com/shorts/zgZvC9AQni0?si=fd1aU-C62ulUwQBp",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 182,
@@ -1459,7 +1522,10 @@ final hymnJson = [
     "lyrics": "Antiphon;\nYes, I shall arise, and return to my Father.\n\n1. To you, O Lord, I lift up my soul;\nIn you, O my God, I place all my trust.\n\n2. Look down on me, Have mercy O Lord;\nForgive me my sins, behold all my grief.\n\n3. My heart and soul shall yearn for your face;\nBe gracious to me and answer my plea.\n\n4. Do not withhold your goodness from me; O Lord,\nMay your love be deep in my soul.\n\n5. To you I pray: have pity on me; my God,\nI have sinned against your great love.\n\n6. Mercy I cry, O Lord wash me clean;\nAnd whiter than snow my spirit shall be.\n\n7. Give again the joy of your help;\nNow open my lips, your praise I will sing.\n\n8. Happy is he, forgiven by God;\nHis sin blotted out, his guilt is no more.\n\n9. You are my joy, my refuge and strength;\nLet all upright hearts give praise to the Lord.\n\n10. My Soul will sing, my heart will rejoice;\nThe blessing of God will fill all my days.",
     "firstLine": "Yes, I shall arise, and return to my Father.",
     "composer": "L. DEISS",
-    "category": "LENT AND PENANCE"
+    "category": "LENT AND PENANCE",
+    "src": "https://youtu.be/4BQB13DT-o4?si=Aig-QKov3CV65XFS",
+    "choir": "",
+    "imgPath": "",
   },
   {
     "number": 183,

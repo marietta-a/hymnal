@@ -5,11 +5,47 @@ import 'package:hymnal/models/hymn.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/font_provider.dart'; // Import FontProvider
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HymnDetailScreen extends StatelessWidget {
   final Hymn hymn;
 
   const HymnDetailScreen({super.key, required this.hymn});
+
+  bool get hasYouTubeLink {
+    return hymn.src != null && hymn.src!.isNotEmpty;
+  }
+
+  // Future<void> _launchYouTube(BuildContext context, String url) async {
+  //   final Uri uri = Uri.parse(url);
+    
+  //   try {
+  //     // mode: LaunchMode.externalApplication attempts to open the YouTube App
+  //     if (await canLaunchUrl(uri)) {
+  //       await launchUrl(
+  //         uri,
+  //         mode: LaunchMode.externalApplication,
+  //       );
+  //     } else {
+  //       throw 'Could not launch $url';
+  //     }
+  //   } catch (e) {
+  //     if (context.mounted) {
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //         SnackBar(content: Text("Error opening video: $e")),
+  //       );
+  //     }
+  //   }
+  // }
+  Future<void> _launchYouTube(BuildContext context, String url) async {
+    final Uri uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      // Fallback to internal browser if external fails
+      await launchUrl(uri, mode: LaunchMode.platformDefault);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -83,6 +119,17 @@ class HymnDetailScreen extends StatelessWidget {
                 ),
             ],
           ),
+          // --- Floating YouTube Button ---
+          floatingActionButton: hasYouTubeLink
+              ? FloatingActionButton.extended(
+                  onPressed: () => _launchYouTube(context, hymn.src!),
+                  backgroundColor: const Color(0xFFFF0000), // YouTube Red
+                  foregroundColor: Colors.white,
+                  icon: const Icon(Icons.play_circle_fill),
+                  label: const Text("Play"),
+                  tooltip: "Watch on YouTube",
+                )
+              : null,
         );
       },
     );
