@@ -30,6 +30,7 @@ class Hymn {
         firstLine: json['firstLine'],
         composer: json['composer'],
         category: json['category'],
+        src: json['src']
       );
     }
     catch(err){
