@@ -86,7 +86,12 @@ class HymnDetailScreen extends StatelessWidget {
               // --- Layer 1: The scrollable lyrics ---
               SingleChildScrollView(
                 // Add bottom padding to prevent composer from overlapping the last line
-                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 60.0),
+                padding: EdgeInsets.fromLTRB(
+                  16.0, 
+                  16.0, 
+                  16.0, 
+                  hasYouTubeLink ? 130.0 : 90.0
+                ),
                 child: SelectableText(
                   hymn.lyrics,
                   // Apply dynamic lyrics font from the provider
@@ -128,6 +133,7 @@ class HymnDetailScreen extends StatelessWidget {
                   icon: const Icon(Icons.play_circle_fill),
                   label: const Text("Play"),
                   tooltip: "Watch on YouTube",
+                  isExtended: false,
                 )
               : null,
         );
