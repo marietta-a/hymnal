@@ -1310,7 +1310,7 @@ final hymnJson = [
   {
     "number": 163,
     "title": "BLESSED LAMB ON CALVARY”S MOUNTAIN",
-    "lyrics": "Blessed Lamb! on Calvary’s mountain\nSlain to take our sins away:\nLet the drops of that rich fountain\nOur tremendous ransoms pay:\nSacred Saviour! Sacred Savoiur\nLowly at thy feet we pray.\n\n2. Blessed Lamb! vouchsafe us pardon,\nIn thy love our souls confide:\nBy thy groans within thou hast died,\nLet thy Passion – let thy Passion\nEvermore with us abide!\n\n3. So shall peace, sweet peace be given,\nPurchase of thy precious pain;\nSo shall earth but lead to heaven,\nSince for us the Lamb was slain;\nDear Redeemer! Dear Redeemer!\nThou cast not have die in vain.",
+    "lyrics": "Blessed Lamb! on Calvary’s mountain\nSlain to take our sins away:\nLet the drops of that rich fountain\nOur tremendous ransoms pay:\nSacred Saviour! Sacred Savoiur\nLowly at thy feet we pray.\n\n2. Blessed Lamb! vouchsafe us pardon,\nIn thy love our souls confide:\nBy the groans within the garden, \nBy the death which thou hast died,\nLet thy Passion – let thy Passion\nEvermore with us abide!\n\n3. So shall peace, sweet peace be given,\nPurchase of thy precious pain;\nSo shall earth but lead to heaven,\nSince for us the Lamb was slain;\nDear Redeemer! Dear Redeemer!\nThou cast not have die in vain.",
     "firstLine": "Blessed Lamb! on Calvary’s mountain",
     "composer": "M. BRIDGES, 1800-94",
     "category": "LENT AND PENANCE",
