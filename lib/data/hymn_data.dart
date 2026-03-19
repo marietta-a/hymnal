@@ -1343,7 +1343,7 @@ final hymnJson = [
   {
     "number": 166,
     "title": "GOD OF MERCY AND COMPASSION",
-    "lyrics": "God of mercy and compassion,\nLook with pity upon me;\nFather, let me call the Father,\n‘Tis thy child returns to thee.\nJesus, Lord I ask for mercy;\nLet me not implore in vain;\nAll my sins I now detest them;\nNever will I sin again\n\n2. By my sins I have deserved\nDeath and endless misery,\nHell with all its pains and torments,\nAnd for all eternity,\nJesus, Lord, etc.\n\n3. By my sins I have abandon’d\nRight and claim to heaven above,\nWhere the saints rejoice for ever\nIn a boundless sea of love.\nJesus, Lord, etc.\n\n4. See our Saviour, bleeind, dying,\nOn the cross of Calvary;\nTo that cross my sins have nail’d him,\nYet he bleeds and dies for me,\nJesus, Lord, etc.",
+    "lyrics": "God of mercy and compassion,\nLook with pity upon me;\nFather, let me call thee Father,\n‘Tis thy child returns to thee.\nJesus, Lord I ask for mercy;\nLet me not implore in vain;\nAll my sins I now detest them;\nNever will I sin again\n\n2. By my sins I have deserved death\nDeath and endless misery,\nHell with all its pains and torments,\nAnd for all eternity,\nJesus, Lord, etc.\n\n3. By my sins I have abandon’d\nRight and claim to heaven above,\nWhere the saints rejoice for ever\nIn a boundless sea of love.\nJesus, Lord, etc.\n\n4. See our Saviour, bleeding, dying,\nOn the cross of Calvary;\nTo that cross my sins have nail’d him,\nYet he bleeds and dies for me,\nJesus, Lord, etc.",
     "firstLine": "God of mercy and compassion,",
     "composer": "E. VAUGHAN, C.SS.R, 1827-1908",
     "category": "LENT AND PENANCE",
@@ -1409,8 +1409,8 @@ final hymnJson = [
   {
     "number": 172,
     "title": "JESUS MEEK AND LOWLY",
-    "lyrics": "Jesu, meek and lowly,\nSavior, pure and holy,\nOn thy love relying,\nCome I to thee flying.\n\n2. Prince of life and power,\nMy salvation’s tower,\nOn the cross I view thee,\nCalling sinners to thee.\n\n3. There behold me gazing\nAt the sight amazing;\nBending low before thee,\nHelpless I adore thee.\n\n4. See the red wounds streaming,\nWith Christ life-blood gleaming:\nBlood for sinners flowing,\nPardon free bestowing.\n\n5. Fountain rich in blessing,\nChrist’s fond love expressing\nThough my aching sadness\nTurnest into gladness.\n\n6. Lord in mercy guide me,\nBe thou e’er beside me;\nIn thy ways direct me,\n‘Neath thy wings protect me.",
-    "firstLine": "Jesu, meek and lowly,",
+    "lyrics": "Jesus, meek and lowly,\nSavior, pure and holy,\nOn thy love relying,\nCome I to thee flying.\n\n2. Prince of life and power,\nMy salvation’s tower,\nOn the cross I view thee,\nCalling sinners to thee.\n\n3. There behold me gazing\nAt the sight amazing;\nBending low before thee,\nHelpless I adore thee.\n\n4. See the red wounds streaming,\nWith Christ life-blood gleaming:\nBlood for sinners flowing,\nPardon free bestowing.\n\n5. Fountain rich in blessing,\nChrist’s fond love expressing\nThough my aching sadness\nTurnest into gladness.\n\n6. Lord in mercy guide me,\nBe thou e’er beside me;\nIn thy ways direct me,\n‘Neath thy wings protect me.",
+    "firstLine": "Jesus, meek and lowly,",
     "composer": "A.H. COLLINS,O.C.R,1827-1919",
     "category": "LENT AND PENANCE",
     "src": "https://youtu.be/207OIADezZQ?si=Tgc1ADCrmKYyS0Wh",
