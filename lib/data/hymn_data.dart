@@ -1819,7 +1819,10 @@ final hymnJson = [
     "lyrics": "Spirit of God in the clear running water,\nBlowing to greatness the trees on the hill,\nSpirit of God in the finger of morning,\nFill the earth, bring it to birth, and\nBlow where you will.\nRefrain:\nBlow, blow, blow till I be\nBut breath of the Spirit blowing in me.\n\n2. Down in the meadow the willows are moaning,\nSheep in the pasture-land cannot lie still,\nSpirit of God, - creation is groaning,\nFill the earth, bring it to birth, and\nBlow where you will.\n\n3. I saw the scar of a year that lay dying,\nHeard the lament of alone whippoorwill;\nSpirit of God, - see that cloud crying;\nFill the earth, bring it to birth,\nBlow where you will.\n\n4. Spirit of God, ev’ry man’s heart is lonely,\nWatching and waiting and hungry until,\nSpirit of God, - man longs that you only\nFulfill,\nThe earth, bring it to birth , and\nBlow where you will.",
     "firstLine": "Spirit of God in the clear running water,",
     "composer": "MIRIAM THERESE WINTER",
-    "category": "PENTECOST AND BLESSED TRINITY"
+    "category": "PENTECOST AND BLESSED TRINITY",
+    "src": "https://www.youtube.com/watch?v=L_qvO6SD5fw&list=RDL_qvO6SD5fw&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 219,
