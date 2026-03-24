@@ -17,7 +17,7 @@ final hymnJson = [
     "firstLine": "All the earth proclaim the Lord.",
     "composer": "L. DEISS",
     "category": "ENTRANCE",
-    "src": "",
+    "src": "https://www.youtube.com/watch?v=RgkiYyQyKKw&list=RDRgkiYyQyKKw&start_radio=1",
     "choir": "",
     "imgPath": "",
   },
@@ -27,7 +27,10 @@ final hymnJson = [
     "lyrics": "1. Come, praise the Lord, You children of the Lord!\nCome, raise your voice in joyous song.\nAlleluia, Alleluia, Alleluia, Alleluia.\n\n2. Come, bless his name, you children of the Lord!\nCome, sing his praise, and let the trumpet sound.\nAlleluia, Alleluia, Alleluia, Alleluia.\n\n3. Rejoice in God, His love descends on us,\nLift up your voice and sound his name afar,\nAlleluia, Alleluia, Alleluia, Alleluia.",
     "firstLine": "Come, praise the Lord, You children of the Lord!",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 4,
@@ -3158,7 +3161,10 @@ final hymnJson = [
     "lyrics": "Ave Maria, O maiden, O mother,\nFondly our voices arise unto thee.\nThine are the graces unclaimed by another,\nSinless and beautiful star of the sea.\n\nRefrain:\nMater amabilis, ora pro nobis\nPray for thy children who call upon thee.\nAve sanctissima, ave purissima,\nSinless and beautiful star of the sea.\n\n2. Ave Maria! The night shades are falling;\nSoftly our voices arise unto Thee.\nEarth's lonely exiles for succor are calling;\nSinless and Beautiful star of the sea. (Ref)\n\n3. Ave Maria! Thou portal of Heaven;\nHarbour of refuge, to Thee do we flee.\nLost in the darkness by stormy winds driven;\nShine on our pathway, fair star of the sea. (Ref)",
     "firstLine": "Ave Maria, O maiden, O mother,",
     "composer": null,
-    "category": "OUR LADY - NEW"
+    "category": "OUR LADY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 387,
