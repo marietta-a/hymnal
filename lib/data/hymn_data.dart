@@ -646,7 +646,10 @@ final hymnJson = [
     "lyrics": "I am not worthy Holy lord,\nThat thou shouldst come to me:\nSpeak but the word; one gracious word\nCan set the sinner free.\n\n2. I am not worthy; cold and bare\nThe lodgings of my soul;\nHow canst thou deign to enter there?\nLord, speak, and make me whole.\n\n3. I am not worthy; yet, my God,\nHow can I say thee nay;\nThee, who didst give thy flesh and blood,\nMy ransom – price to pay?\n\n4. O come! In this sweet morning hour\nFeed me with food divine;\nAnd fill with all thy love and power\nThis worthless heart of mine.",
     "firstLine": "I am not worthy Holy lord,",
     "composer": "HENRY WILLIAMS BAKER 1821-77",
-    "category": "COMMUNION AND CORPUS CHRISTI"
+    "category": "COMMUNION AND CORPUS CHRISTI",
+    "src": "https://www.youtube.com/watch?v=NMMJ5rTt72A&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=3",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 81,
@@ -3162,7 +3165,7 @@ final hymnJson = [
     "firstLine": "Ave Maria, O maiden, O mother,",
     "composer": null,
     "category": "OUR LADY - NEW",
-    "src": "",
+    "src": "https://www.youtube.com/watch?v=HTcbplVigYs&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=2",
     "choir": "",
     "imgPath": ""
   },
