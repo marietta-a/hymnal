@@ -700,7 +700,10 @@ final hymnJson = [
     "lyrics": "Jesus, my lord, my God, my all,\nHow can I love thee as I ought?\nAnd how revere this wondrous gift,\nSo far surpassing hope of thought?\nSweet sacrament, we thee adore;\nOh, make us love thee more and more.\n\n2. Had I but Mary’s sinless heart\nTo love thee with, my dearest king,\nOh, with what bursts of fervent praise\nThy goodness, Jesus, would I sing!\nSweet sacrament etc\n\n3. Ah, see! Within a creature’s hand\nThe vast creator deigns to be,\nReposing, infant-like, as though\nOn Joseph’s arm, or Mary’s knee.\nSweet Sacrament, etc\n\n4. Thy body, soul, and Godhead, all;\nO mystery of Love divine!\nI cannot compass all I have,\nFor all thou hast and art are mine,\nSweet sacrament, etc\n\n5. Sound, sound his praises higher still\nAnd come, ye angels, to our aid;\n‘Tis God, ‘tis God, the very God,\nWhose power both man and angels made.\nSweet sacrament, etc.",
     "firstLine": "Jesus, my lord, my God, my all,",
     "composer": "F.W FABER, 1814-63",
-    "category": "COMMUNION AND CORPUS CHRISTI"
+    "category": "COMMUNION AND CORPUS CHRISTI",
+    "src": "https://www.youtube.com/watch?v=vL6zvsRxpMo&list=RDvL6zvsRxpMo&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 87,
