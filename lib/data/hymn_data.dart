@@ -2516,7 +2516,10 @@ final hymnJson = [
     "lyrics": "1. My faith looks up to thee,\nThou lamb of Calvary,\nSaviour divine!\nNow hear me while I pray,\nTake all my guilt away,\nO let me from this day\nBe wholly thine.\n\n2. May thy rich grace impart\nStrength to my fainting heart,\nMy zeal inspire;\nO may my love to thee\nPure, warm, and changeless be,\nA living fire.\n\n3. While life’s dark maze I tread,\nAnd griefs around me spread,\nBe thou my guide;\nBid darkness turn to-day,\nWipe sorrow’s tears away,\nNor let me ever stray\nFrom thee aside.\n\n4. When ends life’s transient dream,\nWhen death’s cold sullen stream\nShall o’er me roll,\nBlest savior, then in love\nFear and distrust remove;\nO bear me safe above,\nA ransomed soul.",
     "firstLine": "My faith looks up to thee,",
     "composer": "RAY PALMER, 1808-87",
-    "category": "THE CHURCH"
+    "category": "THE CHURCH",
+    "src": "https://www.youtube.com/watch?v=-0Qvt3fCWbQ&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=7",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 305,
