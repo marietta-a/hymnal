@@ -54,7 +54,10 @@ final hymnJson = [
     "lyrics": "1. Holy God, we praise thy name;\nLord of all, we bow before thee!\nAll in heaven above adore thee.\nInfinite thy vast domain,\nEverlasting is thy reign.\n\n2. Hark! the loud celestial hymn,\nAngel choirs above are raising;\nCherubim and seraphim,\nIn unceasing chorus praising,\nFill the heavens with sweet accord,\nHoly, holy, holy Lord.\n\n3. Holy Father, holy Son,\nHoly Spirit, Three we name thee,\nWhile in Essence only One\nUndivided God we claim thee;\nAnd adoring bend the knee,\nWhile we own the mystery.\n\n4. Spare thy people, Lord, we pray,\nBy a thousand snares surrounded;\nKeep us without sin today;\nNever let us be confounded.\nLo, I put my trust in thee –\nNever, Lord, abandon me.",
     "firstLine": "Holy God, we praise thy name;",
     "composer": "C. A. WALWORTH, 1820-1900",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "https://www.youtube.com/watch?v=ybatH5qoQQk&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=5",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 7,
@@ -646,7 +649,10 @@ final hymnJson = [
     "lyrics": "I am not worthy Holy lord,\nThat thou shouldst come to me:\nSpeak but the word; one gracious word\nCan set the sinner free.\n\n2. I am not worthy; cold and bare\nThe lodgings of my soul;\nHow canst thou deign to enter there?\nLord, speak, and make me whole.\n\n3. I am not worthy; yet, my God,\nHow can I say thee nay;\nThee, who didst give thy flesh and blood,\nMy ransom – price to pay?\n\n4. O come! In this sweet morning hour\nFeed me with food divine;\nAnd fill with all thy love and power\nThis worthless heart of mine.",
     "firstLine": "I am not worthy Holy lord,",
     "composer": "HENRY WILLIAMS BAKER 1821-77",
-    "category": "COMMUNION AND CORPUS CHRISTI"
+    "category": "COMMUNION AND CORPUS CHRISTI",
+    "src": "https://www.youtube.com/watch?v=NMMJ5rTt72A&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=3",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 81,
@@ -1816,7 +1822,10 @@ final hymnJson = [
     "lyrics": "Spirit of God in the clear running water,\nBlowing to greatness the trees on the hill,\nSpirit of God in the finger of morning,\nFill the earth, bring it to birth, and\nBlow where you will.\nRefrain:\nBlow, blow, blow till I be\nBut breath of the Spirit blowing in me.\n\n2. Down in the meadow the willows are moaning,\nSheep in the pasture-land cannot lie still,\nSpirit of God, - creation is groaning,\nFill the earth, bring it to birth, and\nBlow where you will.\n\n3. I saw the scar of a year that lay dying,\nHeard the lament of alone whippoorwill;\nSpirit of God, - see that cloud crying;\nFill the earth, bring it to birth,\nBlow where you will.\n\n4. Spirit of God, ev’ry man’s heart is lonely,\nWatching and waiting and hungry until,\nSpirit of God, - man longs that you only\nFulfill,\nThe earth, bring it to birth , and\nBlow where you will.",
     "firstLine": "Spirit of God in the clear running water,",
     "composer": "MIRIAM THERESE WINTER",
-    "category": "PENTECOST AND BLESSED TRINITY"
+    "category": "PENTECOST AND BLESSED TRINITY",
+    "src": "https://www.youtube.com/watch?v=L_qvO6SD5fw&list=RDL_qvO6SD5fw&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 219,
@@ -3162,7 +3171,7 @@ final hymnJson = [
     "firstLine": "Ave Maria, O maiden, O mother,",
     "composer": null,
     "category": "OUR LADY - NEW",
-    "src": "",
+    "src": "https://www.youtube.com/watch?v=HTcbplVigYs&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=2",
     "choir": "",
     "imgPath": ""
   },
