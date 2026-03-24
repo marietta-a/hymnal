@@ -700,7 +700,10 @@ final hymnJson = [
     "lyrics": "Jesus, my lord, my God, my all,\nHow can I love thee as I ought?\nAnd how revere this wondrous gift,\nSo far surpassing hope of thought?\nSweet sacrament, we thee adore;\nOh, make us love thee more and more.\n\n2. Had I but Mary’s sinless heart\nTo love thee with, my dearest king,\nOh, with what bursts of fervent praise\nThy goodness, Jesus, would I sing!\nSweet sacrament etc\n\n3. Ah, see! Within a creature’s hand\nThe vast creator deigns to be,\nReposing, infant-like, as though\nOn Joseph’s arm, or Mary’s knee.\nSweet Sacrament, etc\n\n4. Thy body, soul, and Godhead, all;\nO mystery of Love divine!\nI cannot compass all I have,\nFor all thou hast and art are mine,\nSweet sacrament, etc\n\n5. Sound, sound his praises higher still\nAnd come, ye angels, to our aid;\n‘Tis God, ‘tis God, the very God,\nWhose power both man and angels made.\nSweet sacrament, etc.",
     "firstLine": "Jesus, my lord, my God, my all,",
     "composer": "F.W FABER, 1814-63",
-    "category": "COMMUNION AND CORPUS CHRISTI"
+    "category": "COMMUNION AND CORPUS CHRISTI",
+    "src": "https://www.youtube.com/watch?v=vL6zvsRxpMo&list=RDvL6zvsRxpMo&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 87,
@@ -2513,7 +2516,10 @@ final hymnJson = [
     "lyrics": "1. My faith looks up to thee,\nThou lamb of Calvary,\nSaviour divine!\nNow hear me while I pray,\nTake all my guilt away,\nO let me from this day\nBe wholly thine.\n\n2. May thy rich grace impart\nStrength to my fainting heart,\nMy zeal inspire;\nO may my love to thee\nPure, warm, and changeless be,\nA living fire.\n\n3. While life’s dark maze I tread,\nAnd griefs around me spread,\nBe thou my guide;\nBid darkness turn to-day,\nWipe sorrow’s tears away,\nNor let me ever stray\nFrom thee aside.\n\n4. When ends life’s transient dream,\nWhen death’s cold sullen stream\nShall o’er me roll,\nBlest savior, then in love\nFear and distrust remove;\nO bear me safe above,\nA ransomed soul.",
     "firstLine": "My faith looks up to thee,",
     "composer": "RAY PALMER, 1808-87",
-    "category": "THE CHURCH"
+    "category": "THE CHURCH",
+    "src": "https://www.youtube.com/watch?v=-0Qvt3fCWbQ&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=7",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 305,
