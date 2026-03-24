@@ -38,7 +38,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\ncome, let us worship the Lord!\n\nAntiphon 2\nLet us bow down before the God who made us.\n\nAntiphon 3\nCome in, let us worship: bend low, let us kneel\nbefore the God who made us.\n\n1. Come, RING out our Joy to the LORD;\nHAIL the ROCK who SAVES us.\nLet us COME beFORE him, giving THANKS,\nwith SONGS let us HAIL the LORD.\n\n2. A MIGHTY GOD is the LORD,\na GREAT king aBOVE all GODS;\nin his HAND are the DEPTHS of the EARTH;\nthe HEIGHTS of the MOUNTAINS are HIS.\nTo HIM belongs the SEA, for he MADE it,\nand the DRY land SHAPED by his HANDS.\n\n3. Come IN, let us BOW and bend LOW;\nlet us KNEEL before the GOD who MADE us,\nfor HE is our GOD and WE\nthe PEOPLE who beLONG to his PASTURES,\nthe FLOCK that is LED by his HAND.\n\n4. O that toDAY you would LISten to his VOICE!\n“HARDen not your HEARTS as at MerIba,\nas on that DAY at MASsah in the DESert\nwhen your Fathers PUT me to the TEST,\nwhen they TRIED me, THOUGH they saw my work.”\n\n5. For forty YEARS I was WEARied PEOple\nand I SAID: “Their HEARTS are aSTRAY,\nthese PEOple do not KNOW my WAYS.”\nTHEN I took an OATH in my ANGer:\n“ NEVer shall they ENter my REST.”\n\n6. Give GLORy to the Father AlMIGHTY,\nto his SON, Jesus CHRIST, the LORD\nto the SPIrit who DWELLS in our HEARTS,\nboth NOW and for EVer. AMEN.",
     "firstLine": "Come, let us worship the Lord!",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 5,
@@ -46,7 +49,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nArise, come to your God, sing him your songs of rejoicing\n\nAntiphon 2\nGlory to you, O God!\n\nAntiphon 3\nAlleluia, alleluia, alleluia.\n\n1. Cry out with JOY to the LORD, all the EARTH.\nSERVE the LORD with GLADness.\nCome before him, SINGing for JOY.\n\n2. Know that HE, the LORD, is God.\nHe MADE us, we beLONG to HIM,\nWe are his PEOple, the SHEEP of his FLOCK.\n\n3. GO within his GATES, giving THANKS.\nEnter his COURTS with SONGS of PRAISE.\nGive THANKS to him and BLESS his NAME.\n\n4. InDEED, how GOOD is the LORD,\neTERNal his MERciful LOVE;\nhe is FAITHful from AGE to AGE.\n\n5. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS.",
     "firstLine": "Arise, come to your God, sing him your songs of rejoice",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "https://www.youtube.com/watch?v=q6mGIdQADYU&list=RDq6mGIdQADYU&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 6,
@@ -65,7 +71,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nHow great is your name, O Lord our God, through all the earth!\n\nAntiphon 2\nFrom the voices of children, Lord, comes the sound of your praise.\n\nAntiphon 3\nWhat is mortal man that you care for him?\n\nAntiphon 4\nWhat is man that you keep him in mind, mortal man that you care for him?\n\n1. Your MAJesty is PRAISed above the HEAvens;\non the LIPS of CHILdren and of BABES\nyou have found PRAISED to FOIL your ENemy,\nto SILence the FOE and the REBel.\n\n2. When I see the HEAvens, the WORK of your HANDS,\nthe MOON and the STARS which are arRANGED,\nwhat is MAN that you should KEEP him in MIND,\nmortal MAN that you CARE for HIM?\n\n3. Yet you have MADE him LESS than a GOD;\nwith GLORy and HONour you CROWNED him,\ngave him POWER over the WORKS of your HAND,\nput ALL things UNder his FEET.\n\n4. ALL of them, SHEEP and CATTLE,\nyes, EVen the SAVage BEAST,\nBIRDS of the AIR, and FISH\nthat MAKE their WAY through the WAters.\n\n5. Give GLORy to the FAther ALMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS,\nboth NOW and for EVer. AMEN.",
     "firstLine": "How great is your name, O Lord our God, through all the earth!",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 8,
@@ -73,7 +82,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nHow lovely is your dwelling place, O Lord of hosts.\n\nAntiphon 2\nLord, God of hosts, happy the man who trusts In you.\n\n1. My SOUL is LONGing and YEARNing,\nis YEARNing for the COURTS of the LORD.\nMy HEART and my SOUL ring out their JOY\nto GOD, the LIVing GOD.\n\n2. The SPArrow herSELF finds a HOME\nand the SWAllow a NEST for her BROOD;\nshe LAYS her YOUNG by your ALtars,\nGod of HOSTS, my KING and my GOD.\n\n3. They are HAPpy, who DWELL in your HOUSE,\nfor EVer SINGing your PRAISE.\nThey are HAPpy, whose STRENGTH is in YOU,\nin whose HEARTS are the ROADS to SION.\n\n4. As they GO through the BITTer VALLey,\nthey MAKE it a PLACE of SPRINGS,\n(the AUtumn rain COVers it with BLESSings,)\nthey WALK with EVer growing STRENGTH.\nThey will SEE the God of GODS in SION.\n\n5. O LORD God of HOST, hear my PRAYER,\ngive EAR, O GOD of JAcob.\nTurn your EYES, O GOD, our SHIELD,\nLOOK on the FACE of your aNNIONTed.\n\n6. ONE day withIN your COURTS\nis BETTer than THOUSand elseWHERE.\nThe TRESHold of the HOUSE of God\nI preFER to the DWELLings of the WICKed.\n\n7. For the Lord GOD is a RAMPart, a SHIELD;\nhe will GIVE us his FAVour and GLORy.\nThe LORD will not reFUSE any GOOD\nto those who WALK without BLAME.\n\n8. Give PRAISE to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST the LORD,\nto the SPIrit who DWELLS in our HEARTS,\nboth NOW and for EVer. AMEN.",
     "firstLine": "How lovely is your dwelling place, O Lord of hosts.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 9,
@@ -81,7 +93,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nWe shall go up with joy to the house of our God.\n\nAntiphon 2\nFor love of the house of the Lord I will pray for your good.\n\n1. I reJOIced when I HEARD them SAY;\n“Let us GO to God’s HOUSE.”\nAnd NOW our FEET are STANDing\nwithin your GATES, O JerUsalem.\n\n2. JerUsalem is BUILT as a CITy\nSTRONGly comPACT.\nIt is THERE that the TRIBES go UP,\nthe TRIBES of the LORD.\n\n3. For ISrael’s LAW it IS\nthere to PRAISE the Lord’s NAME.\nTHERE were set the THRONES of JUDGment,\nof the HOUSE of DAVid.\n\n4. For the PEACE of JerUsalem, PRAY;\n“PEACE be your HOMES!\nMay PEACE REIGN in your WALLS,\nin your PALaces, PEACE!”\n\n5. For LOVE of my BRETHren and FRIENDS,\nI say; “PEACE upon YOU!”\nFor LOVE of the HOUSE of the LORD\nI will ASK for your GOOD.\n\n6. Praise the FAther, the SON and Holy SPIrit,\nboth NOW and for EVer,\nthe God who IS, who WAS and is to COME\nat the END of the Ages.",
     "firstLine": "We shall go up with joy to the house of our God.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 10,
@@ -89,7 +104,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nMy soul is thirsting for the Lord: when shall I see him face to face?\n\nAntiphon 2\nI shall go to the House of God with songs of joy.\n\n1. LIKE the DEER that YERNS\nfor RUNning STREAMS,\nSO my SOUL is YERNing\nfor YOU, my GOD.\n\n2. My SOUL is THIRSTing for GOD,\nthe GOD of my LIFE;\nWHEN can I ENTer and SEE\nthe FACE of GOD?\n\n3. My TEARS have beCOME my BREAD,\nby NIGHT, by DAY,\nas I HEAR it SAID all day LONG:\n“WHERE is your GOD?”\n\n4. THESE things will I reMEMber\nas I POUR out my SOUL:\nhow I would LEAD the reJOICing CROWD\ninto the HOUSE of GOD.\n(amid CRIES of GLADness and\nTHANKSgiving,\nthe THRONG wild with JOY.)\n\n5. WHY are you cast DOWN, my SOUL,\nwhy GROAN withIN me?\nHope in GOD, I will PRAISE him STILL,\nmy SAViour and my GOD.\n\n6. My SOUL is cast DOWN withIN me\nso I THINK of YOU\nfrom the COUNtry of JORdan and Mount HERmon,\nFrom the HILL of MIzar.\n\n7. DEEP is CALLing on DEEP,\nin the ROAR of WAters:\nyour Torrent and ALL your WAVES\nswept OVer ME.\n\n8. By DAY the LORD will SEND\nhis LOVing KINDness;\nby NIGHT I will SING to HIM,\npraise the GOD of my LIFE.\n\n9. I will SAY to GOD, my Rock,\n“WHY have you forGOTten me?\nWHY do I go MOURNing,\nopPRESSed by the FOE? ”\n\n10. With CRIES that PIERCE me to the HEART,\nmy ENemies reVILE me,\nSAYing to me ALL day LONG:\n“WHERE is your GOD?”\n\n11. WHY are you cast DOWN, my SOUL,\nwhy GROAN withIN me?\nHope in GOD, I will PRAISE him STILL,\nmy SAViour and my GOD.\n\n12. Praise the FAther, the SON and the Holy SPIrit,\nboth NOW and for EVer,\nthe God who IS, who WAS and who WILL be,\nWORLD without END.",
     "firstLine": "My soul is thirsting for the Lord: when shall I see him face to face?",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
     {
     "number": 11,
@@ -97,7 +115,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nO come to the springs of living waters that flow from the Lord.\n\n1. O come you nations come and adore the Lord.\n\n2. O come from valley and mountain unto your Lord.\n\n3. O come with your humble offerings unto your King.\n\n4. O come with drums and cymbals to praise your God.\n\n5. O come with voices singing in love to God.\n\n6. Come to him, now come hasten to pay your vows.\n\n7. Blessed is the man who makes the Lord his trust.\n\n8. Come now adore the Lord in his temple court.",
     "firstLine": "O come to the springs of living waters that flow from the Lord.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 12,
@@ -105,7 +126,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nThe Lord will give strength to his people; the Lord will bless his people with peace.\n\nAntiphon 2\nSing glory to the king of kings!\n\n1. give the LORD you SONS of GOD,\ngive the LORD GLORy and POWer;\ngive the LORD the GLORY of his NAME;\nadore the LORD in his HOLy COURT.\n\n2. The Lord’s VOICE reSOUNDing on the WATers,\nthe LORD on the imMENSity of WAters;\nthe VOICE of the LORD, full of POWer,\nthe VOICE of the LORD, full of SPLENdour.\n\n3. The Lord’s VOICE SHATtering the CEdars,\nthe Lord SHATters the CEdars of LEBanon;\nhe makes LEBanon LEAP like a CALF\nand SIRion like a YOUNG wild-ox.\n(the Lord’s VOICE FLASHing flames of FIRE)\n\n4. The Lord’s VOICE SHAKing in the WILDerness,\nthe Lord SHAKES the WILDerness of KADesh\nthe Lord’s VOICE RENDing the OAK tree\nand STRIPping the FORest BARE.\n\n5. In his TEMple they ALL cry: “GLORy!”\nThe LORD sat enTHRONED over the FLOOD;\nthe LORD sits as KING for EVer.\n\n6. Give GLORy to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST, the LORD,\nto the SPIrit who DWELLS in our HEARTS,\nboth NOW and for EVer. AMEN.",
     "firstLine": "The Lord will give strength to his people; the Lord will bless his people with peace.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 13,
@@ -113,7 +137,10 @@ final hymnJson = [
     "lyrics": "Antiphon:\nBlessed be the Lord: let his glory fill the earth.\n\n1. O GOD, give your JUDGEment to the KING,\nto a KING’S son your JUSTice,\nthat he may JUDGE your PEOple in JUSTice\nand your POOR in right JUDGEment.\n\n2. May the MOUNTains bring forth PEACE for the PEOple\nand the HILLS, JUSTice!\nMay he deFEND the POOR of the PEOple\nand save the CHILDren of the NEEDy.\n\n3. He shall enDURE like the SUN and the MOON,\nfrom AGE to AGE.\nHe shall deSCEND like RAIN on the MEADOW,\nlike RAINdrops on the EARTH.\n\n4. In his DAYS JUSTice shall FLOURish\nand PEACE till the MOON fails.\n\n5. He shall RULE from SEA to SEA,\nfrom the Great RIVer to earth’s BOUNDS.\n\n6. BeFORE him his ENemies shall FALL,\nhis FOES lick the DUST.\nThe KINGS of TARshish and the SEA coasts\nshall PAY him TRIButes.\n\n7. The KINGS of SHEba and SEba\nshall BRING him GIFTS.\nBefore HIM all THINGS shall fall PROStrate,\nall NAtions shall SERVE him.\n\n8. For he shall SAVE the POOR when they CRY,\nand the NEEDY who are HELPless.\nHE will have PITY on the WEAK\nand save the LIVES of the POOR.\n\n9. From opPRESSion he will REScure their LIVES,\nto HIM their blood is DEAR.\nThey shall PRAY for HIM without CEASing,\nBLESS him all the DAY.\n\n10. May CORN be aBUNDant in the LAND,\nto the PEAKS of the MOUNTains!\nMay its FRUITS RUStle like LEBanon,\nmay men FLOURish in the CITies\nlike GRASS on the EARTH!\n\n11. May his NAME be BLESSed for EVer,\nand enDURE like the SUN.\nEvery TRIBE shall be BLESSed in HIM,\nall NAtions bless his NAME.\n\n12. BLESSed be the LORD, God of ISrael,\nwho aLONE works WONders.\nEver BLESSed his GLORious NAME!\nLet his GLORy fill the EARTH.",
     "firstLine": "Blessed be the Lord: let his glory fill the earth.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 14,
@@ -121,7 +148,10 @@ final hymnJson = [
     "lyrics": "1. O Holy Lord by all adored,\nOur trespasses confessing,\nTo thee this day thy children pray,\nOur holy faith professing!\nAccept, O king, the gifts we bring,\nOur songs of praise the prayers we raise,\nAnd grant us Love thy blessing.\n\n2. To God on High be thanks and praise,\nWho deigns are bonds to sever;\nHis care shall guide us all our days,\nAnd harm shall reach us never.\nOn Him we rest with faith assured;\nOf all that live He is the Lord,\nFor ever and for ever.",
     "firstLine": "O Holy Lord by all adored,",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 15,
@@ -129,7 +159,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\nGreat is the Lord, worthy of praise; tell all the nations “God is king”; spread the news of his love.\n\nAntiphon 2\nBring an offering and enter his courts: in his temple worship the Lord.\n\n1. O SING a new SONG to the LORD,\nSING to the LORD all the EARTH.\nO SING to the LORD, bless his NAME.\n\n2. ProCLAIM his HELP day by DAY,\nTELL among the NAtions his GLORy,\nand his WONders aMONG all the PEOples.\n\n3. The Lord is GREAT and WORthy of PRAISE,\nto be FEARED aBOVE all GODS,\nthe GODS of the HEATHens are NAUGHT.\n\n4. It was the LORD who MADE the HEAVens,\nhis are MAJesty and STATE and POWer\nand SPLENdour in his HOLY PLACE.\n\n5. Give the LORD, you FAMilies of PEOples,\ngive the LORD GLORy and POWer,\ngive the LORD the GLORy of his NAME.\n\n6. Bring an OFFering and ENter his COURTS,\nWORship the LORD in his TEMple,\nO EARTH, TREMble beFORE him.\n\n7. ProCLAIM to the NAtions: God is KING,\nthe WORLD he made FIRM in its PLACE;\nhe will JUDGE the PEOples in FAIRness.\n\n8. Let the HEAVens rejoice and earth be GLAD,\nlet the SEA and all withIN it thurnder PRAISE,\nlet the LAND and all it BEARS reJOICE,\nall the TREES of the WOOD shout for JOY\n\n9. At the PRESence of the LORD for he COMES,\nhe COMES to RULE the EARTH.\nWith JUStice he will RULE the WORLD,\nhe will JUDGE the PEOples with his TRUTH.\n\n10. Give PRAISE to the FAther AlMIGHTy,\nto his SON, Jesus CHRIST the LORD,\nto the SPIrit who DWELLS in our HEARTS,\nboth NOW and for EVer. AMEN.",
     "firstLine": "Great is the Lord, worthy of praise; tell all the nations “God is king”; spread the news of his love.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 16,
@@ -137,7 +170,10 @@ final hymnJson = [
     "lyrics": "1. O Worship the king ,\nAll glorious above;\nO gratefully sing\nHis power and his love:\nOur shield and defender,\nThe ancient of days,\nPavilioned in splendor\nAnd girded with praise.\n\n2. O tell of his might,\nO sing of his grace\nWhose robe is the light,\nWhose canopy space.\nHis chariot of wrath\nThe deep thunder-clouds form,\nAnd dark his path\nOn the wings of the storm.\n\n3. The earth: with its store\nOf windows untold,\nAlmighty, thy power\nHath ‘stablished it fast\nBy a changeless decree,\nAnd round it hath cast,\nLike a mantle, the sea.\n\n4. Thy bountiful care\nWhat tongue can recite?\nIt breathes in the air;\nIt shines in the light;\nIt streams from the hills;\nIt descends to the plain,\nAnd sweetly distils\nIn the dew and the rain.\n\n5. Frail children of dust,\nAnd feeble as frail,\nIn thee do we trust,\nNor find thee to fail;\nThy mercies how tender,\nHow firm to the end,\nOur maker, Defender,\nRedeemer and friend!\n\n6. O measureless Might!\nIneffable Love!\nWhile angels delight\nTo hymn Thee above,\nThe humbler creation,\nThough feeble their lays,\nWith true adoration\nShall sing to thy praise.",
     "firstLine": "O Worship the king ,",
     "composer": "ROBERT GRANT, 1779-1838",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 17,
@@ -145,7 +181,10 @@ final hymnJson = [
     "lyrics": "1. Praise to the Lord the almighty the king of creation!\nO my soul praise him for he is thy health and Salvation.\nAll you who hear, now to his altar draw nea,\nJoin in profound adoration.\n\n2. Praise to the Lord, let us offer our gifts at his Altar;\nLet not our sins and transgressions now cause us\nTo falter.\nChrist the High-priest bids us all join in his Feast,\nVictims with him on the altar.\n\n3. Praise to the Lord, who will prosper our work And defend us;\nSurely his goodness and mercy shall daily Attend us;\nPonder anew all the almighty can do,\nHe who will love will befriend us.\n\n4. Praise to the Lord, Oh, let all that is in us Adore him!\nAll that has life and breath, come now in praises\nBefore him.\nLet the Amen sound from his people again,\nNow as we worship before him.",
     "firstLine": "Praise to the Lord the almighty the king of creation!",
     "composer": "JOACHIM NEANDER, 1650-1680 TRANS. BY CATHERINE WINKWORTH AND OTHERS",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "https://www.youtube.com/watch?v=3NNatbKemz0&list=RD3NNatbKemz0&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 18,
@@ -153,7 +192,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nPriestly people, Kingly people, Holy people,\nGod’s chosen people,\nSing praise to the Lord.\n\n1. We sing to you, O Christ beloved Son of the Father.\nWe give you praise, O wisdom everlasting, and Word of God.\n\n2. We sing to you, O Son, born of Mary the Virgin.\nWe give you praise our brother, born to heal Us, our saving Lord.\n\n3. We sing to you, O Brightness of splendor And glory,\nWe give you praise O morning star, announcing The coming day.\n\n4. We sing to you, O light bringing men out of Darkness.\nWe give you praise, O guiding light, who shows the way to Heaven.\n\n5. We sing to you, Messiah, foretold by the Prophets.\nWe give you praise, O Son of David and Son Of Abraham.\n\n6. We sing to you, the way to the Father in Heaven.\nO Christ our Lord and King, humble, meek Of Heart\n\n7. We sing to you, Messiah, Hope of the people.\nWe give you praise, the way of truth, and the Way of all grace and light.\n\n8. We sing to you, O Priest of the new dispensation.\nWe give you praise, our peace sealed by the Blood of sacrifice.\n\n9. We sing to you, O lamb put to death by the sinner.\nWe give you praise, O victim immolated for all mankind.\n\n10. We sing to you, the tabernacle made by the Father.\nWe give praise, the corner stone of Isreal.\n\n11. We sing to you, the shepherd who leads to the Kingdom.\nWe give you praise who gather all your sheep to the one true fold.\n\n12. We sing to you, O fount, overflowing with mercy.\nWe give you praise who give us living waters to quench our thirst.\n\n13. We sing to you, true vine planted by God our Father.\nWe sing to you, O blessed vine whose branches bear fruit in love.\n\n14. We sing to you, O Manna which God gives his people.\nWe give praise, O living bread which comes to us from Heaven.\n\n15. We sing to you, the image of the Father Eternal.\nWe give you praise, O King of justice, Lord and the King of Peace.\n\n16. We sing to you, the first born of all God’s creation.\nWe give you praise, Salvation of your Saints Sleeping in the Lord.\n\n17. We sing to you, O Lord whom the Father exalted.\nWe give you praise, in glory you are coming to judge all men.",
     "firstLine": "Priestly people, Kingly people, Holy people,",
     "composer": "L. DEISS",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "https://www.youtube.com/watch?v=NLD-tOfcRl8&list=RDNLD-tOfcRl8&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 19,
@@ -161,7 +203,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nStand together for what you believe,\nWork for what must be done.\nLove each other in all that you do,\nTill all my people are one.\n\n1. Spread the peace, my brothers, spread it everywhere.\nMake the world know right from wrong\nHelp the world to care.\n\n2. Cry out the sound of freedom, make ev’ry\nSound be heard.\nPeople crying painfully: Hear their ev’ry word\n\n3. Open your hearts, my brothers, lend a willing\nhand:\nShow the lonely and the poor that God is in our land.\n\n4. Sing out the joy of living, sing your song on\nhigh:\nThe truth of mankind is that he was born to\nLive not die.\n\n5. Know that he is with us, in ev’ry thing we do.\nThough hard times may lie ahead, peace will\nFollow through.",
     "firstLine": "Stand together for what you believe,",
     "composer": "RAY REPP",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 20,
@@ -169,7 +214,10 @@ final hymnJson = [
     "lyrics": "Antiphon 1\n\nAntiphon 2\nThe Lord is my light and my help;\nWhom shall I fear?\n\n1. The LORD is my LIGHT and my HELP,\nWHOM shall I FEAR?\nThe LORD is the STRONGHOLD of my LIFE,\nbefore WHOM shall I SHRINK?\n\n2. When Evil-Doers draw NEAR\nTo DeVOUR my FLESH,\nIt is THEY, my Enemies and FOES,\nwho STUMble and FALL.\n\n3. Though an ARmy enCAMP agAINST me\nMy HEART would not FEAR.\nThough WAR break OUT against me\nEven THEN would I TRUST.\n\n4. There is ONE thing I ASK of the LORD,\nFor this I LONG,\nto LIVE in the HOUSE of the LORD,\nAll the days of my LIFE,\nTo SAVour the SWEETness of the LORD,\nTo beHOLD his TEMple.\n\n5. For THERE he conceals me in his TENT,\nIn the DAY of Evil.\nHe HIDES me in the HIDing of his TENT\nOn a ROCK he sets me SAFE.\n\n6. And NOW my HEAD shall be RAISED\nAbove my FOES who surround me,\nAnd I shall Offer within his TENT\nA SACrifice of JOY\n\n7. O LORD, hear my VOICE when I CALL\nHave MERcy and ANSwer\nOf YOU my HEART has SPOken,\n“ SEEK his FACE.”\n\n8. It is your FACE, O LORD, that I SEEK,\nHIDE not your FACE.\nDisMISS not your SERVant in ANGer;\nYOU have been my HELP.\n\n9. Do not abandon or forsake me,\nO GOD my HELP!\nThough Father and Mother forsake me,\nThe LORD will receive me.\n\n10. InSTRUCT me, LORD, in your WAY,\non an EVen path LEAD me,\nWhen they LIE IN AMbush, proTECT me\nFrom my Enemy’s GREED.\nFalse WITnesses RISE against me,\nBREATHing out FUry.\n\n11. I am SURE I shall SEE the Lord’s GOODness\nIn the LAND of the LIVing.\nHope in HIM, hold FIRM and take HEART.\nHOPE in the LORD!\n\n12. Praise the Father, the SON and Holy SPirit,\nboth NOW and for EVer,\nThe God who IS, who WAS, and is to COME,\nat the END of the AGes.",
     "firstLine": "I will sing and make music for the Lord.",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
    {
     "number": 21,
@@ -177,7 +225,10 @@ final hymnJson = [
     "lyrics": "1. There’s a stranger at the door, Let Him in;\nHe has been there oft before, Let Him in;\nLet Him in, ere He is gone, Let Him in, the Holy One,\nJesus Christ, the Father’s son, Let Him in.\n\n2. Open now to Him your heart, Let Him in;\nIf you wait He will depart, Let Him in;\nLet Him in, He is your Friend,\nHe your soul will sure defend,\nHe will keep you to the end, Let Him in.\n\n3. Hear you now His living voice? Let Him in;\nNow, Oh, now make Him your choice, Let Him in;\nHe is standing at your door,\nJoy to you He will restore,\nAnd His name you will adore, Let Him in.\n\n4. Now admit the heavenly Guest, Let him in;\nHe will make for you a feast, Let him in;\nHe will speak your sins forgiv’n,\nAnd when earth ties all are riv’n,\nHe will take you home t heav’n, Let Him in.",
     "firstLine": "There’s a stranger at the door, Let Him in;",
     "composer": "COPRYRIGHT 1909 BY E. O. EXCELL",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 22,
@@ -185,7 +236,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nYes we will enter your house to praise your name O Lord,\nYes we will enter your house with happiness. (bis)\n\n1. Come let us go to the house of God,\nTo sing and praise his name, forever more.\n\n2. Come let us go and ask for mercy, The Lord will forgive, and bless us all.\n\n3. Glory and praise be to the Father,\nThe Son and Holy Ghost, forever more.\n\nCoda:\nAlleluia, alleluia, alleluia, alleluia.\nWith happiness. (bis) Refrain.",
     "firstLine": "Yes we will enter your house to praise your name O Lord,",
     "composer": null,
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 23,
@@ -193,7 +247,10 @@ final hymnJson = [
     "lyrics": "Antiphon:\nAll you nations sing out your joy to the Lord,\nAlleluia, Alleluia!\n\n1. Joyfully shout all you on earth,\nGive praise to the glory of God;\nAnd with a hymn sing out his glorious Praise; Alleluia!\n\n2. Let all the earth kneel in his sight,\nExtolling his marvelous fame;\nHonour his name, in highest heaven give\nPraise; Alleluia!\n\n3. Come forth and see all the great works\nThat God has brought forth by his might\nFall on your knees before his glorious Throne; Alleluia!\n\n4. Glory and thanks be to the Father;\nHonour and praise to the Son;\nAnd to the Spirit source of Life and of Love; Alleluia!",
     "firstLine": "All you nations sing out your joy to the Lord,",
     "composer": "FAKO CATHOLIC CHOIRS ASSOCIATION",
-    "category": "AFTER THE READINGS"
+    "category": "AFTER THE READINGS",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 24,
@@ -2888,7 +2945,10 @@ final hymnJson = [
     "firstLine": "Requiem aeternum dona eis, Domine: et lux per",
     "composer": null,
     // "category": "ALL SOULS AND FUNERALS"
-    "category": "MASS"
+    "category": "MASS",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
     {
     "number": 351,
@@ -2896,7 +2956,10 @@ final hymnJson = [
     "lyrics": "Be glad, O people of the earth\nLift up your hands with song and dance\nFor I am with you, yes within you,\nForever, you are the heart of my heart.\n\n1. I will never forget you, O my people\nOn the day of anguish I will answer you.\nAs you join in celebration\nMy joy will move among you.\n\n2. I will make your faith burn brightly,\nSo that others may find life's fullness.\nFreedom for all captives,\nAnd justice for all nations.\n\n3. No longer will the circle of your life,\nIts pain and goodness,\nBe just for yourself,\nYour gift to share will flower.\n\n4. As you work for others' freedom,\nWith the seed of hope within you,\nHunger shall not harm you,\nNor thirst withdraw your courage.",
     "firstLine": "Be glad, O people of the earth",
     "composer": null,
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 352,
@@ -2904,7 +2967,10 @@ final hymnJson = [
     "lyrics": "Be ready now to stand (2x)\nTake all your sins to Jesus\nWho is waiting\nBe ready now to stand.\n\nRefrain:\nThe Holy Spirit shall descend on you,\nHe shall make you whole.\nBe ready now to stand.\n\n2. The Saviour cares for you. (2x)\nHe knows that Satan never\nLets you leave him;\nThe Saviour cares for you.\nHe is the only one to take your burden;\nThe Saviour cares for you. (Ref)\n\n3. The Spirit comes to you. (2x)\nThe Spirit comes, bringing you\nPeace and freedom;\nThe Spirit comes to you.\nThe peace and freedom that will\nLast forever;\nThe Spirit comes to you. (Ref)",
     "firstLine": "Be ready now to stand (2x)",
     "composer": null,
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 353,
@@ -2912,7 +2978,10 @@ final hymnJson = [
     "lyrics": "Behold among men,\nThe dwelling place of God\nThey shall be his people,\nAnd he shall be their Lord and God.\n\n1. People called by God\nThrough the word of the Prophets\nPeople brought together in the\nHouse of the Lord,\nPeople who attend to their Lord,\nThe Church of Christ the Lord.\n\n2. People who are grafted on\nJesus the vine,\nBranches bearing fruits in the\nGrace of the Lord,\nBranches rooted in His great love,\nThe church of Christ, the Lord.\n\n3. People who are born in the\nWaters of the Spirit,\nPeople who are marked by the\nSeal of the Spirit,\nPeople in the Spirit made one,\nThe church of Christ, the Lord.\n\n4. People nourished now by the\nBody of the Lord,\nPeople who sit down to the\nNew Paschal supper,\nHoly people called to be royal,\nThe church of Christ, the Lord.\n\n5. People called in faith to be\nQuickened by His life,\nPeople called by God from the\nDarkness into light,\nPeople called by God for His own,\nThe church of Christ, the Lord.",
     "firstLine": "Behold among men,",
     "composer": "LUCIEN DEISS",
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "https://www.youtube.com/watch?v=r5y79t7bRAU&list=RDr5y79t7bRAU&start_radio=1",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 354,
@@ -2920,7 +2989,10 @@ final hymnJson = [
     "lyrics": "O sing a new song to Jesus our savior\nThe solid rock on which we stand\nO praise and glorify the name of Jesus\nOur redeemer and king of kings.\n\nRefrain:\nHappy are those who will come to Jesus\nHappy are those who will do his will,\nThey are like trees that grow beside the river,\nWhose fresh green leaves will never dry.\n\n2. Be merciful to me, dear Lord and Master,\nForgive my sins and make me clean.\nO, let me hear the sound of joy and gladness,\nAnd make me willing to obey.\n\n3. O Lord, we come to You for our protection,\nRescue and save us from all ills.\nO God of Jacob, now be our refuge,\nSo we will never be afraid.",
     "firstLine": "O sing a new song to Jesus our savior",
     "composer": "SOH PADDY",
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 355,
@@ -2928,7 +3000,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nJoy filled my heart when I heard them say\nLet us go to the house of God.\n\nCoda:\nOne day in his house\nIs better than a thousand elsewhere. (bis)\n\n1. I shall go up to the altar\nOf the almighty God\nThe God who gives joy to my being. (Ref)\n\n2. Let us enter His house to\nExpress our joy before Him\nWith our songs of praises. (Ref)\n\n3. Let us enter His house\nEven though we are not worthy\nIn order to hear his voice. (Ref)\n\n4. Let us enter His house to\nExpress our happiness\nAnd also beg for His blessings. (Ref)",
     "firstLine": "Joy filled my heart when I heard them say",
     "composer": "MENGOLO E.",
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 356,
@@ -2936,7 +3011,10 @@ final hymnJson = [
     "lyrics": "People of the Lord,\nSing praise to the Lord\nPraise to the Lord on high (3x)\nFor the Lord is good.\n\n2. O sing to the Lord, (2x)\nAnd shout your praise to Him.\nShout and praise the Lord, (2x)\nFor the Lord is good.\n\n3. Acclaim the Lord, (2x)\nGreat is His Holy name.\nGreat is His Holy name, (2x)\nMighty is the Lord.\n\n4. Give glory to the Lord, (2x)\nGlory and praise to Him.\nGlory and praise to Him, (2x)\nWonderful is God.\n\n5. Give thanks to the Lord, (2x)\nFor all His wondrous deeds.\nThank and praise the Lord, (2x)\nFor His wondrous deeds.\n\n6. The Lord Almighty reigns, (2x)\nLet us rejoice in Him.\nYes, rejoice in Him, (2x)\nHoly is the Lord.\n\n7. Alleluia! Alleluia! Alleluia! Amen.\nAlleluia! Amen, (2x) Alleluia! Amen.",
     "firstLine": "People of the Lord,",
     "composer": null,
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 357,
@@ -2944,7 +3022,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nRejoice all you people on earth\nLift up your hearts with songs of praise\nFor we are all his people,\nAnd he is our Lord and God,\nHe is with us always.\n\n1. He is our God,\nHe leads us wherever we go\nIf we keep faithful to him,\nHe will surely protect\nAnd lead us wherever we go, rejoice!\n\n2. Praise to our God;\nHe made us and we belong to Him\nLet us come bowing to Him;\nHe provides what we need.\nLet us join asking His blessing, rejoice!\n\n3. Praise to our Lord;\nHe redeemed us for God with His blood.\nHe has opened us the way,\nTo everlasting joy.\nSaving us from condemnation, rejoice!\n\n4. Praise the Paraclete;\nThe Spirit that dwells in our hearts.\nHe has opened up our minds\nTo accept the Good News.\nAnd has made us children of God, rejoice!\n\n5. Praise the Trinity,\nThe Father, Son and Holy Spirit.\nLet our tongues unceasingly,\nNow and forever more,\nEcho His praise from pole to pole, rejoice!",
     "firstLine": "Rejoice all you people on earth",
     "composer": "ALOYSIUS FONKENG",
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 358,
@@ -2952,7 +3033,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nCome let us praise the Lord our God\nHe made us we belong to him.\nCome, praise the Lord, O you children of God\nWe are the sheep of his flock.\n\n1. Salvation, power and glory\nBelong to our God\nHis judgments are true and just\nTo him be sempiternal glory! (Ref)\n\n2. Praise our God, you his servants.\nPraise Him, you who fear Him.\nPraise Him, all you, small and great.\nTo Him be sempiternal Glory! (Ref)\n\n3. Our God the Almighty reigns.\nLet's re-joice and exult.\nLet us now give Him the Glory.\nTo Him be sempiternal Glory! (Ref)\n\n4. The Marriage Feast of the Lamb!\nThe Marriage of the Lamb has come!\nHis bride has made herself ready!\nTo Him be sempiternal Glory! (Ref)\n\n5. All Praise be to God the Father;\nPraise to his Co-equal Son;\nAdoration to the Spirit;\nBond of Love, in Godhead one! (Ref)",
     "firstLine": "Come let us praise the Lord our God",
     "composer": null,
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 359,
@@ -2960,7 +3044,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nCome to the House of Yahweh\nGive him the praise that is his due,\nThe Alpha and Omega\nIs none, but our God.\n\n1. Sing with the trumpets aloud\nO sing with joy in your heart\nO enter the House of Yahweh. (Ref)\n\n2. Sing with the flute and the harp;\nAssemble in the Lord's temple;\nChrist is the King and the Lamb. (Ref)\n\n3. Blow the pipe and the flute;\nDisplay with drums and xylophones;\nFor this is the palace of God. (Ref)\n\n4. Praises all to Yahweh;\nAnd Jesus Christ His only Son;\nAnd to the Holy Spirit. (Ref)",
     "firstLine": "Come to the House of Yahweh",
     "composer": null,
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 360,
@@ -2968,7 +3055,10 @@ final hymnJson = [
     "lyrics": "We sing to you,\nO light bringing men Out of darkness\nWe give you praise, O guiding light\nWho shows the way to heaven.\nWe are one in the spirit\nWe are one in the Lord.\nAnd we pray that our unity\nMay one day be restored.\n\nChorus:\nAnd they will know (4x)\nWe are Christians by our love.\n\n2. We will walk with each other,\nWe will walk hand in hand.\nAnd together we will spread the news,\nThat God is in our land.\n\n3. All praise be to the Father\nFrom whom all things come,\nAnd all praise to Christ Jesus; His only Son,\nAnd all praise to the Spirit, who makes us one.",
     "firstLine": "We sing to you,",
     "composer": "J.B. SALLE",
-    "category": "ENTRANCE - NEW"
+    "category": "ENTRANCE - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 361,
@@ -2976,7 +3066,10 @@ final hymnJson = [
     "lyrics": "I the Lord of sea and sky,\nI have heard my people cry,\nAll who dwell in dark and sin,\nMy hand will save.\nI who made the stars of night,\nI will make their darkness bright,\nWho will bear my light to them?\nWhom shall I send?\n\nRefrain:\nHere I am Lord, it is I Lord.\nI have heard you calling in the night,\nI will go Lord, if you lead me\nI will hold your people in my heart.\n\n2. I the Lord of snow and rain,\nI have borne my people's pain.\nI have wept for love of them,\nThey turn away.\nI will break their hearts of stone,\nGive them hearts of love alone,\nI will speak my word to them,\nWhom shall I send?\n\n3. I the Lord of wind and flame,\nI will tend the poor and lame,\nI will set a feast for them,\nMy hand will save.\nFinest bread I will provide,\nTill their hearts are satisfied\nI will give my life to them,\nWhom shall I send?",
     "firstLine": "I the Lord of sea and sky,",
     "composer": null,
-    "category": "AFTER THE READINGS - NEW"
+    "category": "AFTER THE READINGS - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 362,
@@ -2984,7 +3077,10 @@ final hymnJson = [
     "lyrics": "When upon life's billows\nYou are tempest tossed,\nWhen you are discouraged\nThinking all is lost,\nCount your many blessings\nName them one by one,\nAnd it will surprise you\nWhat the Lord has done.\n\nRefrain:\nCount your blessings, name them one by one,\nCount your blessings, see what God has done;\nCount your blessings, name them one by one,\nAnd it will surprise you what the Lord has done.\n\n2. Are you ever burdened with the load of care?\nDoes the cross seem heavy you are called to bear?\nCount your many blessings every doubt will fly\nAnd you will be singing as the days go by.\n\n3. When you look at others with their lands and gold\nThink that Christ has promised you his wealth untold;\nCount your many blessings, money cannot buy,\nYour reward in heaven, not your home on high.\n\n4. So amid the conflict, whether great or small,\nDo not be discouraged, God is over all;\nCount your many blessings, angels will attend,\nHelp and comfort give you to your journey's end.",
     "firstLine": "When upon life's billows",
     "composer": null,
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 363,
@@ -2992,7 +3088,10 @@ final hymnJson = [
     "lyrics": "I believe that Jesus that died for me.\nA sacrifice beyond my understanding.\nOffering Himself in place of me.\nOh! How can I repay the Lord?\n\nRefrain:\nFather to You we offer, O my,\nJesus, to You this gift we bring.\nHoly Ghost accept this offering\nWhich we offer up to You.\n\n2. I believe all that the Scripture said,\nAbout the love beyond my understanding.\nForgiveness beyond comprehension.\nOh! How can I repay the Lord? (Ref)\n\n3. Teach me, Lord, to love You as I ought.\nOh! Teach me, Lord, to love You all my lifetime.\nSpreading love where'er I find myself.\nOh! How can I repay the Lord?",
     "firstLine": "I believe that Jesus that died for me.",
     "composer": "JUDE NNAM",
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 364,
@@ -3000,7 +3099,10 @@ final hymnJson = [
     "lyrics": "Lord, let us know Your Holy ways,\nLord, let us know Your Holy path. (2x)\n\nRefrain:\nO Lord----Receive our gifts\nO Lord----Receive our hearts\nO Lord------Receive our bread\nO Lord------Receive our wine.\n\n2. All that we have, all that we own,\nAll comes from You, our blessed Lord.\n\n3. Teach us to be humble and true,\nTeach us to be generous, Lord.\n\n4. For You are God our Sa-viour,\nRemember Your mer-cy, Lord.",
     "firstLine": "Lord, let us know Your Holy ways,",
     "composer": null,
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 365,
@@ -3008,7 +3110,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nO yes! In the presence of the Lord\nI will bring my gifts in thanksgiving and love.\nThere is joy in my heart;\nIt is flowing like a river;\nI will praise the Lord in thanksgiving and love.\n\n1. God our Father, everlasting king\nPlease accept the gifts we offer\n(all) in thanksgiving and love.\nTake our bread upon this altar\nAnd our wine in the chalice,\n(all) in thanksgiving and love.\n\n2. With thankful hearts and joyful songs\nWe approach your holy altar,\n(all) in thanksgiving and love.\nBearing gifts of your creation\nWe return what you have given\n(all) in thanksgiving and love.\n\n3. To you, Father, now we offer\nThe ciborium and the chalice,\n(all) in thanksgiving and love\nAll we have and all our being,\nIn this sacrifice most holy,\n(all) in thanksgiving and love.\n\n4. O Lord Jesus, our very precious friend,\nWe bow to give you honour\n(all) in thanksgiving and love\nIn the morning and in the ev'ning;\nWe prostrate before you, trembling\n(all) in thanksgiving and love.\n\n5. O Maria, take our families,\nWhom we offer with these gifts\n(all) in thanksgiving and love\nO Maria, take all our friends,\nand the people we offer you\n(all) in thanksgiving and love.",
     "firstLine": "O yes! In the presence of the Lord",
     "composer": "JUDE NNAM",
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 366,
@@ -3016,7 +3121,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nReceive these humble gifts we bring to You,\nO Lord, we offer them with joy,\nAccept them all and bless them, O Lord.\nReceive these humble gifts we bring to You,\nO Lord, we offer them with joy,\nAccept them all, and bless them all.\n\n1. O Lord, accept our thanks and prayers,\nAnd grant us pardon for our sins. (Ref.)\n\n2. Accept, accept our minds and hearts,\nAnd purify them, O Lord, our God. (Ref.)\n\n3. Our joy and sorrows we offer You,\nAccept them all and bless us, O Lord. (Ref.)\n\n4. Accept, accept this bread and wine,\nFor this Holy sa-crifice. (Ref.)\n\n5. Accept, accept these songs of praise,\nYour sons offer to You, O Lord. (Ref.)\n\n6. Honour and praise be to the Father,\nAnd to the Son, and Holy Ghost. (Ref.)",
     "firstLine": "Receive these humble gifts we bring to You,",
     "composer": null,
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 367,
@@ -3024,7 +3132,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nTake and sanctify for Your honour, Lord;\nAnd sanctify these gifts.\nTake and sanctify\nThese for Your honour, Lord. (2x)\n\n1. All that I have, all that I do;\nEverything I will ever make.\nTake my life and take my all;\nEverything I will ever make. (Ref)\n\n2. All that I need, all that I pray;\nEverything I will ever have.\nTake my life and take my all;\nEverything I will ever have. (Ref)\n\n3. All that I dream, all that I crave;\nEverything I will ever be.\nTake my life and take my all;\nEverything I will ever be. (Ref)",
     "firstLine": "Take and sanctify for Your honour, Lord;",
     "composer": "JUDE NNAM",
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 368,
@@ -3032,7 +3143,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nWe bring our gifts to You,\nWith our whole hearts, O Lord,\nReceive our gifts, O Lord\nWhich we bring to You.\n\n1. Let us offer our gifts,\n(all) with a humble heart.\n\n2. Always offer to God,\n(all) with an open heart.\n\n3. Offer your best of gifts\n(all) as Abel did.\n\n4. Do as Abraham did,\n(all) who offered Isaac.\n\n5. Offer all that you have,\n(all) though a widow's mite.\n\n6. Let us offer ourselves,\n(all) with Christ on the cross.\n\n7. Let us give thanks to God,\n(all) maker of all things.",
     "firstLine": "We bring our gifts to You,",
     "composer": null,
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 369,
@@ -3040,7 +3154,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nWhat return to You can I make, O Lord?\nWhat return to You, but my humble yes.\n\n1. You created me, Lord;\nAdopted me, Your child,\nI come to You, my Lord;\nWith my humble yes. (Ref)\n\n2. But Lord, I'm not so sure;\nThough I say yes to You,\nPlease Lord, send me Your Spirit;\nTo guide me and lead me. (Ref)\n\n3. I know I am so weak;\nTo respond to Your love,\nBut Your Spirit will do;\nI say yes to serve You. (Ref)\n\n4. O Lord, open my ears;\nTo hear Your words of love,\nCome, live within my heart;\nKeep Your word in my heart. (Ref)\n\n5. O Lord, open my mouth,\nTo Spread Your Word of Love,\nTeach me to share Your Love,\nWith those who don't know You. (Ref)\n\n6. Oh Yes, Oh Yes, O Lord,\nI say, Yes, to serve You;\nSince you love me so much,\nI say my humble Yes. (Ref)",
     "firstLine": "What return to You can I make, O Lord?",
     "composer": null,
-    "category": "OFFERTORY - NEW"
+    "category": "OFFERTORY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 370,
@@ -3048,7 +3165,10 @@ final hymnJson = [
     "lyrics": "All to Jesus I surrender,\nAll to him I freely give.\nI will ever love and trust him\nIn his presence daily live.\n\nRefrain:\nI surrender all (2x)\nAll to Thee my blessed Saviour\nI surrender all.\n\n2. All to Jesus I surrender\nHumbly at his feet I bow,\nWorldly pleasures all forsaken\nTake me Jesus, take me now.\n\n3. All to Jesus I surrender,\nMake me Saviour wholly thine;\nLet me feel the Holy Spirit,\nTruly know that thou art mine.\n\n4. All to Jesus I surrender,\nLord, I give myself to thee,\nFill me with thy love and power,\nLet thy blessing fall on me.\n\n5. All to Jesus I surrender,\nNow I feel the sacred flame.\nOh, they joy of full salvation!\nGlory, glory to his name.",
     "firstLine": "All to Jesus I surrender,",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 371,
@@ -3056,7 +3176,10 @@ final hymnJson = [
     "lyrics": "Amazing grace, how sweet the sound\nThat saved a wretch like me.\nI was once lost, but now I'm found,\nWas blind, but now I see.\n\n2. 'Twas grace that taught my heart to fear,\nAnd grace my fears relieved.\nHow precious did that grace appear\nThe hour I first believed.\n\n3. Through many dangers, foils and snares\nI have already come.\n'Tis grace hath brought me safe thus far,\nAnd grace will lead me home.\n\n4. The Lord has promised good to me;\nHis word my hope secures.\nHe will my shied and portion be\nAs long as life endures.",
     "firstLine": "Amazing grace, how sweet the sound",
     "composer": "ERICH SYLVESTER 1975",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 372,
@@ -3064,7 +3187,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nBind us together Lord, bind us together\nWith cords that cannot be broken\nBind us together Lord (2x)\nBind us together in love.\n\n1. There is only one God\nThere is only one King.\nThere is only one Body,\nThat is why we sing. (Ref)\n\n2. Made for the glory of God,\nPurchased by his precious Son.\nBorn with right to be clean,\nFor Jesus the victory has won.\n\n3. You are the family of God,\nYou are the promise divine,\nYou are God's chosen desire,\nYou are the glorious new wine. (Ref)",
     "firstLine": "Bind us together Lord, bind us together",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 373,
@@ -3072,7 +3198,10 @@ final hymnJson = [
     "lyrics": "Blessed assurance, Jesus is mine!\nOh, what a foretaste of glory divine!\nHeir of salvation, purchase of God;\nBorn of his spirit, washed in his blood.\n\nRefrain:\nThis is my story, this is my song,\nPraising my Saviour, all the day long. (2x)\n\n2. Perfect submission, perfect delight,\nVisions of rapture now burst on my sight:\nAngels descending bring from above\nEchoes of mercy, whispers of love. (Ref)\n\n3. Perfect submission, all is at rest,\nI in my Saviour am happy and blest:\nWatching and waiting, looking above,\nFilled with his goodness, lost in his love. (Ref)",
     "firstLine": "Blessed assurance, Jesus is mine!",
     "composer": "FANNY J. CROSBY, 1820-1915; JOSEPH F. KNAPP, 1839-1908",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 374,
@@ -3080,7 +3209,10 @@ final hymnJson = [
     "lyrics": "Accipite et manducate,\nEx hoc omnes ooo\nHoc est enim Corpus Meum,\nQuod pro vobis tradetur.\nTake this and eat, you who believe\nThis is my body given for you.\n\n1. This is the mystery which we celebrate,\nJesus did it all at the Last Supper.\nThis is the mystery in which we believe,\nGiving himself as our food and drink.\n\n2. The Eucharist builds up the church,\nIt binds together all believers.\nThe Holy Eucharist nourishes our lives,\nAnd purifies us all our iniquity.\n\n3. Come, let us bow and adore the Lord,\nLet's give Him honour, praise and thanksgiving.\nHe is the bread come down from Heaven,\nHe who eats this bread shall live forever.\n\n4. Praise to the Father, the Almighty,\nPraise to the Son, Jesus Christ, our Lord.\nPraise to the Spirit who dwells in our hearts,\nDwelling both now and forever, Amen.",
     "firstLine": "Accipite et manducate,",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 375,
@@ -3088,7 +3220,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nEat my body, drink my blood,\nThus shall you have eternal life.\n\n1. All ye that labour come to me\nAnd I will give you rest.\nCome unto me you troubled hearts,\nCome unto your God. (Ref)\n\n2. All ye who thirst come unto me,\nCome have some wine for free;\nHunger and thirst shall pass away,\nCome unto your God. (Ref)\n\n3. Come to the sure fountain of life,\nCome and refresh your soul.\nCome to the fountain of my love,\nCome unto your God.\n\n4. Eat of the bread I alone give,\nEat till you get your fill.\nFood for the living do I give,\nCome unto your God.\n\n5. My flesh I give in form of bread,\nMy blood in form of wine.\nEat the one bread and drink this cup,\nCome unto your God.\n\n6. Pilgrims along the long, rough way,\nStrength do I give to you.\nEat and be raised on the last day,\nCome unto your God.",
     "firstLine": "Eat my body, drink my blood,",
     "composer": "ALOYSIUS FONKENG",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 376,
@@ -3096,7 +3231,10 @@ final hymnJson = [
     "lyrics": "Guide me O thou great redeemer,\nPilgrim through this barren world,\nI am weak, but thou art mighty\nHold me with thy powerful hand.\nBread of heaven (2x)\nFeed me till I want no more. (2x)\n\n2. Open now the crystal fountain,\nWhence the healing stream doth flow;\nLet the fire and cloudy pillar\nLead me all my journey through:\nStrong deliverer, (2x)\nBe thou still my strength and shield. (2x)\n\n3. When I tread the verge of Jordan,\nBid my anxious fears subside,\nDeath of death, and hell's destruction,\nLand me safe on Canaan's side:\nSongs of praises, (2x)\nI will ever give to Thee. (2x)",
     "firstLine": "Guide me O thou great redeemer,",
     "composer": "W. WILLIAMS, 1717",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 377,
@@ -3104,7 +3242,10 @@ final hymnJson = [
     "lyrics": "He knows my thoughts, my ways, my deeds,\nMy Jesus knows it all,\nEv'ry part in me his hands hath made\nHe knows, He knows it all.\nHe knows it all, my total heart,\nNothing is hidden from my Lord\nHe knows, He knows it all.\n\n2. In the darkness or bright day-light,\nHe knows, He knows it all.\nIn depths beneath or heights above,\nHe knows, He knows it all\nWhat e'er I do, what e'er I say\nHe notes and takes into account\nWhat e'er I do or say.\n\n3. He plans my ways, He directs me,\nHe knows, He knows it all.\nIn time of woe, in time of joy,\nHe knows, He knows it all.\nHis plan for me is in His hand\nHe plans and controls everything,\nYes, Jesus knows it all.\n\n4. My life on earth my Jesus knows\nHis hand provides me strength,\nIf I should leave this earthly home,\nJesus has one for me.\nJe-sus loves me, beyond compare\nI am the sheep of His pastures,\nHe loves me this I know.\n\n5. My life's mysteries my Jesus knows,\nHe knows and cares for me.\nNo matter how the tides may rise,\nHe's there and will take care.\nMy times are ever in His hands\nHe draws the plans and executes\nAs it is in His hands.",
     "firstLine": "He knows my thoughts, my ways, my deeds,",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 378,
@@ -3112,7 +3253,10 @@ final hymnJson = [
     "lyrics": "I need Thee ev'ry hour,\nMost gracious Lord\nNo tender voice like Thine\nCan peace afford.\n\nRefrain:\nI need Thee, oh! I need Thee,\nEv'ry hour I need Thee,\nOh bless me now my Saviour\nI come to Thee.\n\n2. I need Thee ev'ry hour,\nStay Thou near by,\nTemptation lose their pow'r\nWhen Thou art nigh.\n\n3. I need Thee ev'ry hour,\nIn joy or pain,\nCome quickly and abide,\nOr life is vain.\n\n4. I need Thee ev'ry hour,\nTeach me Thy will,\nAnd Thy rich promises\nIn me fulfill.\n\n5. I need Thee ev'ry hour,\nMost Holy One;\nOh make me Thine indeed,\nThou blessed Son.",
     "firstLine": "I need Thee ev'ry hour,",
     "composer": "A. HAWKS, 1872",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 379,
@@ -3120,7 +3264,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nIn You I put my trust,\nO come to me (Loving God)\nHelp me to hearken to your voice always\n(Fill me with your spirit),\nTo guide my ways, (Thus strengthened),\nI will do your will.\n\n1. Lord you made me Priest,\nProphet and King\nTo do your will with all my might,\nBut you know, my God,\nI'm weak and frail,\nO grant me the grace I need. (Ref)\n\n2. Make me know your ways,\nTeach me your paths\nO guide me in the paths of truth.\nDo not let me be parted from you,\nFor you are my Lord and God. (Ref)\n\n3. In the Lord I find my resting place,\nHe is my Rock, he is my Strength.\nIn his safe keeping, I find refuge;\nIn his arms I rest secure. (Ref)\n\n4. From distress and fear, free me Jesus!\nFrom vainglory, deliver me!\nFrom all earthly gains, Free me Jesus!\nGive me grace to do your will. (Ref)\n\n5. God the Father, Son and Holy Ghost,\nThe fount of life, of love and hope,\nO direct my ways Bless'd Trinity.\nI have confidence in You. (Ref)",
     "firstLine": "In You I put my trust,",
     "composer": "NFORFI MICHAEL",
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 380,
@@ -3128,7 +3275,10 @@ final hymnJson = [
     "lyrics": "My hope is built on nothing less\nThan Jesus' blood and righteousness;\nI dare not trust my sweetest frame,\nBut wholly lean on Jesus' name.\n\nRefrain:\nOn Christ the solid rock I stand;\nAll other ground is sinking sand. (2x)\n\n2. When darkness seems to veil His face,\nI rest on His unchanging grace,\nIn every high and stormy gale,\nMy anchor holds within the veil. (Ref)\n\n3. His oath, His covenant and blood,\nSupport me in the whelming flood;\nWhen all around my soul gives way,\nHe then is all my hope and stay. (Ref)",
     "firstLine": "My hope is built on nothing less",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 381,
@@ -3136,7 +3286,10 @@ final hymnJson = [
     "lyrics": "Oh, the love of my Lord is the essence\nOf all that I love here on earth\nAll the beauty I see,\nHe has given to me\nAnd his giving is gentle as silence.\n\n2. Every day, every hour, every moment\nHave been blessed by the strength of his love\nAt the turn of each tide,\nHe is here at my side,\nAnd his touch is as gentle as silence.\n\n3. There've been times when I've turned\nFrom his presence\nAnd I've walked other paths, other ways,\nBut I've called on his name\nIn the dark of my shame,\nAnd his mercy was gentle as silence.",
     "firstLine": "Oh, the love of my Lord is the essence",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 382,
@@ -3144,7 +3297,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nTake this all of you and eat,\nFor this is my bo-dy,\nTake this all of you and drink,\nFor this is my blood.\n\n1. The day before he suffered,\nJesus broke the bread and said:\n\"Take this bread and eat it,\nFor this is my body.\" (Ref)\n\n2. Supper being ended,\nHe took the cup of wine,\nThanking You, His Father,\nHe charged the twelve and said. (Ref)\n\n3. This is the cup of my blood,\nThe blood of the new law,\nThat sins may be forgiven,\nI will shed for you and for all men. (Ref)\n\n4. I thank You, Lord, my God,\nIn the meeting of the just,\nThe Lord is compassion and love,\nHe makes us remember His wonders. (Ref)\n\n5. He gives food to those who fear Him,\nKeeps His covenant ever in mind,\nThe works of the Lord are great,\nTo be pondered by all who love Him. (Ref)\n\n6. All creatures look to You,\nAnd You give them their food in due time,\nHow good is the Lord to all,\nAnd kind to all his creatures. (Ref)",
     "firstLine": "Take this all of you and eat,",
     "composer": null,
-    "category": "COMMUNION - NEW"
+    "category": "COMMUNION - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 383,
@@ -3152,7 +3308,10 @@ final hymnJson = [
     "lyrics": "Jesus my heavenly king\nLoves me I know.\nPraises to him I sing onward I go\nClosely to him I cling,\nBlessings still flow.\nI love my Saviour too.\n\nRefrain:\nI love my Saviour\nHe loves me too\nI seek his favour\nIn everything I do.\n\n2. Walking with Him each day,\nLove light doth shine\nDoing His will always, never refine\nKneeling to him I pray\n\"Thy will, not mine\"\nI love my Saviour too.\n\n3. Happy to serve my friend,\nLean on his arm\nRapture will never end, nothing alarm\nVoices will sweetly blend\nUnder his charm\nI love my Saviour too.",
     "firstLine": "Jesus my heavenly king",
     "composer": "F. R. BAXTER",
-    "category": "CLOSING - NEW"
+    "category": "CLOSING - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 384,
@@ -3160,7 +3319,10 @@ final hymnJson = [
     "lyrics": "I'm just a weary pilgrim\nPlodding through this world of sin\nGetting ready for that city\nWhen the saints go marching in.\n\nRefrain:\nWhen the Saints (2x) Go marching in (2x)\nWhen the saints go marching in,\nLord I want to be in the number\nWhen the saints go marching in.\n\n2. If I will see the Saviour,\nA new life I must begin.\nThen I'll be in that glad number,\nWhen the saints go marching in. (Ref)\n\n3. I'll follow my Redeemer,\nIn the steps where He has been.\nThus I know that He will call me,\nWhen the saints go marching in. (Ref)\n\n4. Up there I'll see the Saviour,\nWho redeemed my soul from sin.\nWith extended hands He'll greet me,\nWhen the saints go marching in. (Ref)",
     "firstLine": "I'm just a weary pilgrim",
     "composer": null,
-    "category": "CLOSING - NEW"
+    "category": "CLOSING - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 385,
@@ -3168,7 +3330,10 @@ final hymnJson = [
     "lyrics": "As I kneel before you,\nAs I bow my head in prayer\nTake this day, make it yours,\nAnd fill me with your love.\n\nRefrain:\nAve Maria, gratia plena\nDominus te cum, benedicta tu.\n\n2. All I have I give You,\nEvery dream and wish are Yours,\nMother of Christ, Mother of mine,\nPresent them to my Lord.\n\n3. As I kneel before You,\nAs I see Your smiling face,\nEvery thought, every word\nIs lost in Your embrace.",
     "firstLine": "As I kneel before you,",
     "composer": null,
-    "category": "OUR LADY - NEW"
+    "category": "OUR LADY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 386,
@@ -3187,7 +3352,10 @@ final hymnJson = [
     "lyrics": "Refrain:\nBeautiful queen of peace,\nBeautiful mother of grace\nFor your great honour we sing,\nBe joyful today, Mother Mary.\n\n1. Mother of virtue and honour\nBlessed is the fruit that thou didst conceive\nIn thy holy womb.\n\n2. Mother so gentle and loving,\nYou gave to the world a blessed Saviour;\nJesus Christ, our Lord.\n\n3. Mary, our wonderful Mother,\nWe raise up our hearts in praises to You;\nSplendour of the world.\n\n4. Mary, the model of maidens,\nYour wonderful light shines upon the earth;\nO Thou star of light.\n\n5. Mary, our beautiful Virgin,\nIntercede for us to Your own dear Son;\nJesus Christ, our Lord.",
     "firstLine": "Beautiful queen of peace,",
     "composer": "J. P. GRIGNARD",
-    "category": "OUR LADY - NEW"
+    "category": "OUR LADY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 388,
@@ -3195,7 +3363,10 @@ final hymnJson = [
     "lyrics": "I will rejoice in the Lord\nand my soul will triumph in God;\nfor He has clothed me in holiness\nand robed me with grace,\nlike a bride, adorned in her bridal dress.\n\n1. My soul glorifies the Lord,\nMy spi-rit finds joy in God my Sa-viour.\nHe has looked upon his low-ly handmaid;\nAll people now will call me blessed.\n\n2. The Almigh-ty has wrought for me his wonders.\nThe name of our God is Holy,\nHe has mercy on those who fear him,\nFrom one generation to the next.\n\n3. He has shown the strength of his arm.\nAnd sca-ttered the wicked in their pride.\nHe has put down the mighty from their thrones,\nAnd exalted the gentle and lowly. (Ref)\n\n4. He has filled the hungry with good things;\nThe rich sent empty away;\nHe cherishes Israel his servant,\nHe keeps his merciful designs in remembrance.\n\n5. He stands firm in his promise to our fathers,\nTo A-bra-ham and all his children,\nSo His love for our fathers is fulfilled,\nThe loving kindness of the heart of our God.\n\n6. Praise the Father, the Son and Holy Spi-rit,\nBoth now and forever. Amen.\nThe Lord who is, who was and who will be,\nFor ages unending. Amen. (Ref)",
     "firstLine": "I will rejoice in the Lord",
     "composer": null,
-    "category": "OUR LADY - NEW"
+    "category": "OUR LADY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 389,
@@ -3203,7 +3374,10 @@ final hymnJson = [
     "lyrics": "My soul now glorify,\nThe Lord who is my Saviour.\nRejoice for whom am I;\nThat God has shown me favour.\n\n2. The world shall call me blessed;\nAnd ponder on my story;\nIn me is manifest,\nGod's greatness and His glory.\n\n3. For those who are His friends;\nAnd keep His law as holy;\nHis mercy never ends;\nAnd He exalts the lowly.\n\n4. But by His power, the great,\nThe proud, the self-conceited;\nThe kings who sit in state,\nAre humbled and defeated.\n\n5. He feeds the starving poor.\nHe guards His holy nation.\nFulfilling what He swore,\nLong since in revelation.\n\n6. Then glorify with me\nThe Lord who is my Saviour.\nOne Holy Trinity\nForever and forever.",
     "firstLine": "My soul now glorify,",
     "composer": null,
-    "category": "OUR LADY - NEW"
+    "category": "OUR LADY - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 390,
@@ -3211,7 +3385,10 @@ final hymnJson = [
     "lyrics": "When peace, like a river,\nAttendeth my way,\nWhen sorrows like sea-billows, roll\nWhatever my lot, thou hast taught me to say\nIt is well, it is well with my soul.\n\nRefrain:\nIt is well (it is well)\nWith my soul (with my soul)\nIt is well, it is well with my soul.\n\n2. Though Satan should buffet,\nThough trials should come,\nLet this blest assurance control,\nThat Christ has regar-ded\nMy helpless estate,\nAnd hath shed\nHis own blood for my soul. (Ref)\n\n3. My sin, oh the bliss\nOf this glo-ri-ous thought,\nMy sin not in part, but the whole,\nIs nailed to the Cross, and I bear it no more,\nPraise the Lord,\nPraise the Lord, O my soul! (Ref)\n\n4. For me, be it Christ,\nBe it Christ hence to live:\nIf Jordan above me shall roll,\nNo pang shall be mine,\nFor in death as in life,\nThou wilt whisper\nThy peace to my soul. (Ref)\n\n5. But Lord, 'tis for thee,\nFor thy coming we wait,\nThe sky not the grave is our goal;\nOh, trump of the angel!\nOh, voice of the Lord! Blessed hope,\nBlessed rest of my soul. (Ref)\n\n6. And Lord, haste the day\nWhen the faith shall be sight,\nThe clouds be rolled back as a scroll;\nThe trump shall resound,\nAnd the Lord shall descend,\n\"Even so, it is well with my soul\" (Ref)",
     "firstLine": "When peace, like a river,",
     "composer": "HORATIO SPAFFORD, 1873",
-    "category": "GENERAL - NEW"
+    "category": "GENERAL - NEW",
+    "src": "",
+    "choir": "",
+    "imgPath": ""
   }
 
 ];
