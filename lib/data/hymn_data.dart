@@ -193,7 +193,7 @@ final hymnJson = [
     "firstLine": "Priestly people, Kingly people, Holy people,",
     "composer": "L. DEISS",
     "category": "ENTRANCE",
-    "src": "",
+    "src": "https://www.youtube.com/watch?v=NLD-tOfcRl8&list=RDNLD-tOfcRl8&start_radio=1",
     "choir": "",
     "imgPath": ""
   },
