@@ -54,7 +54,10 @@ final hymnJson = [
     "lyrics": "1. Holy God, we praise thy name;\nLord of all, we bow before thee!\nAll in heaven above adore thee.\nInfinite thy vast domain,\nEverlasting is thy reign.\n\n2. Hark! the loud celestial hymn,\nAngel choirs above are raising;\nCherubim and seraphim,\nIn unceasing chorus praising,\nFill the heavens with sweet accord,\nHoly, holy, holy Lord.\n\n3. Holy Father, holy Son,\nHoly Spirit, Three we name thee,\nWhile in Essence only One\nUndivided God we claim thee;\nAnd adoring bend the knee,\nWhile we own the mystery.\n\n4. Spare thy people, Lord, we pray,\nBy a thousand snares surrounded;\nKeep us without sin today;\nNever let us be confounded.\nLo, I put my trust in thee –\nNever, Lord, abandon me.",
     "firstLine": "Holy God, we praise thy name;",
     "composer": "C. A. WALWORTH, 1820-1900",
-    "category": "ENTRANCE"
+    "category": "ENTRANCE",
+    "src": "https://www.youtube.com/watch?v=ybatH5qoQQk&list=PL8UQn_fEQXibuwJmt3RHYOPchrzT5jPNQ&index=5",
+    "choir": "",
+    "imgPath": ""
   },
   {
     "number": 7,
