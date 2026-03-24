@@ -50,7 +50,7 @@ final hymnJson = [
     "firstLine": "Arise, come to your God, sing him your songs of rejoice",
     "composer": null,
     "category": "ENTRANCE",
-    "src": "",
+    "src": "https://www.youtube.com/watch?v=q6mGIdQADYU&list=RDq6mGIdQADYU&start_radio=1",
     "choir": "",
     "imgPath": ""
   },
