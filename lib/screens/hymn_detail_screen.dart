@@ -98,7 +98,7 @@ class HymnDetailScreen extends StatelessWidget {
                           onPressed: () => _launchYouTube(context, hymn.src!),
                           icon: const Icon(
                             Icons.play_circle_fill,
-                            size: 20,
+                            size: 30,
                             color: Color(0xFFFF0000), // YouTube Red
                           ),
                           label: const Text(
