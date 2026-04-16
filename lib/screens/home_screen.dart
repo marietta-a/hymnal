@@ -6,6 +6,7 @@ import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/font_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/providers/theme_provider.dart';
+import 'package:hymnal/screens/game_screen.dart';
 import 'package:hymnal/screens/settings_screen.dart';
 import 'package:hymnal/services/notification_service.dart';
 import 'package:hymnal/widgets/hymn_list_tile.dart';
@@ -43,6 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
         _loadAd();
       }
       _checkForUpdate();
+      // Reschedule daily notification so hymn content refreshes each day
+      NotificationService().rescheduleDailyHymnIfEnabled();
     });
   }
 
@@ -177,10 +180,20 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
-        onTap: (index) => setState(() => _currentIndex = index),
+        onTap: (index) {
+          if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const GameScreen()),
+            );
+          } else {
+            setState(() => _currentIndex = index);
+          }
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.notes), label: 'All Hymns'),
           BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorites'),
+          BottomNavigationBarItem(icon: Icon(Icons.quiz_rounded), label: 'Quiz'),
         ],
       ),
     );
