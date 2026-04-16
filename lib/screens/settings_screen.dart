@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/screens/font_settings_screen.dart';
 import 'package:hymnal/services/iap_service.dart';
+import 'package:hymnal/services/notification_service.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
@@ -19,12 +20,44 @@ class _SettingsScreenState extends State<SettingsScreen> {
   late IAPService _iapService;
   final InAppReview _inAppReview = InAppReview.instance;
 
+  bool _notificationsEnabled = false;
+  TimeOfDay _notificationTime = const TimeOfDay(hour: 8, minute: 0);
+
   @override
   void initState() {
     super.initState();
     final adProvider = Provider.of<AdProvider>(context, listen: false);
     _iapService = IAPService(adProvider);
     _iapService.initialize();
+    _loadNotificationPrefs();
+  }
+
+  Future<void> _loadNotificationPrefs() async {
+    final enabled = await NotificationService().isDailyNotificationEnabled();
+    final time = await NotificationService().getSavedNotificationTime();
+    if (mounted) setState(() { _notificationsEnabled = enabled; _notificationTime = time; });
+  }
+
+  Future<void> _toggleNotifications(bool value) async {
+    if (value) {
+      await NotificationService().scheduleDailyHymnNotification(_notificationTime);
+    } else {
+      await NotificationService().cancelDailyHymnNotification();
+    }
+    if (mounted) setState(() => _notificationsEnabled = value);
+  }
+
+  Future<void> _pickNotificationTime() async {
+    final picked = await showTimePicker(
+      context: context,
+      initialTime: _notificationTime,
+      helpText: 'Choose daily reminder time',
+    );
+    if (picked == null || !mounted) return;
+    setState(() => _notificationTime = picked);
+    if (_notificationsEnabled) {
+      await NotificationService().scheduleDailyHymnNotification(picked);
+    }
   }
 
   @override
@@ -90,6 +123,36 @@ class _SettingsScreenState extends State<SettingsScreen> {
               subtitle: 'Tell others about Cameroon Hymnal',
               onTap: _shareApp,
             ),
+          ]),
+
+          // --- NOTIFICATIONS SECTION ---
+          _sectionLabel('Notifications'),
+          _settingsCard([
+            SwitchListTile(
+              secondary: _iconBox(Icons.notifications_rounded, colorScheme.primary),
+              title: const Text('Daily Hymn Reminder',
+                  style: TextStyle(fontWeight: FontWeight.w500)),
+              subtitle: const Text('Get a hymn delivered every day',
+                  style: TextStyle(fontSize: 12)),
+              value: _notificationsEnabled,
+              onChanged: _toggleNotifications,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            ),
+            if (_notificationsEnabled) ...[
+              _divider(),
+              ListTile(
+                leading: _iconBox(Icons.schedule_rounded, colorScheme.secondary),
+                title: const Text('Reminder Time',
+                    style: TextStyle(fontWeight: FontWeight.w500)),
+                subtitle: Text(_notificationTime.format(context),
+                    style: const TextStyle(fontSize: 12)),
+                trailing: Icon(Icons.chevron_right_rounded,
+                    size: 20, color: colorScheme.outline),
+                onTap: _pickNotificationTime,
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              ),
+            ],
           ]),
 
           // --- APPEARANCE SECTION ---

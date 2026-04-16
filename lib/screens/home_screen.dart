@@ -44,6 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
         _loadAd();
       }
       _checkForUpdate();
+      // Reschedule daily notification so hymn content refreshes each day
+      NotificationService().rescheduleDailyHymnIfEnabled();
     });
   }
 
