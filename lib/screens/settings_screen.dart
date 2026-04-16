@@ -42,9 +42,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _rateApp() async {
-    if (await _inAppReview.isAvailable()) {
-      await _inAppReview.requestReview();
-    } else if (Platform.isIOS) {
+    // if (await _inAppReview.isAvailable()) {
+    //   await _inAppReview.requestReview();
+    // } else 
+    if (Platform.isIOS) {
       await _inAppReview.openStoreListing(
         appStoreId: 'your-app-store-id', // Update with real App Store ID
       );
