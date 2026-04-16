@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart'; // 1. Import AdMob
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hymnal/models/hymn.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
 import 'package:hymnal/providers/font_provider.dart';
@@ -12,7 +12,6 @@ import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:provider/provider.dart';
-import 'package:share_plus/share_plus.dart';
 import 'dart:io' show Platform;
 
 class HomeScreen extends StatefulWidget {
@@ -27,41 +26,38 @@ class _HomeScreenState extends State<HomeScreen> {
   final Map<String, bool> _expandedCategories = {};
   String _searchQuery = '';
 
-  // --- ADMOB PROPERTIES ---
   BannerAd? _bannerAd;
   bool _isBannerAdLoaded = false;
 
-  // Replace these with your REAL Ad Unit IDs (the ones with the "/")
   final String _adUnitId = Platform.isAndroid
       ? 'ca-app-pub-2717868471631453/2339502385'
-      : 'ca-app-pub-2717868471631453/2339502385'; // iOS Test Banner ID TODO
+      : 'ca-app-pub-3940256099942544/2934735716'; 
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _resetExpansionState();
-      _loadAd(); 
+      // Banner ads are Android-only; iOS uses a subscription model with no ads
+      if (Platform.isAndroid) {
+        _loadAd();
+      }
       _checkForUpdate();
     });
   }
 
   @override
   void dispose() {
-    _bannerAd?.dispose(); // Dispose Ad to free memory
+    _bannerAd?.dispose();
     super.dispose();
   }
 
   void _loadAd() async {
-    // Get an AnchoredAdaptiveBannerAdSize before loading the ad.
     final size = await AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(
       MediaQuery.sizeOf(context).width.truncate(),
     );
 
-    if (size == null) {
-      // Unable to get width of anchored banner.
-      return;
-    }
+    if (size == null) return;
 
     BannerAd(
       adUnitId: _adUnitId,
@@ -69,38 +65,28 @@ class _HomeScreenState extends State<HomeScreen> {
       size: size,
       listener: BannerAdListener(
         onAdLoaded: (ad) {
-          // Called when an ad is successfully received.
-          debugPrint("Ad was loaded.");
-          
           setState(() {
             _bannerAd = ad as BannerAd;
             _isBannerAdLoaded = true;
           });
         },
         onAdFailedToLoad: (ad, err) {
-          // Called when an ad request failed.
-          debugPrint("Ad failed to load with error: $err");
           ad.dispose();
         },
       ),
     ).load();
   }
 
-  /// Helper widget to display the ad safely
   Widget _buildAdWidget() {
-    if (_isBannerAdLoaded && _bannerAd != null) {
-      return Container(
-        alignment: Alignment.center,
-        width: _bannerAd!.size.width.toDouble(),
-        height: _bannerAd!.size.height.toDouble(),
-        margin: const EdgeInsets.symmetric(vertical: 16.0),
-        child: AdWidget(ad: _bannerAd!),
-      );
-    }
-    return const SizedBox.shrink();
+    if (!_isBannerAdLoaded || _bannerAd == null) return const SizedBox.shrink();
+    return Container(
+      alignment: Alignment.center,
+      width: _bannerAd!.size.width.toDouble(),
+      height: _bannerAd!.size.height.toDouble(),
+      child: AdWidget(ad: _bannerAd!),
+    );
   }
 
-  // ==================== IN-APP UPDATE LOGIC ====================
   Future<void> _checkForUpdate() async {
     if (!Platform.isAndroid) return;
     try {
@@ -114,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
         });
       }
     } catch (e) {
-      debugPrint('Failed to check for in-app update: $e');
+      debugPrint('Update check error: $e');
     }
   }
 
@@ -123,19 +109,8 @@ class _HomeScreenState extends State<HomeScreen> {
     final allHymns = Provider.of<HymnProvider>(context, listen: false).allHymns;
     if (allHymns.isNotEmpty) {
       final String firstCategory = allHymns.first.category ?? 'General';
-      setState(() {
-        _expandedCategories[firstCategory] = true;
-      });
+      setState(() => _expandedCategories[firstCategory] = true);
     }
-  }
-
-  void _shareApp() {
-    const String appName = "Cameroon Hymnal";
-    const String playStoreUrl = "https://play.google.com/store/apps/details?id=com.hymnal.cameroon";
-    const String appStoreUrl = "https://apps.apple.com/app/your-app-name/idYOUR_APP_ID";
-    final String url = Platform.isAndroid ? playStoreUrl : appStoreUrl;
-    final String message = "Download the new edition of $appName here: \n\n$url";
-    Share.share(message, subject: 'Download $appName');
   }
 
   @override
@@ -159,10 +134,6 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SettingsScreen())),
-          ),
-          IconButton(
-            icon: const Icon(Icons.share),
-            onPressed: _shareApp,
           ),
         ],
         bottom: PreferredSize(
@@ -188,14 +159,21 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      body: Consumer<HymnProvider>(
-        builder: (context, hymnDataProvider, child) {
-          if (_currentIndex == 0) {
-            return _buildGroupedHymnList(hymnDataProvider.filteredHymns);
-          } else {
-            return _buildHymnListPage(_getFavoriteHymns(hymnDataProvider, favoritesProvider));
-          }
-        },
+      body: Column(
+        children: [
+          Expanded(
+            child: Consumer<HymnProvider>(
+              builder: (context, hymnDataProvider, child) {
+                if (_currentIndex == 0) {
+                  return _buildGroupedHymnList(hymnDataProvider.filteredHymns);
+                } else {
+                  return _buildHymnListPage(_getFavoriteHymns(hymnDataProvider, favoritesProvider));
+                }
+              },
+            ),
+          ),
+          _buildAdWidget(), 
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
@@ -209,65 +187,39 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Hymn> _getFavoriteHymns(HymnProvider hymnProvider, FavoritesProvider favoritesProvider) {
-    return hymnProvider.allHymns
-        .where((hymn) => favoritesProvider.isFavorite(hymn.number))
-        .toList();
+    return hymnProvider.allHymns.where((hymn) => favoritesProvider.isFavorite(hymn.number)).toList();
   }
 
-  /// Favorites Page with Ad at the end
   Widget _buildHymnListPage(List<Hymn> hymns) {
     if (hymns.isEmpty) return const Center(child: Text('No favorites yet.'));
-    
-    // Add 1 to length for the ad
-    int itemCount = hymns.length + (_isBannerAdLoaded ? 1 : 0);
-
     return ListView.separated(
-      itemCount: itemCount,
-      itemBuilder: (context, index) {
-        if (index == hymns.length) return _buildAdWidget(); // Ad at bottom
-        return HymnListTile(hymn: hymns[index]);
-      },
-      separatorBuilder: (context, index) {
-        if (index == hymns.length - 1 && _isBannerAdLoaded) return const SizedBox.shrink();
-        return const Divider(height: 1);
-      },
+      itemCount: hymns.length,
+      itemBuilder: (context, index) => HymnListTile(hymn: hymns[index]),
+      separatorBuilder: (context, index) => const Divider(height: 1),
     );
   }
 
-  /// Main Hymn List with Ad at the end of search results
   Widget _buildGroupedHymnList(List<Hymn> hymns) {
     if (hymns.isEmpty && _searchQuery.isNotEmpty) {
       return const Center(child: Text('No hymns found for your search.'));
     }
-
     final allHymns = Provider.of<HymnProvider>(context).allHymns;
     if (allHymns.isEmpty) return const Center(child: CircularProgressIndicator());
 
     final List<dynamic> displayList = [];
     String? currentCategory;
-
     for (final hymn in hymns) {
       final hymnCategory = hymn.category ?? 'General';
       if (hymnCategory != currentCategory) {
         currentCategory = hymnCategory;
         displayList.add(currentCategory);
       }
-      if (_expandedCategories[currentCategory] ?? false) {
-        displayList.add(hymn);
-      }
+      if (_expandedCategories[currentCategory] ?? false) displayList.add(hymn);
     }
 
-    // Add 1 to length for the ad
-    int itemCount = displayList.length + (_isBannerAdLoaded ? 1 : 0);
-
     return ListView.builder(
-      itemCount: itemCount,
+      itemCount: displayList.length,
       itemBuilder: (context, index) {
-        // If this is the extra slot at the end, show the ad
-        if (index == displayList.length) {
-          return _buildAdWidget();
-        }
-
         final item = displayList[index];
         if (item is String) {
           return _buildCategoryHeader(item, _expandedCategories[item] ?? false);
@@ -306,14 +258,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontSize: fontProvider.headerFontSize,
                         fontWeight: FontWeight.bold,
                         color: Theme.of(context).colorScheme.primary,
-                        letterSpacing: 1.2,
                       ),
                     ),
                   ),
-                  Icon(
-                    isExpanded ? Icons.expand_less : Icons.expand_more,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
+                  Icon(isExpanded ? Icons.expand_less : Icons.expand_more,
+                       color: Theme.of(context).colorScheme.primary),
                 ],
               ),
             ),
