@@ -491,7 +491,7 @@
 				DEVELOPMENT_TEAM = NNN2GM3RZW;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Ed";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Edition";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,7 +677,7 @@
 				DEVELOPMENT_TEAM = NNN2GM3RZW;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Ed";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Edition";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,7 +703,7 @@
 				DEVELOPMENT_TEAM = NNN2GM3RZW;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Ed";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cameroon Hymnal: Best Edition";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

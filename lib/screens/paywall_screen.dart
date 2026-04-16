@@ -52,11 +52,12 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   color: colorScheme.primaryContainer,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Icon(
-                  Icons.library_music_rounded,
-                  size: 44,
-                  color: colorScheme.primary,
-                ),
+                child: Image.asset("assets/images/logo.png", width: 100, height: 100,),
+                // Icon(
+                //   Icons.library_music_rounded,
+                //   size: 44,
+                //   color: colorScheme.primary,
+                // ),
               ),
               const SizedBox(height: 20),
               Text(
@@ -89,6 +90,9 @@ class _PaywallScreenState extends State<PaywallScreen> {
               const SizedBox(height: 16),
               _featureRow(context, Icons.favorite_rounded, 'Favourites',
                   'Save hymns for quick access'),
+              const SizedBox(height: 16),
+              _featureRow(context, Icons.quiz_rounded, 'Quizzes',
+                  'Test your knowledge with interactive quizzes'),
               const SizedBox(height: 16),
               _featureRow(context, Icons.block_rounded, 'No Ads',
                   'Completely ad-free experience'),
