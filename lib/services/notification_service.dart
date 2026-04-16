@@ -134,7 +134,7 @@ class NotificationService {
 
   Future<bool> isDailyNotificationEnabled() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getBool(_enabledKey) ?? false;
+    return prefs.getBool(_enabledKey) ?? true;
   }
 
   Future<TimeOfDay> getSavedNotificationTime() async {

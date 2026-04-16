@@ -135,17 +135,17 @@ class _PaywallScreenState extends State<PaywallScreen> {
                                 ),
                         ),
                       ),
-                      const SizedBox(height: 14),
-                      TextButton(
-                        onPressed: () => _iapService.restorePurchases(),
-                        child: Text(
-                          'Restore Purchase',
-                          style: TextStyle(
-                            color: colorScheme.primary,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
+                      // const SizedBox(height: 14),
+                      // TextButton(
+                      //   onPressed: () => _iapService.restorePurchases(),
+                      //   child: Text(
+                      //     'Restore Purchase',
+                      //     style: TextStyle(
+                      //       color: colorScheme.primary,
+                      //       fontWeight: FontWeight.w500,
+                      //     ),
+                      //   ),
+                      // ),
                     ],
                   );
                 },

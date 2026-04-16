@@ -45,13 +45,15 @@ class MyApp extends StatelessWidget {
             themeMode: themeProvider.themeMode,
             theme: AppThemes.lightTheme,
             darkTheme: AppThemes.darkTheme,
-            home: Platform.isIOS
-                ? Consumer<AdProvider>(
-                    builder: (context, adProvider, _) => adProvider.isSubscribed
-                        ? const HomeScreen()
-                        : const PaywallScreen(),
-                  )
-                : const HomeScreen(),
+            home: 
+            // Platform.isIOS
+            //     ? Consumer<AdProvider>(
+            //         builder: (context, adProvider, _) => adProvider.isSubscribed
+            //             ? const HomeScreen()
+            //             : const PaywallScreen(),
+            //       )
+            //     : 
+                const HomeScreen(),
             debugShowCheckedModeBanner: false,
           );
         },
