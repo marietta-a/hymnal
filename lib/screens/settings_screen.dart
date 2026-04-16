@@ -1,132 +1,237 @@
-// lib/screens/settings_screen.dart
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:hymnal/providers/font_provider.dart';
+import 'package:hymnal/providers/ad_provider.dart';
+import 'package:hymnal/screens/font_settings_screen.dart';
+import 'package:hymnal/services/iap_service.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
+import 'dart:io';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
 
   @override
+  State<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  late IAPService _iapService;
+  final InAppReview _inAppReview = InAppReview.instance;
+
+  @override
+  void initState() {
+    super.initState();
+    final adProvider = Provider.of<AdProvider>(context, listen: false);
+    _iapService = IAPService(adProvider);
+    _iapService.initialize();
+  }
+
+  @override
+  void dispose() {
+    _iapService.dispose();
+    super.dispose();
+  }
+
+  void _shareApp() {
+    const String appName = "Cameroon Hymnal";
+    final String url = Platform.isAndroid
+        ? "https://play.google.com/store/apps/details?id=com.hymnal.cameroon"
+        : "https://apps.apple.com/app/your-app-id"; // Update with real Apple ID
+    Share.share("Download the $appName here: \n\n$url");
+  }
+
+  Future<void> _rateApp() async {
+    if (await _inAppReview.isAvailable()) {
+      await _inAppReview.requestReview();
+    } else if (Platform.isIOS) {
+      await _inAppReview.openStoreListing(
+        appStoreId: 'your-app-store-id', // Update with real App Store ID
+      );
+    } else {
+      // Android: openStoreListing uses the app's package name automatically
+      await _inAppReview.openStoreListing();
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final adProvider = Provider.of<AdProvider>(context);
+
     return Scaffold(
+      backgroundColor: colorScheme.surfaceContainerLowest,
       appBar: AppBar(
         title: const Text('Settings'),
+        centerTitle: false,
+        elevation: 0,
+        scrolledUnderElevation: 1,
+        backgroundColor: colorScheme.surface,
       ),
-      body: Consumer<FontProvider>(
-        builder: (context, fontProvider, child) {
-          return ListView(
-            padding: const EdgeInsets.all(16.0),
-            children: [
-              _buildSectionHeader(context, 'Header & Title Text', fontProvider),
-              _buildFontSizeSlider(
+      body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        children: [
+          // --- APP SECTION ---
+          _sectionLabel('App'),
+          _settingsCard([
+            _tile(
+              icon: Icons.star_rounded,
+              iconColor: Colors.amber.shade700,
+              title: 'Rate the App',
+              subtitle: 'Enjoying the hymnal? Leave us a review',
+              onTap: _rateApp,
+            ),
+            _divider(),
+            _tile(
+              icon: Icons.share_rounded,
+              iconColor: colorScheme.primary,
+              title: 'Share App',
+              subtitle: 'Tell others about Cameroon Hymnal',
+              onTap: _shareApp,
+            ),
+          ]),
+
+          // --- APPEARANCE SECTION ---
+          _sectionLabel('Appearance'),
+          _settingsCard([
+            _tile(
+              icon: Icons.text_fields_rounded,
+              iconColor: colorScheme.tertiary,
+              title: 'Font Settings',
+              subtitle: 'Customize text style and size',
+              onTap: () => Navigator.push(
                 context,
-                'Text Size: ${fontProvider.headerFontSize.toStringAsFixed(1)}',
-                fontProvider.headerFontSize,
-                (value) => fontProvider.setHeaderFontSize(value),
-                fontProvider,
-                isHeader: true
+                MaterialPageRoute(builder: (_) => const FontSettingsScreen()),
               ),
-              _buildFontFamilyDropdown(
-                context,
-                'Text Style',
-                fontProvider.headerFontFamily,
-                (family) => fontProvider.setHeaderFontFamily(family!),
-                fontProvider.headerFontSize, // For preview
+            ),
+          ]),
+
+          // --- PREMIUM SECTION (iOS Only) ---
+          if (Platform.isIOS) ...[
+            _sectionLabel('Premium'),
+            _settingsCard([
+              if (!adProvider.isSubscribed)
+                FutureBuilder<List<ProductDetails>>(
+                  future: _iapService.getProducts(),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return ListTile(
+                        leading: _iconBox(Icons.hourglass_top_rounded, colorScheme.primary),
+                        title: const Text('Loading...'),
+                        trailing: const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        ),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      );
+                    }
+                    if (snapshot.hasData && snapshot.data!.isNotEmpty) {
+                      final product = snapshot.data!.first;
+                      return _tile(
+                        icon: Icons.workspace_premium_rounded,
+                        iconColor: Colors.amber.shade700,
+                        title: 'Yearly Subscription (${product.price}/yr)',
+                        subtitle: 'Support the app with an ad-free experience',
+                        onTap: () => _iapService.buySubscription(product),
+                      );
+                    }
+                    return _tile(
+                      icon: Icons.block_rounded,
+                      iconColor: colorScheme.outline,
+                      title: 'Subscription Unavailable',
+                      subtitle: 'Please try again later',
+                    );
+                  },
+                ),
+              if (adProvider.isSubscribed) ...[
+                _tile(
+                  icon: Icons.check_circle_rounded,
+                  iconColor: Colors.green,
+                  title: 'Subscribed',
+                  subtitle: 'Thank you for your support!',
+                ),
+                _divider(),
+              ],
+              _tile(
+                icon: Icons.restore_rounded,
+                iconColor: colorScheme.primary,
+                title: 'Restore Purchases',
+                subtitle: 'Recover a previous purchase',
+                onTap: () => _iapService.restorePurchases(),
               ),
-              const Divider(height: 40),
-              _buildSectionHeader(context, 'Lyrics Text', fontProvider, isHeader: false),
-              _buildFontSizeSlider(
-                context,
-                'Text Size: ${fontProvider.lyricsFontSize.toStringAsFixed(1)}',
-                fontProvider.lyricsFontSize,
-                (value) => fontProvider.setLyricsFontSize(value),
-                fontProvider,
-                isHeader: false
-              ),
-              _buildFontFamilyDropdown(
-                context,
-                'Text Style',
-                fontProvider.lyricsFontFamily,
-                (family) => fontProvider.setLyricsFontFamily(family!),
-                fontProvider.lyricsFontSize, // For preview
-              ),
-            ],
-          );
-        },
+            ]),
+          ],
+
+          const SizedBox(height: 32),
+        ],
       ),
     );
   }
 
-  Widget _buildSectionHeader(BuildContext context, String title, FontProvider fontProvider, {bool isHeader = true}) {
+  Widget _sectionLabel(String title) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0),
+      padding: const EdgeInsets.only(top: 20, bottom: 6, left: 4),
       child: Text(
-        title,
-        style: GoogleFonts.getFont(
-          isHeader ? fontProvider.headerFontFamily : fontProvider.lyricsFontFamily,
-          fontSize: isHeader ? fontProvider.headerFontSize : fontProvider.lyricsFontSize,
-          fontWeight: FontWeight.bold,
+        title.toUpperCase(),
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+          letterSpacing: 1.2,
           color: Theme.of(context).colorScheme.primary,
         ),
       ),
     );
   }
 
-  Widget _buildFontSizeSlider(
-    BuildContext context,
-    String label,
-    double currentValue,
-    ValueChanged<double> onChanged,
-    FontProvider fontProvider,
-    {
-      bool isHeader = true,
-    }
-  ) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(label,
-          style: GoogleFonts.getFont(
-            isHeader ? fontProvider.headerFontFamily : fontProvider.lyricsFontFamily,
-            fontSize: isHeader ? fontProvider.headerFontSize : fontProvider.lyricsFontSize
-          ),
+  Widget _settingsCard(List<Widget> children) {
+    final colorScheme = Theme.of(context).colorScheme;
+    return Card(
+      margin: EdgeInsets.zero,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: colorScheme.outlineVariant.withValues(alpha: 0.5),
         ),
-        Slider(
-          value: currentValue,
-          min: 12.0,
-          max: 32.0,
-          divisions: 20,
-          label: currentValue.toStringAsFixed(1),
-          onChanged: onChanged,
-        ),
-      ],
+      ),
+      child: Column(children: children),
     );
   }
 
-  Widget _buildFontFamilyDropdown(
-    BuildContext context,
-    String label,
-    String currentFamily,
-    ValueChanged<String?> onChanged,
-    double previewFontSize,
-  ) {
-    return DropdownButtonFormField<String>(
-      value: currentFamily,
-      decoration: InputDecoration(
-        labelText: label,
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+  Widget _iconBox(IconData icon, Color color) {
+    return Container(
+      width: 36,
+      height: 36,
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(8),
       ),
-      items: FontProvider.availableFontFamilies.map((String family) {
-        return DropdownMenuItem<String>(
-          value: family,
-          child: Text(
-            family,
-            style: GoogleFonts.getFont(family, fontSize: previewFontSize),
-          ),
-        );
-      }).toList(),
-      onChanged: onChanged,
+      child: Icon(icon, size: 20, color: color),
     );
   }
+
+  Widget _tile({
+    required IconData icon,
+    required Color iconColor,
+    required String title,
+    String? subtitle,
+    VoidCallback? onTap,
+  }) {
+    return ListTile(
+      leading: _iconBox(icon, iconColor),
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w500)),
+      subtitle: subtitle != null
+          ? Text(subtitle, style: const TextStyle(fontSize: 12))
+          : null,
+      trailing: onTap != null
+          ? Icon(Icons.chevron_right_rounded, size: 20,
+              color: Theme.of(context).colorScheme.outline)
+          : null,
+      onTap: onTap,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+    );
+  }
+
+  Widget _divider() => const Divider(height: 1, indent: 68);
 }
