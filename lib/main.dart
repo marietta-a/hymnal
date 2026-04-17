@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/providers/favorites_provider.dart';
+import 'package:hymnal/providers/font_provider.dart';
+import 'package:hymnal/providers/game_provider.dart';
 import 'package:hymnal/providers/hymn_provider.dart';
 import 'package:hymnal/providers/theme_provider.dart';
-import 'package:hymnal/providers/font_provider.dart';
 import 'package:hymnal/screens/home_screen.dart';
 import 'package:hymnal/screens/paywall_screen.dart';
 import 'package:hymnal/services/notification_service.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AdProvider()), // Add this
         ChangeNotifierProvider(create: (_) => HymnProvider()),
         ChangeNotifierProvider(create: (_) => FavoritesProvider()),
+        ChangeNotifierProvider(create: (_) => GameProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => FontProvider()),
       ],

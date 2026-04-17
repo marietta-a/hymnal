@@ -178,24 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
           _buildAdWidget(), 
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
-          if (index == 2) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const GameScreen()),
-            );
-          } else {
-            setState(() => _currentIndex = index);
-          }
-        },
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.notes), label: 'All Hymns'),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorites'),
-          BottomNavigationBarItem(icon: Icon(Icons.quiz_rounded), label: 'Quiz'),
-        ],
-      ),
+      bottomNavigationBar: _buildBottomNav(),
     );
   }
 
@@ -282,6 +265,114 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         );
       },
+    );
+  }
+
+  Widget _buildBottomNav() {
+    final colorScheme = Theme.of(context).colorScheme;
+
+    const items = [
+      (
+        icon: Icons.menu_book_outlined,
+        activeIcon: Icons.menu_book_rounded,
+        label: 'Hymns',
+        color: Color(0xFF00897B), // teal
+      ),
+      (
+        icon: Icons.favorite_border_rounded,
+        activeIcon: Icons.favorite_rounded,
+        label: 'Favourites',
+        color: Color(0xFFE91E63), // pink
+      ),
+      (
+        icon: Icons.extension_outlined,
+        activeIcon: Icons.extension_rounded,
+        label: 'Quiz',
+        color: Color(0xFFF57C00), // orange
+      ),
+    ];
+
+    return Container(
+      decoration: BoxDecoration(
+        color: colorScheme.surface,
+        boxShadow: [
+          BoxShadow(
+            color: colorScheme.shadow.withValues(alpha: 0.08),
+            blurRadius: 12,
+            offset: const Offset(0, -2),
+          ),
+        ],
+      ),
+      child: SafeArea(
+        top: false,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+          child: Row(
+            children: List.generate(items.length, (i) {
+              final item = items[i];
+              final selected = _currentIndex == i;
+
+              return Expanded(
+                child: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () {
+                    if (i == 2) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => const GameScreen()),
+                      );
+                    } else {
+                      setState(() => _currentIndex = i);
+                    }
+                  },
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 220),
+                    curve: Curves.easeInOut,
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: selected
+                          ? item.color.withValues(alpha: 0.12)
+                          : Colors.transparent,
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          child: Icon(
+                            selected ? item.activeIcon : item.icon,
+                            key: ValueKey(selected),
+                            color: selected
+                                ? item.color
+                                : colorScheme.onSurfaceVariant,
+                            size: 24,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        AnimatedDefaultTextStyle(
+                          duration: const Duration(milliseconds: 200),
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: selected
+                                ? FontWeight.w700
+                                : FontWeight.w400,
+                            color: selected
+                                ? item.color
+                                : colorScheme.onSurfaceVariant,
+                          ),
+                          child: Text(item.label),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ),
+        ),
+      ),
     );
   }
 }
