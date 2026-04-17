@@ -41,17 +41,19 @@ class MyApp extends StatelessWidget {
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, child) {
           return MaterialApp(
-            title: 'Cameroon Hymnal App',
+            title: 'Cameroon Hymnal',
             themeMode: themeProvider.themeMode,
             theme: AppThemes.lightTheme,
             darkTheme: AppThemes.darkTheme,
-            home: Platform.isIOS
+            home: 
+            Platform.isIOS
                 ? Consumer<AdProvider>(
                     builder: (context, adProvider, _) => adProvider.isSubscribed
                         ? const HomeScreen()
                         : const PaywallScreen(),
                   )
-                : const HomeScreen(),
+                : 
+                const HomeScreen(),
             debugShowCheckedModeBanner: false,
           );
         },

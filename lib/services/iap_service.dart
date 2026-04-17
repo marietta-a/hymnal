@@ -9,7 +9,7 @@ class IAPService {
   final AdProvider adProvider;
 
   // Set in App Store Connect as an auto-renewable subscription
-  static const String yearlySubscriptionId = 'com.hymnal.cameroon.yearly';
+  static const String yearlySubscriptionId = 'cam_hymn_annual_subs';
 
   IAPService(this.adProvider);
 

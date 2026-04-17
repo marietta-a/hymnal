@@ -39,12 +39,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _toggleNotifications(bool value) async {
-    if (value) {
+    if (mounted) setState(() => _notificationsEnabled = !_notificationsEnabled);
+    if (_notificationsEnabled) {
       await NotificationService().scheduleDailyHymnNotification(_notificationTime);
     } else {
       await NotificationService().cancelDailyHymnNotification();
     }
-    if (mounted) setState(() => _notificationsEnabled = value);
+    // if (mounted) setState(() => _notificationsEnabled = !_notificationsEnabled);
   }
 
   Future<void> _pickNotificationTime() async {
@@ -125,6 +126,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ]),
 
+          // --- APPEARANCE SECTION ---
+          _sectionLabel('Appearance'),
+          _settingsCard([
+            _tile(
+              icon: Icons.text_fields_rounded,
+              iconColor: colorScheme.tertiary,
+              title: 'Font Settings',
+              subtitle: 'Customize text style and size',
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const FontSettingsScreen()),
+              ),
+            ),
+          ]),
+
           // --- NOTIFICATIONS SECTION ---
           _sectionLabel('Notifications'),
           _settingsCard([
@@ -153,21 +169,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               ),
             ],
-          ]),
-
-          // --- APPEARANCE SECTION ---
-          _sectionLabel('Appearance'),
-          _settingsCard([
-            _tile(
-              icon: Icons.text_fields_rounded,
-              iconColor: colorScheme.tertiary,
-              title: 'Font Settings',
-              subtitle: 'Customize text style and size',
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const FontSettingsScreen()),
-              ),
-            ),
           ]),
 
           // --- PREMIUM SECTION (iOS Only) ---
@@ -217,13 +218,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
                 _divider(),
               ],
-              _tile(
-                icon: Icons.restore_rounded,
-                iconColor: colorScheme.primary,
-                title: 'Restore Purchases',
-                subtitle: 'Recover a previous purchase',
-                onTap: () => _iapService.restorePurchases(),
-              ),
+              // _tile(
+              //   icon: Icons.restore_rounded,
+              //   iconColor: colorScheme.primary,
+              //   title: 'Restore Purchases',
+              //   subtitle: 'Recover a previous purchase',
+              //   onTap: () => _iapService.restorePurchases(),
+              // ),
             ]),
           ],
 
