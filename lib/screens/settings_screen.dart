@@ -117,6 +117,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               onTap: _rateApp,
             ),
             _divider(),
+            if(!Platform.isIOS)
             _tile(
               icon: Icons.share_rounded,
               iconColor: colorScheme.primary,
