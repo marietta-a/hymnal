@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:hymnal/data/hymn_data.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:hymnal/providers/game_provider.dart';
+import 'package:provider/provider.dart';
 
 // ─── Data models ────────────────────────────────────────────────────────────
 
@@ -46,7 +47,6 @@ class _GameScreenState extends State<GameScreen>
   int _lives = 3;
   int _score = 0;
   int _streak = 0;
-  int _highScore = 0;
   int _questionsAnswered = 0;
   _Question? _question;
   String? _selected;
@@ -58,7 +58,6 @@ class _GameScreenState extends State<GameScreen>
   static const int _maxLives = 3;
   static const int _base = 100;
   static const Duration _answerDelay = Duration(milliseconds: 900);
-  static const String _highScoreKey = 'hymnal_game_highscore';
 
   final Random _rng = Random();
 
@@ -99,7 +98,6 @@ class _GameScreenState extends State<GameScreen>
       CurvedAnimation(parent: _pulseCtrl, curve: Curves.elasticOut),
     );
 
-    _loadHighScore();
   }
 
   @override
@@ -107,21 +105,6 @@ class _GameScreenState extends State<GameScreen>
     _timerCtrl.dispose();
     _pulseCtrl.dispose();
     super.dispose();
-  }
-
-  // ── Persistence ────────────────────────────────────────────────────────────
-
-  Future<void> _loadHighScore() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() => _highScore = prefs.getInt(_highScoreKey) ?? 0);
-  }
-
-  Future<void> _saveHighScore() async {
-    if (_score > _highScore) {
-      _highScore = _score;
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setInt(_highScoreKey, _highScore);
-    }
   }
 
   // ── Game logic ─────────────────────────────────────────────────────────────
@@ -261,7 +244,7 @@ class _GameScreenState extends State<GameScreen>
     Future.delayed(_answerDelay, () {
       if (!mounted) return;
       if (_lives <= 0) {
-        _saveHighScore();
+        context.read<GameProvider>().submitScore(_score);
         setState(() => _phase = _Phase.gameOver);
       } else {
         _nextQuestion();
@@ -283,7 +266,7 @@ class _GameScreenState extends State<GameScreen>
     Future.delayed(_answerDelay, () {
       if (!mounted) return;
       if (_lives <= 0) {
-        _saveHighScore();
+        context.read<GameProvider>().submitScore(_score);
         setState(() => _phase = _Phase.gameOver);
       } else {
         _nextQuestion();
@@ -343,7 +326,7 @@ class _GameScreenState extends State<GameScreen>
             ),
             const SizedBox(height: 40),
             // High score badge
-            if (_highScore > 0) ...[
+            if (context.watch<GameProvider>().highScore > 0) ...[
               Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -358,7 +341,7 @@ class _GameScreenState extends State<GameScreen>
                         color: Colors.amber, size: 22),
                     const SizedBox(width: 8),
                     Text(
-                      'Best: $_highScore pts',
+                      'Best: ${context.watch<GameProvider>().highScore} pts',
                       style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -697,7 +680,8 @@ class _GameScreenState extends State<GameScreen>
   // ── Game Over ──────────────────────────────────────────────────────────────
 
   Widget _buildGameOver() {
-    final isNewHigh = _score >= _highScore && _score > 0;
+    final highScore = context.read<GameProvider>().highScore;
+    final isNewHigh = _score >= highScore && _score > 0;
 
     return Center(
       child: Padding(
@@ -706,7 +690,7 @@ class _GameScreenState extends State<GameScreen>
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              _lives <= 0 ? '💔' : '🎉',
+              _lives <= 0 ? '😔' : '🎉',
               style: const TextStyle(fontSize: 64),
             ),
             const SizedBox(height: 16),
@@ -732,7 +716,7 @@ class _GameScreenState extends State<GameScreen>
                   const SizedBox(height: 12),
                   _statRow(
                       'Best',
-                      '$_highScore pts',
+                      '$highScore pts',
                       isNewHigh
                           ? Colors.amber.shade300
                           : Colors.white.withValues(alpha: 0.6)),
