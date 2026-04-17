@@ -16,7 +16,6 @@
   <!-- Uncomment and replace with your App Store link when available
   <a href="YOUR_APP_STORE_LINK"><img src="https://img.shields.io/badge/App_Store-Download-blue.svg" alt="Download on the App Store"></a>
   -->
-  <img src="https://img.shields.io/badge/Platform-Flutter-blue" alt="Platform: Flutter">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </p>
 
@@ -42,13 +41,13 @@ Our goal is to foster "religious singing by the people" and encourage active par
 ## 📸 Screenshots
 
 <!-- IMPORTANT: Replace these placeholder image links with actual paths to your screenshots in your repository -->
-| **Home Screen**                                      | **Hymn Detail**                                       | 
+| **Home Screen**                                      | **Appearance Customization**                                       | 
 | :----------------------------------------------------------- | :---------------------------------------------------- | 
-| ![Home Screen](assets/screenshots/2.png?raw=true "Home Screen") | ![Detail Screen](assets/screenshots/4.png?raw=true "Hymn Detail")
+| ![Home Screen](assets/screenshots/1.jpg?raw=true "Home Screen") | ![Detail Screen](assets/screenshots/2.jpg?raw=true "Hymn Detail")
 
-| **Search**                                               | **Favorites**                                          | **Settings**                                             |
-| :------------------------------------------------------- | :----------------------------------------------------- | :------------------------------------------------------- |
-| ![Search](assets/screenshots/5.png?raw=true "Search Feature") | ![Favorites](assets/screenshots/7.png?raw=true "Favorites") | ![Settings](assets/screenshots/3.png?raw=true "Settings") |
+| **Gamification**                                            |
+| :-------------------------------------------------------|
+| ![Game](assets/screenshots/3.jpg?raw=true "Search Feature") 
 
 ## ⬇️ Download
 
