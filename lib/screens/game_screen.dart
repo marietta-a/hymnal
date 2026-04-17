@@ -4,6 +4,55 @@ import 'package:hymnal/data/hymn_data.dart';
 import 'package:hymnal/providers/game_provider.dart';
 import 'package:provider/provider.dart';
 
+// ─── Confetti particle ───────────────────────────────────────────────────────
+
+class _Particle {
+  final double x0, y0; // normalised start (0–1 fraction of screen)
+  final double vx, vy; // normalised velocity per unit time (0→1)
+  final Color color;
+  final double size;
+  final double rotSpeed; // rotations per unit time
+
+  const _Particle({
+    required this.x0, required this.y0,
+    required this.vx, required this.vy,
+    required this.color, required this.size, required this.rotSpeed,
+  });
+}
+
+class _ConfettiPainter extends CustomPainter {
+  final List<_Particle> particles;
+  final double t; // 0→1 progress
+
+  const _ConfettiPainter(this.particles, this.t);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()..style = PaintingStyle.fill;
+    for (final p in particles) {
+      final fade = t > 0.6 ? (1.0 - (t - 0.6) / 0.4).clamp(0.0, 1.0) : 1.0;
+      final x = (p.x0 + p.vx * t) * size.width;
+      // gravity: adds downward drift proportional to t²
+      final y = (p.y0 + p.vy * t + 0.85 * t * t) * size.height;
+      paint.color = p.color.withValues(alpha: fade);
+      canvas.save();
+      canvas.translate(x, y);
+      canvas.rotate(p.rotSpeed * t * pi * 2);
+      canvas.drawRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: Offset.zero, width: p.size, height: p.size * 0.45),
+          const Radius.circular(2),
+        ),
+        paint,
+      );
+      canvas.restore();
+    }
+  }
+
+  @override
+  bool shouldRepaint(_ConfettiPainter old) => old.t != t;
+}
+
 // ─── Data models ────────────────────────────────────────────────────────────
 
 enum _Phase { intro, playing, answered, gameOver }
@@ -41,9 +90,12 @@ class _GameScreenState extends State<GameScreen>
   late AnimationController _timerCtrl;
   late AnimationController _pulseCtrl;
   late Animation<double> _pulseAnim;
+  late AnimationController _celebrationCtrl;
 
   // Game state
   _Phase _phase = _Phase.intro;
+  bool _isNewHigh = false;
+  List<_Particle> _particles = [];
   int _lives = 3;
   int _score = 0;
   int _streak = 0;
@@ -98,12 +150,17 @@ class _GameScreenState extends State<GameScreen>
       CurvedAnimation(parent: _pulseCtrl, curve: Curves.elasticOut),
     );
 
+    _celebrationCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2800),
+    )..addListener(() => setState(() {}));
   }
 
   @override
   void dispose() {
     _timerCtrl.dispose();
     _pulseCtrl.dispose();
+    _celebrationCtrl.dispose();
     super.dispose();
   }
 
@@ -244,8 +301,14 @@ class _GameScreenState extends State<GameScreen>
     Future.delayed(_answerDelay, () {
       if (!mounted) return;
       if (_lives <= 0) {
+        final prevHigh = context.read<GameProvider>().highScore;
         context.read<GameProvider>().submitScore(_score);
+        _isNewHigh = _score > prevHigh && _score > 0;
         setState(() => _phase = _Phase.gameOver);
+        if (_isNewHigh) {
+          _particles = _generateParticles();
+          _celebrationCtrl.forward(from: 0);
+        }
       } else {
         _nextQuestion();
       }
@@ -266,8 +329,14 @@ class _GameScreenState extends State<GameScreen>
     Future.delayed(_answerDelay, () {
       if (!mounted) return;
       if (_lives <= 0) {
+        final prevHigh = context.read<GameProvider>().highScore;
         context.read<GameProvider>().submitScore(_score);
+        _isNewHigh = _score > prevHigh && _score > 0;
         setState(() => _phase = _Phase.gameOver);
+        if (_isNewHigh) {
+          _particles = _generateParticles();
+          _celebrationCtrl.forward(from: 0);
+        }
       } else {
         _nextQuestion();
       }
@@ -519,11 +588,11 @@ class _GameScreenState extends State<GameScreen>
         final progress = _timerCtrl.value;
         final Color color;
         if (progress > 0.5) {
-          color = Colors.greenAccent.shade400;
+          color = Colors.redAccent.shade400;
         } else if (progress > 0.25) {
           color = Colors.orangeAccent.shade400;
         } else {
-          color = Colors.redAccent.shade400;
+          color = Colors.greenAccent.shade400;
         }
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
@@ -677,64 +746,116 @@ class _GameScreenState extends State<GameScreen>
     );
   }
 
+  // ── Confetti ───────────────────────────────────────────────────────────────
+
+  List<_Particle> _generateParticles() {
+    const colors = [
+      Color(0xFFFFD700), Color(0xFFFF6B6B), Color(0xFF4ECDC4),
+      Color(0xFF45B7D1), Color(0xFFFFA500), Color(0xFFFF69B4),
+      Color(0xFF98FB98), Color(0xFFDDA0DD), Color(0xFFFFEC3D),
+    ];
+    return List.generate(80, (_) {
+      final angle = _rng.nextDouble() * 2 * pi;
+      final speed = 0.15 + _rng.nextDouble() * 0.3;
+      return _Particle(
+        x0: 0.05 + _rng.nextDouble() * 0.9,
+        y0: 0.05 + _rng.nextDouble() * 0.35,
+        vx: cos(angle) * speed * 0.35,
+        vy: -(0.15 + _rng.nextDouble() * 0.45),
+        color: colors[_rng.nextInt(colors.length)],
+        size: 7 + _rng.nextDouble() * 10,
+        rotSpeed: (1 + _rng.nextDouble() * 4) * (_rng.nextBool() ? 1 : -1),
+      );
+    });
+  }
+
   // ── Game Over ──────────────────────────────────────────────────────────────
 
   Widget _buildGameOver() {
     final highScore = context.read<GameProvider>().highScore;
-    final isNewHigh = _score >= highScore && _score > 0;
+    final t = _celebrationCtrl.value;
 
-    return Center(
+    final content = Center(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              _lives <= 0 ? '😔' : '🎉',
-              style: const TextStyle(fontSize: 64),
-            ),
+            // Trophy / emoji
+            if (_isNewHigh)
+              Transform.scale(
+                scale: (t < 0.25
+                    ? Curves.elasticOut.transform((t / 0.25).clamp(0.0, 1.0)) * 1.1
+                    : 1.0 + sin(t * pi * 5) * 0.04 * (1 - t)).clamp(0.0, 1.4),
+                child: const Text('🏆', style: TextStyle(fontSize: 72)),
+              )
+            else
+              Text(_lives <= 0 ? '💔' : '🎉',
+                  style: const TextStyle(fontSize: 64)),
+
             const SizedBox(height: 16),
-            Text(
-              isNewHigh ? 'New High Score!' : 'Game Over',
-              style: const TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-            ),
+
+            // Title with golden shimmer for new high score
+            if (_isNewHigh)
+              ShaderMask(
+                shaderCallback: (bounds) => LinearGradient(
+                  colors: const [
+                    Color(0xFFFFD700), Color(0xFFFFF176),
+                    Color(0xFFFFB300), Color(0xFFFFD700),
+                  ],
+                  stops: const [0.0, 0.35, 0.65, 1.0],
+                  transform: GradientRotation(t * pi * 6),
+                ).createShader(bounds),
+                child: const Text(
+                  '🌟 New High Score! 🌟',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              )
+            else
+              const Text('Game Over',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white)),
+
             const SizedBox(height: 24),
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(20),
-                border:
-                    Border.all(color: Colors.white.withValues(alpha: 0.2)),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
               ),
               child: Column(
                 children: [
                   _statRow('Score', '$_score pts', Colors.amber.shade300),
                   const SizedBox(height: 12),
-                  _statRow(
-                      'Best',
-                      '$highScore pts',
-                      isNewHigh
-                          ? Colors.amber.shade300
-                          : Colors.white.withValues(alpha: 0.6)),
+                  _statRow('Best', '$highScore pts',
+                      _isNewHigh ? Colors.amber.shade300 : Colors.white.withValues(alpha: 0.6)),
                   const SizedBox(height: 12),
                   _statRow('Answered', '$_questionsAnswered', Colors.lightBlueAccent),
                   const SizedBox(height: 12),
                   _statRow(
-                      'Accuracy',
-                      _questionsAnswered == 0
-                          ? '—'
-                          : '${((_questionsAnswered - (_maxLives - _lives)) / _questionsAnswered * 100).round()}%',
-                      Colors.greenAccent.shade200),
+                    'Accuracy',
+                    _questionsAnswered == 0
+                        ? '—'
+                        : '${((_questionsAnswered - (_maxLives - _lives)) / _questionsAnswered * 100).round()}%',
+                    Colors.greenAccent.shade200,
+                  ),
                 ],
               ),
             ),
             const SizedBox(height: 36),
             FilledButton(
-              onPressed: _startGame,
+              onPressed: () {
+                _isNewHigh = false;
+                _celebrationCtrl.reset();
+                _startGame();
+              },
               style: FilledButton.styleFrom(
                 backgroundColor: Colors.amber.shade600,
                 foregroundColor: Colors.black,
@@ -757,6 +878,21 @@ class _GameScreenState extends State<GameScreen>
           ],
         ),
       ),
+    );
+
+    if (!_isNewHigh) return content;
+
+    return Stack(
+      children: [
+        content,
+        Positioned.fill(
+          child: IgnorePointer(
+            child: CustomPaint(
+              painter: _ConfettiPainter(_particles, t),
+            ),
+          ),
+        ),
+      ],
     );
   }
 
