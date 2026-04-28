@@ -117,6 +117,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               onTap: _rateApp,
             ),
             _divider(),
+            if(!Platform.isIOS)
             _tile(
               icon: Icons.share_rounded,
               iconColor: colorScheme.primary,
@@ -142,82 +143,82 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ]),
 
           // --- NOTIFICATIONS SECTION ---
-          _sectionLabel('Notifications'),
-          _settingsCard([
-            SwitchListTile(
-              secondary: _iconBox(Icons.notifications_rounded, colorScheme.primary),
-              title: const Text('Daily Hymn Reminder',
-                  style: TextStyle(fontWeight: FontWeight.w500)),
-              subtitle: const Text('Get a hymn delivered every day',
-                  style: TextStyle(fontSize: 12)),
-              value: _notificationsEnabled,
-              onChanged: _toggleNotifications,
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-            ),
-            if (_notificationsEnabled) ...[
-              _divider(),
-              ListTile(
-                leading: _iconBox(Icons.schedule_rounded, colorScheme.secondary),
-                title: const Text('Reminder Time',
-                    style: TextStyle(fontWeight: FontWeight.w500)),
-                subtitle: Text(_notificationTime.format(context),
-                    style: const TextStyle(fontSize: 12)),
-                trailing: Icon(Icons.chevron_right_rounded,
-                    size: 20, color: colorScheme.outline),
-                onTap: _pickNotificationTime,
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-              ),
-            ],
-          ]),
+          // _sectionLabel('Notifications'),
+          // _settingsCard([
+          //   SwitchListTile(
+          //     secondary: _iconBox(Icons.notifications_rounded, colorScheme.primary),
+          //     title: const Text('Daily Hymn Reminder',
+          //         style: TextStyle(fontWeight: FontWeight.w500)),
+          //     subtitle: const Text('Get a hymn delivered every day',
+          //         style: TextStyle(fontSize: 12)),
+          //     value: _notificationsEnabled,
+          //     onChanged: _toggleNotifications,
+          //     contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          //   ),
+          //   if (_notificationsEnabled) ...[
+          //     _divider(),
+          //     ListTile(
+          //       leading: _iconBox(Icons.schedule_rounded, colorScheme.secondary),
+          //       title: const Text('Reminder Time',
+          //           style: TextStyle(fontWeight: FontWeight.w500)),
+          //       subtitle: Text(_notificationTime.format(context),
+          //           style: const TextStyle(fontSize: 12)),
+          //       trailing: Icon(Icons.chevron_right_rounded,
+          //           size: 20, color: colorScheme.outline),
+          //       onTap: _pickNotificationTime,
+          //       contentPadding:
+          //           const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          //     ),
+          //   ],
+          // ]),
 
-          // --- PREMIUM SECTION (iOS Only) ---
-          if (Platform.isIOS) ...[
-            _sectionLabel('Premium'),
-            _settingsCard([
-              if (!adProvider.isSubscribed)
-                FutureBuilder<List<ProductDetails>>(
-                  future: _iapService.getProducts(),
-                  builder: (context, snapshot) {
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return ListTile(
-                        leading: _iconBox(Icons.hourglass_top_rounded, colorScheme.primary),
-                        title: const Text('Loading...'),
-                        trailing: const SizedBox(
-                          width: 20,
-                          height: 20,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        ),
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                      );
-                    }
-                    if (snapshot.hasData && snapshot.data!.isNotEmpty) {
-                      final product = snapshot.data!.first;
-                      return _tile(
-                        icon: Icons.workspace_premium_rounded,
-                        iconColor: Colors.amber.shade700,
-                        title: 'Yearly Subscription (${product.price}/yr)',
-                        subtitle: 'Support the app with an ad-free experience',
-                        onTap: () => _iapService.buySubscription(product),
-                      );
-                    }
-                    return _tile(
-                      icon: Icons.block_rounded,
-                      iconColor: colorScheme.outline,
-                      title: 'Subscription Unavailable',
-                      subtitle: 'Please try again later',
-                    );
-                  },
-                ),
-              if (adProvider.isSubscribed) ...[
-                _tile(
-                  icon: Icons.check_circle_rounded,
-                  iconColor: Colors.green,
-                  title: 'Subscribed',
-                  subtitle: 'Thank you for your support!',
-                ),
-                _divider(),
-              ],
+          // // --- PREMIUM SECTION (iOS Only) ---
+          // if (Platform.isIOS) ...[
+          //   _sectionLabel('Premium'),
+          //   _settingsCard([
+          //     if (!adProvider.isSubscribed)
+          //       FutureBuilder<List<ProductDetails>>(
+          //         future: _iapService.getProducts(),
+          //         builder: (context, snapshot) {
+          //           if (snapshot.connectionState == ConnectionState.waiting) {
+          //             return ListTile(
+          //               leading: _iconBox(Icons.hourglass_top_rounded, colorScheme.primary),
+          //               title: const Text('Loading...'),
+          //               trailing: const SizedBox(
+          //                 width: 20,
+          //                 height: 20,
+          //                 child: CircularProgressIndicator(strokeWidth: 2),
+          //               ),
+          //               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          //             );
+          //           }
+          //           if (snapshot.hasData && snapshot.data!.isNotEmpty) {
+          //             final product = snapshot.data!.first;
+          //             return _tile(
+          //               icon: Icons.workspace_premium_rounded,
+          //               iconColor: Colors.amber.shade700,
+          //               title: 'Yearly Subscription (${product.price}/yr)',
+          //               subtitle: 'Support the app with an ad-free experience',
+          //               onTap: () => _iapService.buySubscription(product),
+          //             );
+          //           }
+          //           return _tile(
+          //             icon: Icons.block_rounded,
+          //             iconColor: colorScheme.outline,
+          //             title: 'Subscription Unavailable',
+          //             subtitle: 'Please try again later',
+          //           );
+          //         },
+          //       ),
+          //     if (adProvider.isSubscribed) ...[
+          //       _tile(
+          //         icon: Icons.check_circle_rounded,
+          //         iconColor: Colors.green,
+          //         title: 'Subscribed',
+          //         subtitle: 'Thank you for your support!',
+          //       ),
+          //       _divider(),
+          //     ],
               // _tile(
               //   icon: Icons.restore_rounded,
               //   iconColor: colorScheme.primary,
@@ -225,8 +226,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
               //   subtitle: 'Recover a previous purchase',
               //   onTap: () => _iapService.restorePurchases(),
               // ),
-            ]),
-          ],
+          //   ]),
+          // ],
 
           const SizedBox(height: 32),
         ],
