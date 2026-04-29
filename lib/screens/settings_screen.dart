@@ -3,7 +3,7 @@ import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/screens/font_settings_screen.dart';
 import 'package:hymnal/services/iap_service.dart';
 import 'package:hymnal/services/notification_service.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
+// import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
@@ -71,7 +71,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     const String appName = "Cameroon Hymnal";
     final String url = Platform.isAndroid
         ? "https://play.google.com/store/apps/details?id=com.hymnal.cameroon"
-        : "https://apps.apple.com/app/your-app-id"; // Update with real Apple ID
+        : "https://apps.apple.com/us/app/cameroon-hymnal/id6762371454"; // Update with real Apple ID
     Share.share("Download the $appName here: \n\n$url");
   }
 
@@ -81,7 +81,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     // } else 
     if (Platform.isIOS) {
       await _inAppReview.openStoreListing(
-        appStoreId: 'your-app-store-id', // Update with real App Store ID
+        appStoreId: 'https://apps.apple.com/us/app/cameroon-hymnal/id6762371454', // Update with real App Store ID
       );
     } else {
       // Android: openStoreListing uses the app's package name automatically
