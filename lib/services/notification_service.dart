@@ -43,7 +43,32 @@ class NotificationService {
       const InitializationSettings(android: androidSettings, iOS: iosSettings),
     );
 
+    await _createAndroidChannels();
     _requestAndroidPermission();
+  }
+
+  Future<void> _createAndroidChannels() async {
+    final androidPlugin = _plugin.resolvePlatformSpecificImplementation<
+        AndroidFlutterLocalNotificationsPlugin>();
+    if (androidPlugin == null) return;
+
+    await androidPlugin.createNotificationChannel(
+      const AndroidNotificationChannel(
+        'daily_hymn_channel',
+        'Daily Hymn',
+        description: 'Daily reminder to read and sing hymns.',
+        importance: Importance.defaultImportance,
+      ),
+    );
+
+    await androidPlugin.createNotificationChannel(
+      const AndroidNotificationChannel(
+        'app_update_channel',
+        'App Updates',
+        description: 'Notifications for app updates.',
+        importance: Importance.max,
+      ),
+    );
   }
 
   void _requestAndroidPermission() {
