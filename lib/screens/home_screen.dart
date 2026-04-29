@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -13,7 +15,7 @@ import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:provider/provider.dart';
-import 'dart:io' show Platform;
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,6 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
   BannerAd? _bannerAd;
   bool _isBannerAdLoaded = false;
 
+  bool _showWhatsAppBanner = true;
+  Timer? _bannerToggleTimer;
+
   final String _adUnitId = Platform.isAndroid
       ? 'ca-app-pub-2717868471631453/2339502385'
       : 'ca-app-pub-3940256099942544/2934735716'; 
@@ -44,6 +49,9 @@ class _HomeScreenState extends State<HomeScreen> {
         _loadAd();
       }
       _checkForUpdate();
+      _bannerToggleTimer = Timer.periodic(const Duration(seconds: 30), (_) {
+        if (mounted) setState(() => _showWhatsAppBanner = !_showWhatsAppBanner);
+      });
       // Reschedule daily notification so hymn content refreshes each day
       NotificationService().rescheduleDailyHymnIfEnabled();
     });
@@ -51,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void dispose() {
+    _bannerToggleTimer?.cancel();
     _bannerAd?.dispose();
     super.dispose();
   }
@@ -87,6 +96,76 @@ class _HomeScreenState extends State<HomeScreen> {
       width: _bannerAd!.size.width.toDouble(),
       height: _bannerAd!.size.height.toDouble(),
       child: AdWidget(ad: _bannerAd!),
+    );
+  }
+
+  Widget _buildWhatsAppBanner() {
+    return GestureDetector(
+      onTap: () async {
+        final uri = Uri.parse('https://chat.whatsapp.com/DtyNctOi2Nc7J6LDvO6kTT');
+        if (await canLaunchUrl(uri)) {
+          await launchUrl(uri, mode: LaunchMode.externalApplication);
+        }
+      },
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        color: const Color(0xFF25D366),
+        child: Row(
+          children: [
+            const Icon(Icons.groups_rounded, color: Colors.white, size: 28),
+            const SizedBox(width: 12),
+            const Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Join our WhatsApp Group',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13,
+                    ),
+                  ),
+                  Text(
+                    'Cameroon Hymnal Community',
+                    style: TextStyle(color: Colors.white70, fontSize: 11),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Text(
+                'Join Now',
+                style: TextStyle(
+                  color: Color(0xFF25D366),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBannerArea() {
+    // When no ad is loaded (iOS or before first ad loads), always show the WhatsApp banner.
+    if (!_isBannerAdLoaded || _bannerAd == null) return _buildWhatsAppBanner();
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 600),
+      transitionBuilder: (child, animation) =>
+          FadeTransition(opacity: animation, child: child),
+      child: _showWhatsAppBanner
+          ? KeyedSubtree(key: const ValueKey('wa'), child: _buildWhatsAppBanner())
+          : KeyedSubtree(key: const ValueKey('ad'), child: _buildAdWidget()),
     );
   }
 
@@ -175,7 +254,8 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
-          _buildAdWidget(), 
+          // _buildAdWidget(),
+          _buildBannerArea(),
         ],
       ),
       bottomNavigationBar: _buildBottomNav(),
