@@ -156,15 +156,74 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  Widget _buildAppBanner() {
+    return GestureDetector(
+      onTap: () async {
+        final uri = Uri.parse('https://play.google.com/store/apps/details?id=com.notebook_bms.notebook_bms');
+        if (await canLaunchUrl(uri)) {
+          await launchUrl(uri, mode: LaunchMode.externalApplication);
+        }
+      },
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        color: const Color.fromARGB(255, 21, 146, 168),
+        child: Row(
+          children: [
+            const Icon(Icons.download, color: Colors.white, size: 28),
+            const SizedBox(width: 12),
+            const Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Ace Your Biomedical Research and Studies',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                    ),
+                  ),
+                  Text(
+                    'With Notebook BMS',
+                    style: TextStyle(color: Colors.white70, fontSize: 11),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Text(
+                'Download',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 21, 146, 168),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _buildBannerArea() {
     // When no ad is loaded (iOS or before first ad loads), always show the WhatsApp banner.
-    if (!_isBannerAdLoaded || _bannerAd == null) return _buildWhatsAppBanner();
+    if (!_isBannerAdLoaded || _bannerAd == null){
+      return Platform.isAndroid ? _buildAppBanner() : _buildWhatsAppBanner();
+    }
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 600),
       transitionBuilder: (child, animation) =>
           FadeTransition(opacity: animation, child: child),
       child: _showWhatsAppBanner
-          ? KeyedSubtree(key: const ValueKey('wa'), child: _buildWhatsAppBanner())
+          ? KeyedSubtree(key: const ValueKey('wa'), child: Platform.isAndroid ? _buildAppBanner() : _buildWhatsAppBanner())
           : KeyedSubtree(key: const ValueKey('ad'), child: _buildAdWidget()),
     );
   }
