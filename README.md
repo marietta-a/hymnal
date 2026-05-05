@@ -13,13 +13,11 @@
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.hymnal.cameroon"><img src="https://img.shields.io/badge/Google_Play-Download-brightgreen.svg" alt="Get it on Google Play"></a>
-  Uncomment and replace with your App Store link when available
   <a href="https://apps.apple.com/us/app/cameroon-hymnal/id6762371454"><img src="https://img.shields.io/badge/App_Store-Download-blue.svg" alt="Download on the App Store"></a>
  
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </p>
 
----
 
 ## 📖 About The App
 
@@ -57,7 +55,7 @@ Get the latest version of the Cameroon Hymnal app from the Google Play Store.
   <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200"/>
 </a>
 
-*(App Store version coming soon!)*
+  <a href="https://apps.apple.com/us/app/cameroon-hymnal/id6762371454"><img src="https://img.shields.io/badge/App_Store-Download-blue.svg" alt="Download on the App Store" width="200"></a>
 
 ## 🛠️ Built With
 
