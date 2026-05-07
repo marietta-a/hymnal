@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hymnal/data/hymn_data.dart';
 import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/providers/game_provider.dart';
@@ -58,7 +59,7 @@ class _ConfettiPainter extends CustomPainter {
 
 enum _Phase { intro, playing, answered, gameOver }
 
-enum _QuestionType { nameHymn, findCategory }
+enum _QuestionType { nameHymn, findCategory, guessNumber }
 
 class _Question {
   final _QuestionType type;
@@ -66,6 +67,7 @@ class _Question {
   final String label; // question label shown above card
   final String correct;
   final List<String> options; // shuffled 4 choices
+  final Map hymnData; // Reference to original hymn for review
 
   const _Question({
     required this.type,
@@ -73,6 +75,7 @@ class _Question {
     required this.label,
     required this.correct,
     required this.options,
+    required this.hymnData,
   });
 }
 
@@ -104,6 +107,7 @@ class _GameScreenState extends State<GameScreen>
   _Question? _question;
   String? _selected;
   bool _hasOfferedAd = false;
+  final List<_Question> _missedQuestions = [];
 
   // Feedback overlay
   String _feedbackText = '';
@@ -177,11 +181,20 @@ class _GameScreenState extends State<GameScreen>
       _questionsAnswered = 0;
       _selected = null;
       _hasOfferedAd = false;
+      _missedQuestions.clear();
     });
     _nextQuestion();
   }
 
   void _nextQuestion() {
+    // Dynamic difficulty: faster timer for higher streaks
+    int timerSeconds = 10;
+    if (_streak >= 15) timerSeconds = 5;
+    else if (_streak >= 10) timerSeconds = 6;
+    else if (_streak >= 5) timerSeconds = 8;
+    
+    _timerCtrl.duration = Duration(seconds: timerSeconds);
+
     setState(() {
       _question = _buildQuestion();
       _selected = null;
@@ -191,10 +204,10 @@ class _GameScreenState extends State<GameScreen>
   }
 
   _Question _buildQuestion() {
-    final useCategory = _rng.nextBool();
+    final typeRoll = _rng.nextDouble();
 
-    if (useCategory) {
-      // "Which category does [hymn title] belong to?"
+    if (typeRoll < 0.33) {
+      // 1/3 chance: "Which category does [hymn title] belong to?"
       final hymn = _hymns[_rng.nextInt(_hymns.length)];
       final correct = hymn['category'] as String;
       final wrongs = _allCategories
@@ -208,9 +221,34 @@ class _GameScreenState extends State<GameScreen>
         prompt: 'Hymn ${hymn['number']}\n${_titleCase(hymn['title'] as String)}',
         correct: correct,
         options: options,
+        hymnData: hymn,
+      );
+    } else if (typeRoll < 0.66) {
+      // 1/3 chance: "What is the number for this hymn?"
+      final hymn = _hymns[_rng.nextInt(_hymns.length)];
+      final correct = hymn['number'].toString();
+      
+      // Generate plausible wrong numbers near the real number
+      final correctInt = int.tryParse(correct) ?? _rng.nextInt(300) + 1;
+      final Set<String> wrongs = {};
+      while (wrongs.length < 3) {
+        int wrongInt = correctInt + (_rng.nextInt(21) - 10); // +/- 10
+        if (wrongInt > 0 && wrongInt != correctInt) {
+           wrongs.add(wrongInt.toString());
+        }
+      }
+      
+      final options = [correct, ...wrongs]..shuffle(_rng);
+      return _Question(
+        type: _QuestionType.guessNumber,
+        label: 'What is the hymn number for this title?',
+        prompt: _titleCase(hymn['title'] as String),
+        correct: correct,
+        options: options,
+        hymnData: hymn,
       );
     } else {
-      // "Which hymn contains this lyric?"
+      // 1/3 chance: "Which hymn contains this lyric?"
       final hymn = _pickHymnWithGoodLyric();
       final snippet = _extractSnippet(hymn['lyrics'] as String);
       final correct = _titleCase(hymn['title'] as String);
@@ -226,6 +264,7 @@ class _GameScreenState extends State<GameScreen>
         prompt: snippet,
         correct: correct,
         options: options,
+        hymnData: hymn,
       );
     }
   }
@@ -280,6 +319,7 @@ class _GameScreenState extends State<GameScreen>
     });
 
     if (correct) {
+      HapticFeedback.lightImpact();
       final earned = _base * _multiplier;
       setState(() {
         _score += earned;
@@ -292,6 +332,8 @@ class _GameScreenState extends State<GameScreen>
       });
       _pulseCtrl.forward(from: 0);
     } else {
+      HapticFeedback.heavyImpact();
+      _missedQuestions.add(_question!);
       setState(() {
         _lives--;
         _streak = 0;
@@ -312,7 +354,8 @@ class _GameScreenState extends State<GameScreen>
           _particles = _generateParticles();
           _celebrationCtrl.forward(from: 0);
         }
-      } else if (_lives == 1 && context.read<AdProvider>().isRewardedAdReady) {
+      } else if (_lives == 1 && !_hasOfferedAd && context.read<AdProvider>().isRewardedAdReady) {
+        _hasOfferedAd = true;
         _showAdOfferDialog();
       } else {
         _nextQuestion();
@@ -322,6 +365,8 @@ class _GameScreenState extends State<GameScreen>
 
   void _onTimeout() {
     if (_phase != _Phase.playing) return;
+    HapticFeedback.heavyImpact();
+    _missedQuestions.add(_question!);
     setState(() {
       _phase = _Phase.answered;
       _lives--;
@@ -342,7 +387,8 @@ class _GameScreenState extends State<GameScreen>
           _particles = _generateParticles();
           _celebrationCtrl.forward(from: 0);
         }
-      } else if (_lives == 1 && context.read<AdProvider>().isRewardedAdReady) {
+      } else if (_lives == 1 && !_hasOfferedAd && context.read<AdProvider>().isRewardedAdReady) {
+        _hasOfferedAd = true;
         _showAdOfferDialog();
       } else {
         _nextQuestion();
@@ -423,21 +469,49 @@ class _GameScreenState extends State<GameScreen>
   // ── Build ──────────────────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [Color(0xFF006064), Color(0xFF1A237E)],
+    return PopScope(
+      canPop: _phase == _Phase.intro || _phase == _Phase.gameOver,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
+        
+        final shouldPop = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('Quit Game?'),
+            content: const Text('You will lose your current score and streak. Are you sure?'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context, false),
+                child: const Text('Cancel'),
+              ),
+              FilledButton(
+                onPressed: () => Navigator.pop(context, true),
+                child: const Text('Quit'),
+              ),
+            ],
           ),
-        ),
-        child: SafeArea(
-          child: switch (_phase) {
-            _Phase.intro => _buildIntro(),
-            _Phase.gameOver => _buildGameOver(),
-            _ => _buildGame(),
-          },
+        );
+        
+        if (shouldPop == true && mounted) {
+           Navigator.pop(context);
+        }
+      },
+      child: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF006064), Color(0xFF1A237E)],
+            ),
+          ),
+          child: SafeArea(
+            child: switch (_phase) {
+              _Phase.intro => _buildIntro(),
+              _Phase.gameOver => _buildGameOver(),
+              _ => _buildGame(),
+            },
+          ),
         ),
       ),
     );

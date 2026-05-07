@@ -83,6 +83,9 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         onAdFailedToLoad: (ad, err) {
+          setState(() {
+            _isBannerAdLoaded = false;
+          });
           ad.dispose();
         },
       ),
@@ -216,15 +219,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildBannerArea() {
     // When no ad is loaded (iOS or before first ad loads), always show the WhatsApp banner.
     if (!_isBannerAdLoaded || _bannerAd == null){
-      return Platform.isAndroid ? _buildAppBanner() : _buildWhatsAppBanner();
+      return Platform.isAndroid ? _buildAppBanner() : SizedBox.shrink();
     }
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 600),
       transitionBuilder: (child, animation) =>
           FadeTransition(opacity: animation, child: child),
       child: _showWhatsAppBanner
-          ? KeyedSubtree(key: const ValueKey('wa'), child: Platform.isAndroid ? _buildAppBanner() : _buildWhatsAppBanner())
-          : KeyedSubtree(key: const ValueKey('ad'), child: _buildAdWidget()),
+          ? KeyedSubtree(key: const ValueKey('app_banner'), child: Platform.isAndroid ? _buildAppBanner() : _buildWhatsAppBanner())
+          : KeyedSubtree(key: const ValueKey('ad_banner'), child: _buildAdWidget()),
     );
   }
 
@@ -451,18 +454,65 @@ class _HomeScreenState extends State<HomeScreen> {
               final item = items[i];
               final selected = _currentIndex == i;
 
-              return Expanded(
-                child: GestureDetector(
-                  behavior: HitTestBehavior.opaque,
-                  onTap: () {
-                    if (i == 2) {
+              if (i == 2) {
+                // Enhanced "Game/Quiz" Button
+                return Expanded(
+                  child: GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (_) => const GameScreen()),
                       );
-                    } else {
-                      setState(() => _currentIndex = i);
-                    }
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [Colors.amber.shade400, Colors.orange.shade500],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        ),
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.orange.withValues(alpha: 0.3),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
+                          )
+                        ]
+                      ),
+                      child: const Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            Icons.sports_esports_rounded,
+                            color: Colors.white,
+                            size: 16,
+                          ),
+                          SizedBox(height: 2),
+                          Text(
+                            'Play Quiz',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white,
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              }
+
+              return Expanded(
+                child: GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTap: () {
+                    setState(() => _currentIndex = i);
                   },
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 220),

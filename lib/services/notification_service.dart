@@ -103,8 +103,8 @@ class NotificationService {
   /// The hymn content rotates each day based on day-of-year.
   Future<void> scheduleDailyHymnNotification(TimeOfDay time) async {
     final hymn = _hymnOfDay();
-    final title = _toTitleCase(hymn['title'] as String);
-    final body = '"${_firstMeaningfulLine(hymn['lyrics'] as String)}"';
+    final title = 'Master the Hymn: ${_toTitleCase(hymn['title'] as String)}';
+    final body = '"${_firstMeaningfulLine(hymn['lyrics'] as String)}" - Tap to read and sing along!';
 
     const AndroidNotificationDetails androidDetails = AndroidNotificationDetails(
       'daily_hymn_channel',
@@ -148,7 +148,8 @@ class NotificationService {
   /// Call this on every app open so the content rotates daily.
   Future<void> rescheduleDailyHymnIfEnabled() async {
     final prefs = await SharedPreferences.getInstance();
-    final enabled = prefs.getBool(_enabledKey) ?? false;
+    // Default to true if not explicitly disabled
+    final enabled = prefs.getBool(_enabledKey) ?? true; 
     if (!enabled) return;
     final time = TimeOfDay(
       hour: prefs.getInt(_hourKey) ?? 8,

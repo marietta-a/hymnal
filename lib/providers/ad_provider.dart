@@ -45,7 +45,7 @@ class AdProvider with ChangeNotifier {
     RewardedAd.load(
       adUnitId: Platform.isAndroid
           ? 'ca-app-pub-2717868471631453/1992604092'
-          : 'ca-app-pub-2717868471631453/1992604092', 
+          : 'ca-app-pub-2717868471631453/8850040920', 
       request: const AdRequest(),
       rewardedAdLoadCallback: RewardedAdLoadCallback(
         onAdLoaded: (ad) {
