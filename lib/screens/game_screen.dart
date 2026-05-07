@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:hymnal/data/hymn_data.dart';
+import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/providers/game_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -102,6 +103,7 @@ class _GameScreenState extends State<GameScreen>
   int _questionsAnswered = 0;
   _Question? _question;
   String? _selected;
+  bool _hasOfferedAd = false;
 
   // Feedback overlay
   String _feedbackText = '';
@@ -174,6 +176,7 @@ class _GameScreenState extends State<GameScreen>
       _streak = 0;
       _questionsAnswered = 0;
       _selected = null;
+      _hasOfferedAd = false;
     });
     _nextQuestion();
   }
@@ -309,6 +312,8 @@ class _GameScreenState extends State<GameScreen>
           _particles = _generateParticles();
           _celebrationCtrl.forward(from: 0);
         }
+      } else if (_lives == 1 && context.read<AdProvider>().isRewardedAdReady) {
+        _showAdOfferDialog();
       } else {
         _nextQuestion();
       }
@@ -337,14 +342,85 @@ class _GameScreenState extends State<GameScreen>
           _particles = _generateParticles();
           _celebrationCtrl.forward(from: 0);
         }
+      } else if (_lives == 1 && context.read<AdProvider>().isRewardedAdReady) {
+        _showAdOfferDialog();
       } else {
         _nextQuestion();
       }
     });
   }
 
-  // ── Build ──────────────────────────────────────────────────────────────────
+  void _showAdOfferDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1A237E),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Row(
+          children: [
+            Icon(Icons.favorite_rounded, color: Colors.redAccent),
+            SizedBox(width: 10),
+            Text('Low on Hearts!', style: TextStyle(color: Colors.white, fontSize: 18)),
+          ],
+        ),
+        content: const Text(
+          'Watch a short video to gain an extra heart and keep your streak alive?',
+          style: TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              _nextQuestion();
+            },
+            child: Text('Skip', style: TextStyle(color: Colors.white.withValues(alpha: 0.5))),
+          ),
+          FilledButton(
+            onPressed: () {
+              Navigator.pop(context);
+              
+              bool rewardEarned = false;
 
+              context.read<AdProvider>().showRewardedAd(
+                onRewardEarned: () {
+                  rewardEarned = true;
+                },
+                onAdDismissed: () {
+                  if (rewardEarned) {
+                     setState(() {
+                       _lives = min(_lives + 1, _maxLives);
+                     });
+                     if (mounted) {
+                     _nextQuestion();
+                     }
+                  }
+                  if (mounted) {
+                     _nextQuestion();
+                  }
+                },
+                onAdNotReady: () {
+                  if (mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Ad not ready yet. Please try again later.')),
+                    );
+                    _nextQuestion();
+                  }
+                },
+              );
+            },
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.amber,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+            child: const Text('Watch Ad', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ── Build ──────────────────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
     return Scaffold(
