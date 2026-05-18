@@ -15,6 +15,7 @@ import 'package:hymnal/widgets/hymn_list_tile.dart';
 import 'package:hymnal/widgets/search_bar.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:provider/provider.dart';
+import 'package:upgrader/upgrader.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -232,16 +233,11 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _checkForUpdate() async {
-    if (!Platform.isAndroid) return;
     try {
-      final AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
-      if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable) {
-        await InAppUpdate.startFlexibleUpdate();
-        InAppUpdate.installUpdateListener.listen((InstallStatus status) {
-          if (status == InstallStatus.downloaded) {
-            NotificationService().showUpdateDownloadedNotification();
-          }
-        });
+      final upgrader = Upgrader();
+      await upgrader.initialize();
+      if (upgrader.isUpdateAvailable()) {
+        NotificationService().showUpdateDownloadedNotification();
       }
     } catch (e) {
       debugPrint('Update check error: $e');
