@@ -78,19 +78,19 @@ To get a local copy up and running, follow these simple steps.
 
 1. Fork the repo
    
-3.    Clone the repo
+2. Clone the repo
     ```sh
     git clone https://github.com/your-username/hymnal.git
     ```
-4.  Navigate to the project directory
+3.  Navigate to the project directory
     ```sh
     cd hymnal
     ```
-5.  Install dependencies
+4.  Install dependencies
     ```sh
     flutter pub get
     ```
-6.  Run the app
+5.  Run the app
     ```sh
     flutter run
     ```
