@@ -34,9 +34,9 @@ class NotificationService {
 
     const DarwinInitializationSettings iosSettings =
         DarwinInitializationSettings(
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: true,
+        requestAlertPermission: true,
+        requestBadgePermission: true,
+        requestSoundPermission: true,
     );
 
     await _plugin.initialize(
@@ -89,11 +89,17 @@ class NotificationService {
       priority: Priority.high,
     );
 
+    const DarwinNotificationDetails iosDetails = DarwinNotificationDetails(
+      presentAlert: true,
+      presentBadge: true,
+      presentSound: true,
+    );
+
     _plugin.show(
       _updateNotifId,
       'Update Ready to Install',
       'A new version is now available.',
-      const NotificationDetails(android: androidDetails),
+      const NotificationDetails(android: androidDetails, iOS: iosDetails),
     );
   }
 

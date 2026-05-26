@@ -1,7 +1,7 @@
 name: hymnal
 description: "A collection of Cameroon Catholic hymns"
 publish_to: 'none'
-version: 0.0.3
+version: 0.0.4
 
 environment:
   sdk: ^3.8.1
@@ -22,6 +22,7 @@ dependencies:
   timezone: ^0.10.1
   flutter_timezone: ^5.0.2
   url_launcher: ^6.3.2
+  upgrader: ^13.3.0
 
 dev_dependencies:
   flutter_test:
