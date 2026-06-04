@@ -3,6 +3,7 @@ import 'package:hymnal/providers/ad_provider.dart';
 import 'package:hymnal/screens/font_settings_screen.dart';
 import 'package:hymnal/services/iap_service.dart';
 import 'package:hymnal/services/notification_service.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 // import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
@@ -143,36 +144,36 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ]),
 
           // --- NOTIFICATIONS SECTION ---
-          // _sectionLabel('Notifications'),
-          // _settingsCard([
-          //   SwitchListTile(
-          //     secondary: _iconBox(Icons.notifications_rounded, colorScheme.primary),
-          //     title: const Text('Daily Hymn Reminder',
-          //         style: TextStyle(fontWeight: FontWeight.w500)),
-          //     subtitle: const Text('Get a hymn delivered every day',
-          //         style: TextStyle(fontSize: 12)),
-          //     value: _notificationsEnabled,
-          //     onChanged: _toggleNotifications,
-          //     contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-          //   ),
-          //   if (_notificationsEnabled) ...[
-          //     _divider(),
-          //     ListTile(
-          //       leading: _iconBox(Icons.schedule_rounded, colorScheme.secondary),
-          //       title: const Text('Reminder Time',
-          //           style: TextStyle(fontWeight: FontWeight.w500)),
-          //       subtitle: Text(_notificationTime.format(context),
-          //           style: const TextStyle(fontSize: 12)),
-          //       trailing: Icon(Icons.chevron_right_rounded,
-          //           size: 20, color: colorScheme.outline),
-          //       onTap: _pickNotificationTime,
-          //       contentPadding:
-          //           const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-          //     ),
-          //   ],
-          // ]),
+          _sectionLabel('Notifications'),
+          _settingsCard([
+            SwitchListTile(
+              secondary: _iconBox(Icons.notifications_rounded, colorScheme.primary),
+              title: const Text('Daily Hymn Reminder',
+                  style: TextStyle(fontWeight: FontWeight.w500)),
+              subtitle: const Text('Get a hymn delivered every day',
+                  style: TextStyle(fontSize: 12)),
+              value: _notificationsEnabled,
+              onChanged: _toggleNotifications,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            ),
+            if (_notificationsEnabled) ...[
+              _divider(),
+              ListTile(
+                leading: _iconBox(Icons.schedule_rounded, colorScheme.secondary),
+                title: const Text('Reminder Time',
+                    style: TextStyle(fontWeight: FontWeight.w500)),
+                subtitle: Text(_notificationTime.format(context),
+                    style: const TextStyle(fontSize: 12)),
+                trailing: Icon(Icons.chevron_right_rounded,
+                    size: 20, color: colorScheme.outline),
+                onTap: _pickNotificationTime,
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              ),
+            ],
+          ]),
 
-          // // --- PREMIUM SECTION (iOS Only) ---
+          // --- PREMIUM SECTION (iOS Only) ---
           // if (Platform.isIOS) ...[
           //   _sectionLabel('Premium'),
           //   _settingsCard([
@@ -198,7 +199,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           //               icon: Icons.workspace_premium_rounded,
           //               iconColor: Colors.amber.shade700,
           //               title: 'Yearly Subscription (${product.price}/yr)',
-          //               subtitle: 'Support the app with an ad-free experience',
+          //               subtitle: "Support the app's development",
           //               onTap: () => _iapService.buySubscription(product),
           //             );
           //           }
@@ -219,13 +220,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
           //       ),
           //       _divider(),
           //     ],
-              // _tile(
-              //   icon: Icons.restore_rounded,
-              //   iconColor: colorScheme.primary,
-              //   title: 'Restore Purchases',
-              //   subtitle: 'Recover a previous purchase',
-              //   onTap: () => _iapService.restorePurchases(),
-              // ),
+          //     _tile(
+          //       icon: Icons.restore_rounded,
+          //       iconColor: colorScheme.primary,
+          //       title: 'Restore Purchases',
+          //       subtitle: 'Recover a previous purchase',
+          //       onTap: () => _iapService.restorePurchases(),
+          //     ),
           //   ]),
           // ],
 
