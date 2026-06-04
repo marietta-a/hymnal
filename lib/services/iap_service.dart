@@ -26,7 +26,6 @@ class IAPService {
     if (!available) return [];
     const Set<String> ids = {yearlySubscriptionId};
     final ProductDetailsResponse response = await _iap.queryProductDetails(ids);
-    debugPrint('IAP Products: ${response.productDetails}');
     return response.productDetails;
   }
 
